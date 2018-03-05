@@ -17,6 +17,7 @@
 		4B0F5D2F202199F6001F65A2 /* OCTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D2E202199F6001F65A2 /* OCTestUITests.m */; };
 		4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D432021A801001F65A2 /* Test_Generics.m */; };
 		4B0F5D472022C612001F65A2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D462022C612001F65A2 /* Person.m */; };
+		4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F2BB2047E5D70013C590 /* TestVC8.m */; };
 		4B771502202ED09F00257BD8 /* TestVC0.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771501202ED09F00257BD8 /* TestVC0.m */; };
 		4B771505202ED0B600257BD8 /* TestVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771504202ED0B600257BD8 /* TestVC1.m */; };
 		4B771508202ED0C200257BD8 /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771507202ED0C200257BD8 /* TestVC2.m */; };
@@ -68,6 +69,8 @@
 		4B0F5D432021A801001F65A2 /* Test_Generics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_Generics.m; sourceTree = "<group>"; };
 		4B0F5D452022C612001F65A2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		4B0F5D462022C612001F65A2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4B22F2BA2047E5D70013C590 /* TestVC8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC8.h; sourceTree = "<group>"; };
+		4B22F2BB2047E5D70013C590 /* TestVC8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC8.m; sourceTree = "<group>"; };
 		4B771500202ED09F00257BD8 /* TestVC0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC0.h; sourceTree = "<group>"; };
 		4B771501202ED09F00257BD8 /* TestVC0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC0.m; sourceTree = "<group>"; };
 		4B771503202ED0B600257BD8 /* TestVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC1.h; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				4B771520202EF35300257BD8 /* TestVC6.m */,
 				4B771522202EF36000257BD8 /* TestVC7.h */,
 				4B771523202EF36000257BD8 /* TestVC7.m */,
+				4B22F2BA2047E5D70013C590 /* TestVC8.h */,
+				4B22F2BB2047E5D70013C590 /* TestVC8.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
 				4B771514202ED86100257BD8 /* TestBaseVC.m in Sources */,
 				4B0F5D472022C612001F65A2 /* Person.m in Sources */,
+				4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */,
 				4B77150B202ED0D200257BD8 /* TestVC3.m in Sources */,
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
