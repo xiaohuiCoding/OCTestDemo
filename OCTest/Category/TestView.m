@@ -10,17 +10,6 @@
 
 @implementation TestView
 
-//- (instancetype)initWithFrame:(CGRect)frame {
-//    if (self = [super initWithFrame:frame]) {
-//        [self setUpSubviews];
-//    }
-//    return self;
-//}
-//
-//- (void)setUpSubviews {
-//
-//}
-
 //重写hitTest方法，让子视图超出父视图的部分也能响应事件
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {

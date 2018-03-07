@@ -52,7 +52,7 @@
                         @"Block",
                         @"interview question"];
 
-    self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",self.dataSource.count];
+    self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }
 
 - (void)addSubviews {
