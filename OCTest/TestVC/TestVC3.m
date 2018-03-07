@@ -51,6 +51,16 @@
 
     NSDictionary<NSString *, NSNumber *> *mapping = @{@"age":@24, @"height":@180};
     NSLog(@"mapping = %@",mapping);
+    
+    
+    
+    //更多：__kindof
+    
+    //官方API 1：- (nullable __kindof UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+    //官方API 2：@property(nonatomic,readonly,copy) NSArray<__kindof UIView *> *subviews;
+    
+    UIButton *button = self.view.subviews.lastObject; //这么写就容易理解了，也不会报警告
+    NSLog(@"TestVC3 ---> button.hash = %lu",button.hash);
 }
 
 @end

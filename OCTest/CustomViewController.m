@@ -45,11 +45,12 @@
                         @"weak / strong / copy",
                         @"Nullability",
                         @"Generics",
-                        @"__kindof",
+                        @"",
                         @"Hash / Equal",
                         @"UIViewController's life cycle",
                         @"UIView's life cycle",
-                        @"Block"];
+                        @"Block",
+                        @"interview question"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",self.dataSource.count];
 }

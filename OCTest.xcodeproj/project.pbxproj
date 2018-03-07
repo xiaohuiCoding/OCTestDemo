@@ -29,6 +29,12 @@
 		4B771524202EF36000257BD8 /* TestVC7.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771523202EF36000257BD8 /* TestVC7.m */; };
 		4B77152A203017F200257BD8 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771529203017F200257BD8 /* CustomViewController.m */; };
 		4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ACD4C2028470B00504726 /* Test_Nullability.m */; };
+		4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A730204E2F8800AD5683 /* TestVC9.m */; };
+		4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A734204F872300AD5683 /* UIImageView+RoundedCorner.m */; };
+		4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A737204F8BB300AD5683 /* UIImage+PureColor.m */; };
+		4BA0A73A204F96DD00AD5683 /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0A739204F96DD00AD5683 /* fish.png */; };
+		4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */; };
+		4BA0A740204FD0CA00AD5683 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A73F204FD0CA00AD5683 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,17 @@
 		4B771529203017F200257BD8 /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		4B7ACD4B2028470B00504726 /* Test_Nullability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_Nullability.h; sourceTree = "<group>"; };
 		4B7ACD4C2028470B00504726 /* Test_Nullability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_Nullability.m; sourceTree = "<group>"; };
+		4BA0A72F204E2F8800AD5683 /* TestVC9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC9.h; sourceTree = "<group>"; };
+		4BA0A730204E2F8800AD5683 /* TestVC9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC9.m; sourceTree = "<group>"; };
+		4BA0A733204F872300AD5683 /* UIImageView+RoundedCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundedCorner.h"; sourceTree = "<group>"; };
+		4BA0A734204F872300AD5683 /* UIImageView+RoundedCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RoundedCorner.m"; sourceTree = "<group>"; };
+		4BA0A736204F8BB300AD5683 /* UIImage+PureColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+PureColor.h"; sourceTree = "<group>"; };
+		4BA0A737204F8BB300AD5683 /* UIImage+PureColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PureColor.m"; sourceTree = "<group>"; };
+		4BA0A739204F96DD00AD5683 /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
+		4BA0A73B204FBAD500AD5683 /* UIButton+AddResponseArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+AddResponseArea.h"; sourceTree = "<group>"; };
+		4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AddResponseArea.m"; sourceTree = "<group>"; };
+		4BA0A73E204FD0CA00AD5683 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		4BA0A73F204FD0CA00AD5683 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +160,7 @@
 		4B0F5D09202199F6001F65A2 /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				4BA0A732204F86A600AD5683 /* Category */,
 				4B0F5D0A202199F6001F65A2 /* AppDelegate.h */,
 				4B0F5D0B202199F6001F65A2 /* AppDelegate.m */,
 				4B0F5D0D202199F6001F65A2 /* ViewController.h */,
@@ -156,6 +174,7 @@
 				4B0F5D13202199F6001F65A2 /* Assets.xcassets */,
 				4B0F5D15202199F6001F65A2 /* LaunchScreen.storyboard */,
 				4B0F5D18202199F6001F65A2 /* Info.plist */,
+				4BA0A739204F96DD00AD5683 /* fish.png */,
 				4B0F5D19202199F6001F65A2 /* main.m */,
 			);
 			path = OCTest;
@@ -209,6 +228,8 @@
 				4B771523202EF36000257BD8 /* TestVC7.m */,
 				4B22F2BA2047E5D70013C590 /* TestVC8.h */,
 				4B22F2BB2047E5D70013C590 /* TestVC8.m */,
+				4BA0A72F204E2F8800AD5683 /* TestVC9.h */,
+				4BA0A730204E2F8800AD5683 /* TestVC9.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -224,6 +245,21 @@
 				4B0F5D462022C612001F65A2 /* Person.m */,
 			);
 			path = TestModel;
+			sourceTree = "<group>";
+		};
+		4BA0A732204F86A600AD5683 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4BA0A733204F872300AD5683 /* UIImageView+RoundedCorner.h */,
+				4BA0A734204F872300AD5683 /* UIImageView+RoundedCorner.m */,
+				4BA0A736204F8BB300AD5683 /* UIImage+PureColor.h */,
+				4BA0A737204F8BB300AD5683 /* UIImage+PureColor.m */,
+				4BA0A73B204FBAD500AD5683 /* UIButton+AddResponseArea.h */,
+				4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */,
+				4BA0A73E204FD0CA00AD5683 /* TestView.h */,
+				4BA0A73F204FD0CA00AD5683 /* TestView.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0F5D17202199F6001F65A2 /* LaunchScreen.storyboard in Resources */,
+				4BA0A73A204F96DD00AD5683 /* fish.png in Resources */,
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */,
 			);
@@ -361,10 +398,14 @@
 			files = (
 				4B771524202EF36000257BD8 /* TestVC7.m in Sources */,
 				4B0F5D0F202199F6001F65A2 /* ViewController.m in Sources */,
+				4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */,
 				4B77152A203017F200257BD8 /* CustomViewController.m in Sources */,
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
 				4B771511202ED2E200257BD8 /* TestVC5.m in Sources */,
+				4BA0A740204FD0CA00AD5683 /* TestView.m in Sources */,
+				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
+				4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */,
 				4B771514202ED86100257BD8 /* TestBaseVC.m in Sources */,
 				4B0F5D472022C612001F65A2 /* Person.m in Sources */,
 				4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */,
@@ -374,6 +415,7 @@
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
+				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
 				4B0F5D0C202199F6001F65A2 /* AppDelegate.m in Sources */,
 			);
@@ -541,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OCTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.OCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,6 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OCTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.OCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
