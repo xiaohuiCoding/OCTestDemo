@@ -35,6 +35,8 @@
 		4BA0A73A204F96DD00AD5683 /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0A739204F96DD00AD5683 /* fish.png */; };
 		4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */; };
 		4BA0A740204FD0CA00AD5683 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A73F204FD0CA00AD5683 /* TestView.m */; };
+		4BA0A7432051375100AD5683 /* ThreadA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A7422051375100AD5683 /* ThreadA.m */; };
+		4BA0A746205161B000AD5683 /* TestVC10.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A745205161B000AD5683 /* TestVC10.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,10 @@
 		4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AddResponseArea.m"; sourceTree = "<group>"; };
 		4BA0A73E204FD0CA00AD5683 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		4BA0A73F204FD0CA00AD5683 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		4BA0A7412051375100AD5683 /* ThreadA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadA.h; sourceTree = "<group>"; };
+		4BA0A7422051375100AD5683 /* ThreadA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadA.m; sourceTree = "<group>"; };
+		4BA0A744205161B000AD5683 /* TestVC10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC10.h; sourceTree = "<group>"; };
+		4BA0A745205161B000AD5683 /* TestVC10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC10.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +236,8 @@
 				4B22F2BB2047E5D70013C590 /* TestVC8.m */,
 				4BA0A72F204E2F8800AD5683 /* TestVC9.h */,
 				4BA0A730204E2F8800AD5683 /* TestVC9.m */,
+				4BA0A744205161B000AD5683 /* TestVC10.h */,
+				4BA0A745205161B000AD5683 /* TestVC10.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -243,6 +251,8 @@
 				4B0F5D432021A801001F65A2 /* Test_Generics.m */,
 				4B0F5D452022C612001F65A2 /* Person.h */,
 				4B0F5D462022C612001F65A2 /* Person.m */,
+				4BA0A7412051375100AD5683 /* ThreadA.h */,
+				4BA0A7422051375100AD5683 /* ThreadA.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -400,8 +410,10 @@
 				4B0F5D0F202199F6001F65A2 /* ViewController.m in Sources */,
 				4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */,
 				4B77152A203017F200257BD8 /* CustomViewController.m in Sources */,
+				4BA0A7432051375100AD5683 /* ThreadA.m in Sources */,
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
 				4B771511202ED2E200257BD8 /* TestVC5.m in Sources */,
+				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
 				4BA0A740204FD0CA00AD5683 /* TestView.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,

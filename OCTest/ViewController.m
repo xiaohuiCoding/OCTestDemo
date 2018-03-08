@@ -39,7 +39,7 @@
                         @"UIViewController's life cycle",
                         @"UIView's life cycle"];
     
-    self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld条)",self.dataSource.count];
+    self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld条)",(unsigned long)self.dataSource.count];
 }
 
 - (void)addSubviews {

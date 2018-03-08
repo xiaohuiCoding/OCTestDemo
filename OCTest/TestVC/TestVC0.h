@@ -8,7 +8,6 @@
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "TestBaseVC.h"
 
 @interface TestVC0 : TestBaseVC

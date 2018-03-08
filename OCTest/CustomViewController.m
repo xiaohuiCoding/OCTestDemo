@@ -39,8 +39,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [self addSubviews];//添加子视图
-
     self.dataSource = @[@"Deep copy / Shallow copy",
                         @"weak / strong / copy",
                         @"Nullability",
@@ -53,10 +51,6 @@
                         @"interview question"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
-}
-
-- (void)addSubviews {
-    //...
 }
 
 #pragma mark - DataSource & Delegate
