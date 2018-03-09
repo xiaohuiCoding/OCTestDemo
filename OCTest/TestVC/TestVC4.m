@@ -2,7 +2,7 @@
 //  TestVC4.m
 //  OCTest
 
-//  RunLoop（runloop与performSelector）
+//  RunLoop（runloop 与 performSelector）
 
 //  Created by xiaohui on 2018/2/10.
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
