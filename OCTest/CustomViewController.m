@@ -17,7 +17,8 @@
 //@property (nonatomic, weak) UITableView *tableView;//建议用weak声明（不过也因情况而定吧，可能会导致视图获取失败，目前尚有争议！）
 @property (nonatomic, strong) UITableView *tableView;//用strong声明也不会出错（由于strong是强引用，又是用懒加载构建，可能会导致在某些需求下无法重新构建该视图！）
 
-@property (nonatomic, strong) NSArray *dataSource;
+@property (nonatomic, copy) NSArray *dataSource;
+@property (nonatomic, strong) NSString *cellString;//故意这么声明，为了利用其“弊端”！
 
 @end
 
@@ -43,13 +44,15 @@
                         @"weak / strong / copy",
                         @"Nullability",
                         @"Generics",
-                        @"RunLoop 1",
-                        @"Hash / Equal",
+                        @"RunLoop and performSelector",
+                        @"Hash and  Equal",
                         @"UIViewController's life cycle",
                         @"UIView's life cycle",
                         @"Block",
-                        @"interview question",
-                        @"RunLoop 2"];
+                        @"interview",
+                        @"RunLoop and thread",
+                        @"Runtime 1",
+                        @"Runtime 2"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }
@@ -82,7 +85,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld.%@",(long)indexPath.row,self.dataSource[indexPath.row]];
+     NSMutableString *contentString = [NSMutableString stringWithFormat:@"%ld. %@",(long)indexPath.row,self.dataSource[indexPath.row]];
+    self.cellString = contentString;
+    if (indexPath.row <= 9) {
+        [contentString insertString:@" " atIndex:0];//使得看起来接近左对齐
+    }
+    cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+    cell.textLabel.text = self.cellString;
     return cell;
 }
 

@@ -29,14 +29,14 @@
 //      NSString *strDest = strSource;//直接赋值，内部执行浅拷贝，等同于copy
 //      strSource = @"aaa";
 //      strDest = @"bbb";
-//
-//
+
+
 //      NSString *strSource = @"abc";
 //      NSString *strDest = [strSource copy];//内部执行浅拷贝
 //      strSource = @"aaa";
 //      strDest = @"bbb";
-//
-//
+
+
 //      NSString *strSource = @"abc";
 //      NSString *strDest = [strSource mutableCopy];//内部执行深拷贝
 //      strSource = @"aaa";
@@ -50,15 +50,15 @@
 //      NSMutableString *strDest = strSource;//直接赋值，内部执行浅拷贝
 //      [strSource appendString:@"d"];
 //      [strDest appendString:@"e"];
-//
-//
+
+
 //      NSMutableString *strSource = [[NSMutableString alloc] initWithString:@"abc"];
 //      NSMutableString *strDest = [strSource copy];//内部执行深拷贝，strDest所属类型变成NSString了
 //      [strSource appendString:@"d"];
 //      //[strDest appendString:@"e"];//此句代码执行后程序会crash，因为此时strDest实际上已经变成不可变字符串了
 //      strDest = @"bbb";//此句代码会报警告，实际上是没错误的！此时可直接赋值，内部执行深拷贝
-//
-//
+
+
 //      NSMutableString *strSource = [[NSMutableString alloc] initWithString:@"abc"];
 //      NSMutableString *strDest = [strSource mutableCopy];//内部执行深拷贝
 //      [strSource appendString:@"d"];
@@ -70,8 +70,8 @@
     
 //      NSArray *array = @[@1,@2];
 //      NSArray *newArray = array;//直接赋值，array和obj内部都执行浅拷贝，等同于copy
-//
-//
+
+
 //      NSArray *array = @[@1,@2];
 //      NSArray *newArray = [array copy];//array和obj内部都执行浅拷贝
 //

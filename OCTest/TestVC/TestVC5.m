@@ -2,7 +2,7 @@
 //  TestVC5.m
 //  OCTest
 
-//  hash与equal
+//  hash 与 equal
 
 //  Created by xiaohui on 2018/2/10.
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
