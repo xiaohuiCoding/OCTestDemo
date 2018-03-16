@@ -10,6 +10,14 @@
 
 @implementation ModelA
 
+//+ (NSDictionary *)generateDictionaryWithModel {
+//    return @{@"listB":@"ModelB"};
+//}
+
++ (NSDictionary *)generateDictionaryWithModel {
+    return @{@"listB":@"ModelB", @"listC":@"ModelC"};
+}
+
 - (void)test {
     NSLog(@"model A method execute");
 }

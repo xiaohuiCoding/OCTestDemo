@@ -1,5 +1,5 @@
 //
-//  ModelB.h
+//  NSObject+AddProperty.h
 //  OCTest
 //
 //  Created by xiaohui on 2018/3/15.
@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ModelB : NSObject
+@interface NSObject (AddProperty)
 
-@property (nonatomic, copy) NSString *address;
-@property (nonatomic, copy) NSString *hobby;
-
-- (void)test;
+@property (nonatomic, copy) NSString *smallName;
 
 @end

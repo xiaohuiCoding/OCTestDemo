@@ -1,5 +1,5 @@
 //
-//  ModelB.h
+//  ModelC.h
 //  OCTest
 //
 //  Created by xiaohui on 2018/3/15.
@@ -8,11 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ModelB : NSObject
+@interface ModelC : NSObject
 
-@property (nonatomic, copy) NSString *address;
-@property (nonatomic, copy) NSString *hobby;
-
-- (void)test;
+@property (nonatomic, copy) NSString *height;
+@property (nonatomic, copy) NSString *weight;
 
 @end
