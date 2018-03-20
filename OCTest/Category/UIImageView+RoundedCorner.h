@@ -12,6 +12,6 @@
 
 @interface UIImageView (RoundedCorner)
 
-- (UIImageView *)drawRoundedCornerWithCornerRadius:(CGFloat)cornerRadius;
+- (void)drawRoundedCornerWithCornerRadius:(CGFloat)cornerRadius;
 
 @end

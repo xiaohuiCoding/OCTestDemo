@@ -28,6 +28,7 @@
 		4B4445A6205A69EE00D0A043 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A1205A69EE00D0A043 /* CustomViewController.m */; };
 		4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A4205A69EE00D0A043 /* ViewController.m */; };
 		4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A9205A9BD800D0A043 /* ModelC.m */; };
+		4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445AC205BAFA600D0A043 /* TestVC13.m */; };
 		4B771502202ED09F00257BD8 /* TestVC0.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771501202ED09F00257BD8 /* TestVC0.m */; };
 		4B771505202ED0B600257BD8 /* TestVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771504202ED0B600257BD8 /* TestVC1.m */; };
 		4B771508202ED0C200257BD8 /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771507202ED0C200257BD8 /* TestVC2.m */; };
@@ -107,6 +108,8 @@
 		4B4445A4205A69EE00D0A043 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4B4445A8205A9BD800D0A043 /* ModelC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelC.h; sourceTree = "<group>"; };
 		4B4445A9205A9BD800D0A043 /* ModelC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelC.m; sourceTree = "<group>"; };
+		4B4445AB205BAFA600D0A043 /* TestVC13.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC13.h; sourceTree = "<group>"; };
+		4B4445AC205BAFA600D0A043 /* TestVC13.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC13.m; sourceTree = "<group>"; };
 		4B771500202ED09F00257BD8 /* TestVC0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC0.h; sourceTree = "<group>"; };
 		4B771501202ED09F00257BD8 /* TestVC0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC0.m; sourceTree = "<group>"; };
 		4B771503202ED0B600257BD8 /* TestVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC1.h; sourceTree = "<group>"; };
@@ -284,6 +287,8 @@
 				4B444583205A175700D0A043 /* TestVC11.m */,
 				4B444591205A417600D0A043 /* TestVC12.h */,
 				4B444592205A417600D0A043 /* TestVC12.m */,
+				4B4445AB205BAFA600D0A043 /* TestVC13.h */,
+				4B4445AC205BAFA600D0A043 /* TestVC13.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
 				4B771511202ED2E200257BD8 /* TestVC5.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
+				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,

@@ -12,12 +12,11 @@
 
 @implementation UIImageView (RoundedCorner)
 
-- (UIImageView *)drawRoundedCornerWithCornerRadius:(CGFloat)cornerRadius {
+- (void)drawRoundedCornerWithCornerRadius:(CGFloat)cornerRadius {
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:cornerRadius];
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = bezierPath.CGPath;
     self.layer.mask = shapeLayer;
-    return self;
 }
 
 @end
