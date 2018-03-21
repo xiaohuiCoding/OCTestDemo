@@ -39,6 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"%s",__func__);
 
     self.dataSource = @[@"Deep copy / Shallow copy",
                         @"weak / strong / copy",
@@ -53,7 +54,9 @@
                         @"RunLoop and thread",
                         @"Runtime 1",
                         @"Runtime 2",
-                        @"Runtime 3"];
+                        @"Runtime 3",
+                        @"@autoreleasepool",
+                        @"GCD"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }
