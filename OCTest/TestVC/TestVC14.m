@@ -12,16 +12,15 @@
 #import "PNChart.h"
 #import <mach/mach.h>
 
-#define GetScreenWidth      [[UIScreen mainScreen] bounds].size.width
-
 static const int kStep = 100000;
 static const int kIterationCount = 10 * kStep;
+
+#define GetScreenWidth      [[UIScreen mainScreen] bounds].size.width
 
 @interface TestVC14 ()
 
 @property(strong, nonatomic) NSMutableArray *memoryUsageList1;
 @property(strong, nonatomic) NSMutableArray *memoryUsageList2;
-
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
 @end
@@ -53,8 +52,8 @@ static const int kIterationCount = 10 * kStep;
                 NSNumber *num = [NSNumber numberWithInt:i];
                 NSString *str = [NSString stringWithFormat:@"%d ", i];
                 [NSString stringWithFormat:@"%@%@", num, str];
+                //取十个内存数据
                 if (i % kStep == 0) {
-                    NSLog(@"整除1");
                     [_memoryUsageList1 addObject:@(getMemoryUsage())];
                 }
             }
@@ -67,19 +66,19 @@ static const int kIterationCount = 10 * kStep;
             NSNumber *num = [NSNumber numberWithInt:i];
             NSString *str = [NSString stringWithFormat:@"%d ", i];
             [NSString stringWithFormat:@"%@%@", num, str];
+            //取十个内存数据
             if (i % kStep == 0) {
-                NSLog(@"整除2");
                 [_memoryUsageList2 addObject:@(getMemoryUsage())];
             }
         }
     });
     
-    //测试完成
     dispatch_sync(serialQueue, ^{
-        NSLog(@"done");
         dispatch_async(dispatch_get_main_queue(), ^{
             [self showResult];
             _infoLabel.text = @"测试完成";
+            NSLog(@"%@",_memoryUsageList1.lastObject);
+            NSLog(@"%@",_memoryUsageList2.lastObject);
         });
     });
 }
@@ -94,7 +93,7 @@ static const int kIterationCount = 10 * kStep;
     chartView.legendFontSize = 12.0f;
     
     PNLineChartData *lineData1 = [PNLineChartData new];
-    lineData1.dataTitle = @"With @autoreleasepool";
+    lineData1.dataTitle = @"with @autoreleasepool";
     lineData1.color = PNFreshGreen;
     lineData1.alpha = 0.8;
     lineData1.itemCount = _memoryUsageList1.count;
@@ -105,7 +104,7 @@ static const int kIterationCount = 10 * kStep;
     };
     
     PNLineChartData *lineData2 = [PNLineChartData new];
-    lineData2.dataTitle = @"Without @autoreleasepool";
+    lineData2.dataTitle = @"without @autoreleasepool";
     lineData2.color = PNWeiboColor;
     lineData2.alpha = 0.8;
     lineData2.itemCount = _memoryUsageList2.count;

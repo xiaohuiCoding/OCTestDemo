@@ -35,17 +35,31 @@ void async_f_callback(void *context) {
     dispatch_queue_t queueCustom;
     queueCustom = dispatch_queue_create("com.xiaohui.111", DISPATCH_QUEUE_CONCURRENT);
     
+
+    
     //自定义队列的优先级（dispatch_queue_attr_make_with_qos_class）
     dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_UTILITY, -1);
     dispatch_queue_t queueCustom2;
     queueCustom2 = dispatch_queue_create("com.xiaohui.112", attr);
+    
+    
     
     //设置队列优先级（dispatch_set_target_queue）
     dispatch_queue_t queueCustom3 = dispatch_queue_create("com.xiaohui.113", NULL);
     dispatch_queue_t queueCustom4 = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
     dispatch_set_target_queue(queueCustom3, queueCustom4);//使二者的优先级一样
     
-    //设置队列层级体系，比如让多个串行和并行队列在统一一个串行队列里串行执行
+    dispatch_async(queueCustom3, ^{
+        NSLog(@"queueCustom3");
+    });
+    
+    dispatch_async(queueCustom4, ^{
+        NSLog(@"queueCustom4");
+    });
+    
+    
+    
+    //设置队列层级体系，比如：让多个串行和并行队列在统一一个串行队列里串行执行
     dispatch_queue_t serialQueue = dispatch_queue_create("com.starming.gcddemo.serialqueue", DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t firstQueue = dispatch_queue_create("com.starming.gcddemo.firstqueue", DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t secondQueue = dispatch_queue_create("com.starming.gcddemo.secondqueue", DISPATCH_QUEUE_CONCURRENT);
