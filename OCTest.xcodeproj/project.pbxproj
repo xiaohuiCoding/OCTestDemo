@@ -43,6 +43,21 @@
 		4B89431920624E4800924FD2 /* TestVC15.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89431720624E4800924FD2 /* TestVC15.m */; };
 		4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B89431820624E4800924FD2 /* TestVC15.xib */; };
 		4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B89431B20624E9C00924FD2 /* TestVC14.xib */; };
+		4B977CA720689B7D00671B96 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C8720689B7D00671B96 /* PNBar.m */; };
+		4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C8920689B7D00671B96 /* PNBarChart.m */; };
+		4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C8D20689B7D00671B96 /* PNChartLabel.m */; };
+		4B977CAA20689B7D00671B96 /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C8F20689B7D00671B96 /* PNCircleChart.m */; };
+		4B977CAB20689B7D00671B96 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9120689B7D00671B96 /* PNColor.m */; };
+		4B977CAC20689B7D00671B96 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9320689B7D00671B96 /* PNGenericChart.m */; };
+		4B977CAD20689B7D00671B96 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9520689B7D00671B96 /* PNLineChart.m */; };
+		4B977CAE20689B7D00671B96 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9720689B7D00671B96 /* PNLineChartData.m */; };
+		4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9920689B7D00671B96 /* PNLineChartDataItem.m */; };
+		4B977CB020689B7D00671B96 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9B20689B7D00671B96 /* PNPieChart.m */; };
+		4B977CB120689B7D00671B96 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9D20689B7D00671B96 /* PNPieChartDataItem.m */; };
+		4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977C9F20689B7D00671B96 /* PNScatterChart.m */; };
+		4B977CB320689B7D00671B96 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977CA120689B7D00671B96 /* PNScatterChartData.m */; };
+		4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977CA320689B7D00671B96 /* PNScatterChartDataItem.m */; };
+		4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B977CA620689B7D00671B96 /* UICountingLabel.m */; };
 		4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A730204E2F8800AD5683 /* TestVC9.m */; };
 		4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A734204F872300AD5683 /* UIImageView+RoundedCorner.m */; };
 		4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A737204F8BB300AD5683 /* UIImage+PureColor.m */; };
@@ -140,6 +155,39 @@
 		4B89431720624E4800924FD2 /* TestVC15.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC15.m; sourceTree = "<group>"; };
 		4B89431820624E4800924FD2 /* TestVC15.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC15.xib; sourceTree = "<group>"; };
 		4B89431B20624E9C00924FD2 /* TestVC14.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC14.xib; sourceTree = "<group>"; };
+		4B977C8320689B0900671B96 /* PrefixHeader_OCTest.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_OCTest.pch; sourceTree = "<group>"; };
+		4B977C8620689B7D00671B96 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		4B977C8720689B7D00671B96 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		4B977C8820689B7D00671B96 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		4B977C8920689B7D00671B96 /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		4B977C8A20689B7D00671B96 /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		4B977C8B20689B7D00671B96 /* PNChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		4B977C8C20689B7D00671B96 /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		4B977C8D20689B7D00671B96 /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		4B977C8E20689B7D00671B96 /* PNCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		4B977C8F20689B7D00671B96 /* PNCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		4B977C9020689B7D00671B96 /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		4B977C9120689B7D00671B96 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		4B977C9220689B7D00671B96 /* PNGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGenericChart.h; sourceTree = "<group>"; };
+		4B977C9320689B7D00671B96 /* PNGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNGenericChart.m; sourceTree = "<group>"; };
+		4B977C9420689B7D00671B96 /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		4B977C9520689B7D00671B96 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		4B977C9620689B7D00671B96 /* PNLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		4B977C9720689B7D00671B96 /* PNLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		4B977C9820689B7D00671B96 /* PNLineChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		4B977C9920689B7D00671B96 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		4B977C9A20689B7D00671B96 /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		4B977C9B20689B7D00671B96 /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		4B977C9C20689B7D00671B96 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		4B977C9D20689B7D00671B96 /* PNPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		4B977C9E20689B7D00671B96 /* PNScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChart.h; sourceTree = "<group>"; };
+		4B977C9F20689B7D00671B96 /* PNScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChart.m; sourceTree = "<group>"; };
+		4B977CA020689B7D00671B96 /* PNScatterChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartData.h; sourceTree = "<group>"; };
+		4B977CA120689B7D00671B96 /* PNScatterChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartData.m; sourceTree = "<group>"; };
+		4B977CA220689B7D00671B96 /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		4B977CA320689B7D00671B96 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		4B977CA520689B7D00671B96 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		4B977CA620689B7D00671B96 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 		4BA0A72F204E2F8800AD5683 /* TestVC9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC9.h; sourceTree = "<group>"; };
 		4BA0A730204E2F8800AD5683 /* TestVC9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC9.m; sourceTree = "<group>"; };
 		4BA0A733204F872300AD5683 /* UIImageView+RoundedCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -203,6 +251,7 @@
 		4B0F5D09202199F6001F65A2 /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				4B977C8420689B7D00671B96 /* ThirdClass */,
 				4B44459E205A69CE00D0A043 /* Root */,
 				4BA0A732204F86A600AD5683 /* Category */,
 				4B444597205A509800D0A043 /* TestView */,
@@ -215,6 +264,7 @@
 				4B0F5D18202199F6001F65A2 /* Info.plist */,
 				4BA0A739204F96DD00AD5683 /* fish.png */,
 				4B0F5D19202199F6001F65A2 /* main.m */,
+				4B977C8320689B0900671B96 /* PrefixHeader_OCTest.pch */,
 			);
 			path = OCTest;
 			sourceTree = "<group>";
@@ -330,6 +380,61 @@
 				4B4445A9205A9BD800D0A043 /* ModelC.m */,
 			);
 			path = TestModel;
+			sourceTree = "<group>";
+		};
+		4B977C8420689B7D00671B96 /* ThirdClass */ = {
+			isa = PBXGroup;
+			children = (
+				4B977C8520689B7D00671B96 /* PNChart */,
+				4B977CA420689B7D00671B96 /* UICountingLabel */,
+			);
+			path = ThirdClass;
+			sourceTree = "<group>";
+		};
+		4B977C8520689B7D00671B96 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				4B977C8620689B7D00671B96 /* PNBar.h */,
+				4B977C8720689B7D00671B96 /* PNBar.m */,
+				4B977C8820689B7D00671B96 /* PNBarChart.h */,
+				4B977C8920689B7D00671B96 /* PNBarChart.m */,
+				4B977C8A20689B7D00671B96 /* PNChart.h */,
+				4B977C8B20689B7D00671B96 /* PNChartDelegate.h */,
+				4B977C8C20689B7D00671B96 /* PNChartLabel.h */,
+				4B977C8D20689B7D00671B96 /* PNChartLabel.m */,
+				4B977C8E20689B7D00671B96 /* PNCircleChart.h */,
+				4B977C8F20689B7D00671B96 /* PNCircleChart.m */,
+				4B977C9020689B7D00671B96 /* PNColor.h */,
+				4B977C9120689B7D00671B96 /* PNColor.m */,
+				4B977C9220689B7D00671B96 /* PNGenericChart.h */,
+				4B977C9320689B7D00671B96 /* PNGenericChart.m */,
+				4B977C9420689B7D00671B96 /* PNLineChart.h */,
+				4B977C9520689B7D00671B96 /* PNLineChart.m */,
+				4B977C9620689B7D00671B96 /* PNLineChartData.h */,
+				4B977C9720689B7D00671B96 /* PNLineChartData.m */,
+				4B977C9820689B7D00671B96 /* PNLineChartDataItem.h */,
+				4B977C9920689B7D00671B96 /* PNLineChartDataItem.m */,
+				4B977C9A20689B7D00671B96 /* PNPieChart.h */,
+				4B977C9B20689B7D00671B96 /* PNPieChart.m */,
+				4B977C9C20689B7D00671B96 /* PNPieChartDataItem.h */,
+				4B977C9D20689B7D00671B96 /* PNPieChartDataItem.m */,
+				4B977C9E20689B7D00671B96 /* PNScatterChart.h */,
+				4B977C9F20689B7D00671B96 /* PNScatterChart.m */,
+				4B977CA020689B7D00671B96 /* PNScatterChartData.h */,
+				4B977CA120689B7D00671B96 /* PNScatterChartData.m */,
+				4B977CA220689B7D00671B96 /* PNScatterChartDataItem.h */,
+				4B977CA320689B7D00671B96 /* PNScatterChartDataItem.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		4B977CA420689B7D00671B96 /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4B977CA520689B7D00671B96 /* UICountingLabel.h */,
+				4B977CA620689B7D00671B96 /* UICountingLabel.m */,
+			);
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
 		4BA0A732204F86A600AD5683 /* Category */ = {
@@ -486,15 +591,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */,
+				4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */,
 				4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */,
+				4B977CAE20689B7D00671B96 /* PNLineChartData.m in Sources */,
 				4B771524202EF36000257BD8 /* TestVC7.m in Sources */,
+				4B977CAC20689B7D00671B96 /* PNGenericChart.m in Sources */,
 				4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */,
 				4B4445A5205A69EE00D0A043 /* AppDelegate.m in Sources */,
 				4B444593205A417600D0A043 /* TestVC12.m in Sources */,
 				4BA0A7432051375100AD5683 /* ThreadA.m in Sources */,
+				4B977CB020689B7D00671B96 /* PNPieChart.m in Sources */,
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
 				4B771511202ED2E200257BD8 /* TestVC5.m in Sources */,
+				4B977CAB20689B7D00671B96 /* PNColor.m in Sources */,
+				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
+				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
@@ -505,12 +617,19 @@
 				4B44459A205A509800D0A043 /* TestView.m in Sources */,
 				4B0F5D472022C612001F65A2 /* Person.m in Sources */,
 				4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */,
+				4B977CB120689B7D00671B96 /* PNPieChartDataItem.m in Sources */,
+				4B977CAA20689B7D00671B96 /* PNCircleChart.m in Sources */,
 				4B77150B202ED0D200257BD8 /* TestVC3.m in Sources */,
+				4B977CAD20689B7D00671B96 /* PNLineChart.m in Sources */,
+				4B977CA720689B7D00671B96 /* PNBar.m in Sources */,
+				4B977CB320689B7D00671B96 /* PNScatterChartData.m in Sources */,
 				4B44458D205A3CA800D0A043 /* ModelA.m in Sources */,
 				4B444590205A3CB600D0A043 /* ModelB.m in Sources */,
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
+				4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */,
 				4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */,
+				4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */,
 				4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */,
 				4B4445A6205A69EE00D0A043 /* CustomViewController.m in Sources */,
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
@@ -518,6 +637,7 @@
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
+				4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */,
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
 			);
@@ -685,6 +805,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCTest/PrefixHeader_OCTest.pch";
 				INFOPLIST_FILE = OCTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -702,6 +823,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCTest/PrefixHeader_OCTest.pch";
 				INFOPLIST_FILE = OCTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
