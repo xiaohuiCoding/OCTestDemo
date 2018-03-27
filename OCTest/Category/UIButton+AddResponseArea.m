@@ -13,16 +13,25 @@
 
 @implementation UIButton (AddResponseArea)
 
-- (void)addExtensionInset:(UIEdgeInsets)inset{
-    objc_setAssociatedObject(self, _cmd, [NSValue valueWithUIEdgeInsets:inset], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)addInset:(UIEdgeInsets)insets {
+    objc_setAssociatedObject(self, _cmd, [NSValue valueWithUIEdgeInsets:insets], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-//重写UIView的内部方法，判断触摸点是否在当前视图内
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    UIEdgeInsets insert = [objc_getAssociatedObject(self, @selector(addExtensionInset:)) UIEdgeInsetsValue];
-    CGRect newFrame = CGRectMake(self.bounds.origin.x+insert.left, self.bounds.origin.y+insert.top, self.bounds.size.width-insert.left-insert.right, self.bounds.size.height-insert.top-insert.bottom);
-    BOOL b = CGRectContainsPoint(newFrame, point);
-    return b;
+#pragma mark - rewrite method
+
+//利用runtime
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    UIEdgeInsets insets = [objc_getAssociatedObject(self, @selector(addInset:)) UIEdgeInsetsValue];
+    CGRect newbounds = CGRectMake(self.bounds.origin.x+insets.left, self.bounds.origin.y+insets.top, self.bounds.size.width-insets.left-insets.right, self.bounds.size.height-insets.top-insets.bottom);
+    return CGRectContainsPoint(newbounds, point);
 }
+
+////不利用runtime
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+//    UIEdgeInsets insets = self.contentEdgeInsets;
+//    CGRect newbounds = CGRectMake(self.bounds.origin.x+insets.left, self.bounds.origin.y+insets.top, self.bounds.size.width-insets.left-insets.right, self.bounds.size.height-insets.top-insets.bottom);
+////    CGRect newbounds = CGRectInset(self.bounds, -10, -10);//有局限性，只能写死，无法兼顾上下左右的值
+//    return CGRectContainsPoint(newbounds, point);
+//}
 
 @end

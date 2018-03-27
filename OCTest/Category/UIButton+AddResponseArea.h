@@ -12,6 +12,6 @@
 
 @interface UIButton (AddResponseArea)
 
-- (void)addExtensionInset:(UIEdgeInsets)inset;
+- (void)addInset:(UIEdgeInsets)inset;
 
 @end

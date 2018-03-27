@@ -33,10 +33,7 @@
     [self.view addSubview:view];
     
     
-    
-    //另外：UITextField、UITextView、UILabel和UIView类似，但是UILabel还有一个需要注意的地方，如下：
-    
-    
+    //在这一点上UITextField、UITextView、UILabel和UIView类似，但在设置背景色上UILabel需要注意一下，不要直接设置label.backgroundColor，而是设置label.layer.backgroundColor
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 160, 100, 30)];
     label.layer.backgroundColor = [UIColor grayColor].CGColor;
@@ -47,17 +44,18 @@
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 220, 100, 100);
-    [btn setBackgroundColor:[UIColor whiteColor]];
+//    [btn setBackgroundColor:[UIColor redColor]];
     [btn setImage:[UIImage drawImageWithSize:btn.frame.size color:[UIColor redColor] cornerRadius:15] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(printLog) forControlEvents:UIControlEventTouchUpInside];
-    [btn addExtensionInset:UIEdgeInsetsMake(-15, -15, -15, -15)];
+    [btn addTarget:self action:@selector(test1) forControlEvents:UIControlEventTouchUpInside];
+    [btn addInset:UIEdgeInsetsMake(-5, -10, -15, -25)];
+//    btn.contentEdgeInsets = UIEdgeInsetsMake(-5, -10, -15, -25);
     [self.view addSubview:btn];
     
     
 
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 350, 100, 100)];
-//    [imgView setImage:[UIImage drawImageWithSize:imgView.frame.size color:[UIColor blueColor] cornerRadius:50]];
-    [imgView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fish" ofType:@"png"]]];
+//    [imgView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fish" ofType:@"png"]]];
+    [imgView setImage:[UIImage drawImageWithSize:imgView.frame.size color:[UIColor blueColor] cornerRadius:50]];
     [imgView drawRoundedCornerWithCornerRadius:50];
     [self.view addSubview:imgView];
     
@@ -75,16 +73,16 @@
     UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     testBtn.frame = CGRectMake(25, -25, 100, 150);
     [testBtn setBackgroundColor:[UIColor blueColor]];
-    [testBtn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [testBtn addTarget:self action:@selector(test2) forControlEvents:UIControlEventTouchUpInside];
     [testView addSubview:testBtn];
 }
 
-- (void)printLog {
-    NSLog(@"printLog success!");
+- (void)test1 {
+    NSLog(@"test1--->button is clicked!");
 }
 
-- (void)test {
-    NSLog(@"test success!");
+- (void)test2 {
+    NSLog(@"test2--->button is clicked!");
 }
 
 @end
