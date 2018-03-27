@@ -11,9 +11,8 @@
 @implementation TestView
 
 //重写hitTest方法，让子视图超出父视图的部分也能响应事件
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    if (!self.userInteractionEnabled || self.hidden || (self.alpha < 0.01) || self.clipsToBounds) {
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (!self.userInteractionEnabled || self.hidden || self.alpha <= 0.01 || self.clipsToBounds) {
         return nil;
     }
     //如果事件发生在父视图里就返回
@@ -21,7 +20,7 @@
     if (responseView) {
         return responseView;
     }
-    //如果不在父视图里就遍历子视图
+    //如果事件不发生在父视图里就遍历子视图
     for (UIView *subview in self.subviews) {
         //把这个坐标从父视图的坐标系转为子视图的坐标系
         CGPoint subPoint = [subview convertPoint:point fromView:self];
