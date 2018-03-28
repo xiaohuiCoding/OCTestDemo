@@ -26,7 +26,7 @@
 
 //下面是模拟系统的内部实现：
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-//    UIView *touchView = self;
+//    UIView *touchView = [super hitTest:point withEvent:event];
 //    if ([self pointInside:point withEvent:event] && !self.hidden && self.userInteractionEnabled && self.alpha >= 0.01) {
 //        for (UIView *subview in self.subviews) {
 //            CGPoint subpoint = [subview convertPoint:point fromView:self];
@@ -51,7 +51,7 @@
  */
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    UIView *touchView = self;
+    UIView *touchView = [super hitTest:point withEvent:event];
     if (!self.hidden && self.userInteractionEnabled && self.alpha >= 0.01) {
         for (UIView *subview in self.subviews) {
             CGPoint subpoint = [subview convertPoint:point fromView:self];

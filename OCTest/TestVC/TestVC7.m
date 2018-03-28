@@ -47,7 +47,7 @@
 //    [btn setBackgroundColor:[UIColor redColor]];
     [btn setImage:[UIImage drawImageWithSize:btn.frame.size color:[UIColor redColor] cornerRadius:15] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(test1) forControlEvents:UIControlEventTouchUpInside];
-    [btn addInset:UIEdgeInsetsMake(-5, -10, -15, -25)];
+    [btn addInsets:UIEdgeInsetsMake(-5, -10, -15, -25)];
 //    btn.contentEdgeInsets = UIEdgeInsetsMake(-5, -10, -15, -25);
     [self.view addSubview:btn];
     
@@ -75,6 +75,9 @@
     [testBtn setBackgroundColor:[UIColor blueColor]];
     [testBtn addTarget:self action:@selector(test2) forControlEvents:UIControlEventTouchUpInside];
     [testView addSubview:testBtn];
+    
+    
+    
 }
 
 - (void)test1 {

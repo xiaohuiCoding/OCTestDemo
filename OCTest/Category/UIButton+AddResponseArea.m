@@ -17,7 +17,7 @@
 
 #pragma mark - common method
 
-- (void)addInset:(UIEdgeInsets)insets {
+- (void)addInsets:(UIEdgeInsets)insets {
     objc_setAssociatedObject(self, _cmd, [NSValue valueWithUIEdgeInsets:insets], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -27,7 +27,7 @@
 
 //利用runtime
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    UIEdgeInsets insets = [objc_getAssociatedObject(self, @selector(addInset:)) UIEdgeInsetsValue];
+    UIEdgeInsets insets = [objc_getAssociatedObject(self, @selector(addInsets:)) UIEdgeInsetsValue];
     CGRect newbounds = CGRectMake(self.bounds.origin.x+insets.left, self.bounds.origin.y+insets.top, self.bounds.size.width-insets.left-insets.right, self.bounds.size.height-insets.top-insets.bottom);
     return CGRectContainsPoint(newbounds, point);
 }
@@ -44,25 +44,25 @@
 
 #pragma mark - rewrite method
 
-//利用runtime
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    if (!self.userInteractionEnabled || self.hidden || self.alpha <= 0.01 || self.clipsToBounds) {
-        return nil;
-    }
-    UIEdgeInsets insets = [objc_getAssociatedObject(self, @selector(addInset:)) UIEdgeInsetsValue];
-    CGRect newbounds = CGRectMake(self.bounds.origin.x+insets.left, self.bounds.origin.y+insets.top, self.bounds.size.width-insets.left-insets.right, self.bounds.size.height-insets.top-insets.bottom);
-    if (CGRectContainsPoint(newbounds, point)) {
-        for (UIView *subView in [self.subviews reverseObjectEnumerator]) {
-            CGPoint convertedPoint = [subView convertPoint:point fromView:self];
-            UIView *hitTestView = [subView hitTest:convertedPoint withEvent:event];
-            if (hitTestView) {
-                return hitTestView;
-            }
-        }
-        return self;
-    }
-    return nil;
-}
+////利用runtime
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    if (!self.userInteractionEnabled || self.hidden || self.alpha <= 0.01 || self.clipsToBounds) {
+//        return nil;
+//    }
+//    UIEdgeInsets insets = [objc_getAssociatedObject(self, @selector(addInset:)) UIEdgeInsetsValue];
+//    CGRect newbounds = CGRectMake(self.bounds.origin.x+insets.left, self.bounds.origin.y+insets.top, self.bounds.size.width-insets.left-insets.right, self.bounds.size.height-insets.top-insets.bottom);
+//    if (CGRectContainsPoint(newbounds, point)) {
+//        for (UIView *subView in [self.subviews reverseObjectEnumerator]) {
+//            CGPoint convertedPoint = [subView convertPoint:point fromView:self];
+//            UIView *hitTestView = [subView hitTest:convertedPoint withEvent:event];
+//            if (hitTestView) {
+//                return hitTestView;
+//            }
+//        }
+//        return self;
+//    }
+//    return nil;
+//}
 
 ////不利用runtime
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
