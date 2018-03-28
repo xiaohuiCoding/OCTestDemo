@@ -16,6 +16,7 @@
 		4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D432021A801001F65A2 /* Test_Generics.m */; };
 		4B0F5D472022C612001F65A2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D462022C612001F65A2 /* Person.m */; };
 		4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F2BB2047E5D70013C590 /* TestVC8.m */; };
+		4B424FDA206B3C4A00AB306F /* TestVC6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B424FD9206B3C4A00AB306F /* TestVC6.xib */; };
 		4B444584205A175700D0A043 /* TestVC11.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B444583205A175700D0A043 /* TestVC11.m */; };
 		4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B444586205A1AE300D0A043 /* RuntimeTestModel.m */; };
 		4B44458D205A3CA800D0A043 /* ModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44458C205A3CA800D0A043 /* ModelA.m */; };
@@ -103,6 +104,7 @@
 		4B0F5D462022C612001F65A2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		4B22F2BA2047E5D70013C590 /* TestVC8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC8.h; sourceTree = "<group>"; };
 		4B22F2BB2047E5D70013C590 /* TestVC8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC8.m; sourceTree = "<group>"; };
+		4B424FD9206B3C4A00AB306F /* TestVC6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC6.xib; sourceTree = "<group>"; };
 		4B444582205A175700D0A043 /* TestVC11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC11.h; sourceTree = "<group>"; };
 		4B444583205A175700D0A043 /* TestVC11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC11.m; sourceTree = "<group>"; };
 		4B444585205A1AE300D0A043 /* RuntimeTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTestModel.h; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				4B771510202ED2E200257BD8 /* TestVC5.m */,
 				4B77151F202EF35300257BD8 /* TestVC6.h */,
 				4B771520202EF35300257BD8 /* TestVC6.m */,
+				4B424FD9206B3C4A00AB306F /* TestVC6.xib */,
 				4B771522202EF36000257BD8 /* TestVC7.h */,
 				4B771523202EF36000257BD8 /* TestVC7.m */,
 				4B22F2BA2047E5D70013C590 /* TestVC8.h */,
@@ -562,6 +565,7 @@
 			files = (
 				4B0F5D17202199F6001F65A2 /* LaunchScreen.storyboard in Resources */,
 				4BA0A73A204F96DD00AD5683 /* fish.png in Resources */,
+				4B424FDA206B3C4A00AB306F /* TestVC6.xib in Resources */,
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */,
 				4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */,
