@@ -27,8 +27,7 @@
 }
 
 - (void)toNextPage {
-    TestVC16_next *vc = [[TestVC16_next alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (IBAction)loadImageWithMultiThread:(id)sender {
