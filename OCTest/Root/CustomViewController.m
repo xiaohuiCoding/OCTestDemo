@@ -56,7 +56,8 @@
                         @"Runtime 2",
                         @"Runtime 3",
                         @"@autoreleasepool",
-                        @"GCD"];
+                        @"GCD",
+                        @"NSThread"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }

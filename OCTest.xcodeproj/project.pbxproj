@@ -15,6 +15,9 @@
 		4B0F5D2F202199F6001F65A2 /* OCTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D2E202199F6001F65A2 /* OCTestUITests.m */; };
 		4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D432021A801001F65A2 /* Test_Generics.m */; };
 		4B0F5D472022C612001F65A2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F5D462022C612001F65A2 /* Person.m */; };
+		4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DE671207F006A00EE6A61 /* TestVC16.m */; };
+		4B1DE674207F006A00EE6A61 /* TestVC16.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DE672207F006A00EE6A61 /* TestVC16.xib */; };
+		4B1DE677207F090C00EE6A61 /* TestVC16_next.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DE676207F090C00EE6A61 /* TestVC16_next.m */; };
 		4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B22F2BB2047E5D70013C590 /* TestVC8.m */; };
 		4B424FDA206B3C4A00AB306F /* TestVC6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B424FD9206B3C4A00AB306F /* TestVC6.xib */; };
 		4B444584205A175700D0A043 /* TestVC11.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B444583205A175700D0A043 /* TestVC11.m */; };
@@ -102,6 +105,11 @@
 		4B0F5D432021A801001F65A2 /* Test_Generics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_Generics.m; sourceTree = "<group>"; };
 		4B0F5D452022C612001F65A2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		4B0F5D462022C612001F65A2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4B1DE670207F006A00EE6A61 /* TestVC16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC16.h; sourceTree = "<group>"; };
+		4B1DE671207F006A00EE6A61 /* TestVC16.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC16.m; sourceTree = "<group>"; };
+		4B1DE672207F006A00EE6A61 /* TestVC16.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC16.xib; sourceTree = "<group>"; };
+		4B1DE675207F090C00EE6A61 /* TestVC16_next.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC16_next.h; sourceTree = "<group>"; };
+		4B1DE676207F090C00EE6A61 /* TestVC16_next.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC16_next.m; sourceTree = "<group>"; };
 		4B22F2BA2047E5D70013C590 /* TestVC8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC8.h; sourceTree = "<group>"; };
 		4B22F2BB2047E5D70013C590 /* TestVC8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC8.m; sourceTree = "<group>"; };
 		4B424FD9206B3C4A00AB306F /* TestVC6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC6.xib; sourceTree = "<group>"; };
@@ -358,6 +366,11 @@
 				4B89431620624E4800924FD2 /* TestVC15.h */,
 				4B89431720624E4800924FD2 /* TestVC15.m */,
 				4B89431820624E4800924FD2 /* TestVC15.xib */,
+				4B1DE670207F006A00EE6A61 /* TestVC16.h */,
+				4B1DE671207F006A00EE6A61 /* TestVC16.m */,
+				4B1DE672207F006A00EE6A61 /* TestVC16.xib */,
+				4B1DE675207F090C00EE6A61 /* TestVC16_next.h */,
+				4B1DE676207F090C00EE6A61 /* TestVC16_next.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -568,6 +581,7 @@
 				4B424FDA206B3C4A00AB306F /* TestVC6.xib in Resources */,
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */,
+				4B1DE674207F006A00EE6A61 /* TestVC16.xib in Resources */,
 				4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */,
 				4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */,
 			);
@@ -594,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1DE677207F090C00EE6A61 /* TestVC16_next.m in Sources */,
 				4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */,
 				4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */,
 				4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */,
@@ -613,6 +628,7 @@
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
+				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B89431320622EE200924FD2 /* TestVC14.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
