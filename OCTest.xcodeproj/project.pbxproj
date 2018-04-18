@@ -70,6 +70,7 @@
 		4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */; };
 		4BA0A7432051375100AD5683 /* ThreadA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A7422051375100AD5683 /* ThreadA.m */; };
 		4BA0A746205161B000AD5683 /* TestVC10.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A745205161B000AD5683 /* TestVC10.m */; };
+		4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC7C51420880B5B00C389B0 /* TestVC18.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +215,8 @@
 		4BA0A7422051375100AD5683 /* ThreadA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadA.m; sourceTree = "<group>"; };
 		4BA0A744205161B000AD5683 /* TestVC10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC10.h; sourceTree = "<group>"; };
 		4BA0A745205161B000AD5683 /* TestVC10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC10.m; sourceTree = "<group>"; };
+		4BC7C51320880B5B00C389B0 /* TestVC18.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC18.h; sourceTree = "<group>"; };
+		4BC7C51420880B5B00C389B0 /* TestVC18.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC18.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +379,8 @@
 				4B0D88802087459300908880 /* ImageData.m */,
 				4B0D887E2087459300908880 /* TestVC17.h */,
 				4B0D887F2087459300908880 /* TestVC17.m */,
+				4BC7C51320880B5B00C389B0 /* TestVC18.h */,
+				4BC7C51420880B5B00C389B0 /* TestVC18.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -630,6 +635,7 @@
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
+				4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
 				4B0D88822087459300908880 /* ImageData.m in Sources */,
