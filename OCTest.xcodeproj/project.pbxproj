@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
+		4B0D88822087459300908880 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D88802087459300908880 /* ImageData.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
 		4B0F5D17202199F6001F65A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D15202199F6001F65A2 /* LaunchScreen.storyboard */; };
@@ -88,6 +90,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B0D887D2087459200908880 /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
+		4B0D887F2087459300908880 /* TestVC17.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC17.m; sourceTree = "<group>"; };
+		4B0D88802087459300908880 /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		4B0F5D07202199F6001F65A2 /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0F5D11202199F6001F65A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B0F5D13202199F6001F65A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -366,6 +372,10 @@
 				4B1DE670207F006A00EE6A61 /* TestVC16.h */,
 				4B1DE671207F006A00EE6A61 /* TestVC16.m */,
 				4B1DE672207F006A00EE6A61 /* TestVC16.xib */,
+				4B0D887D2087459200908880 /* ImageData.h */,
+				4B0D88802087459300908880 /* ImageData.m */,
+				4B0D887E2087459300908880 /* TestVC17.h */,
+				4B0D887F2087459300908880 /* TestVC17.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -622,9 +632,11 @@
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
+				4B0D88822087459300908880 /* ImageData.m in Sources */,
 				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B89431320622EE200924FD2 /* TestVC14.m in Sources */,
+				4B0D88812087459300908880 /* TestVC17.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
 				4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */,
 				4B771514202ED86100257BD8 /* TestBaseVC.m in Sources */,
