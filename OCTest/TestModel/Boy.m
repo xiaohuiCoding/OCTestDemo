@@ -8,6 +8,14 @@
 
 #import "Boy.h"
 
+static const NSTimeInterval kTimeInterval = 5;
+
+NSString  * const kString = @"string";
+
 @implementation Boy
+
+- (void)test {
+    NSLog(@"%f",kTimeInterval);
+}
 
 @end

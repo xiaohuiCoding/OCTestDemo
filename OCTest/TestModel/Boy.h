@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "Girl.h"
 
+extern NSString * const kString;
+
 @interface Boy : NSObject
 
 @property (nonatomic, strong) Girl *girl;
+
+- (void)test;
 
 @end

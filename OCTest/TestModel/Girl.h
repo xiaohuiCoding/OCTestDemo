@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) Boy *boy;
 
+- (void)test;
+
 @end
 
 /**

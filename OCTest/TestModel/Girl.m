@@ -7,7 +7,12 @@
 //
 
 #import "Girl.h"
+#import "Boy.h"
 
 @implementation Girl
+
+- (void)test {
+    NSLog(@"%@",kString);
+}
 
 @end
