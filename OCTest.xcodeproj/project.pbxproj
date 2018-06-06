@@ -71,6 +71,8 @@
 		4BA0A7432051375100AD5683 /* ThreadA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A7422051375100AD5683 /* ThreadA.m */; };
 		4BA0A746205161B000AD5683 /* TestVC10.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0A745205161B000AD5683 /* TestVC10.m */; };
 		4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC7C51420880B5B00C389B0 /* TestVC18.m */; };
+		4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AF820C7E6DF00052FFC /* Boy.m */; };
+		4BE33AFC20C7E73700052FFC /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFB20C7E73700052FFC /* Girl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +219,10 @@
 		4BA0A745205161B000AD5683 /* TestVC10.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC10.m; sourceTree = "<group>"; };
 		4BC7C51320880B5B00C389B0 /* TestVC18.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC18.h; sourceTree = "<group>"; };
 		4BC7C51420880B5B00C389B0 /* TestVC18.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC18.m; sourceTree = "<group>"; };
+		4BE33AF720C7E6DF00052FFC /* Boy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boy.h; sourceTree = "<group>"; };
+		4BE33AF820C7E6DF00052FFC /* Boy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boy.m; sourceTree = "<group>"; };
+		4BE33AFA20C7E73700052FFC /* Girl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Girl.h; sourceTree = "<group>"; };
+		4BE33AFB20C7E73700052FFC /* Girl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Girl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -404,6 +410,10 @@
 				4B44458F205A3CB600D0A043 /* ModelB.m */,
 				4B4445A8205A9BD800D0A043 /* ModelC.h */,
 				4B4445A9205A9BD800D0A043 /* ModelC.m */,
+				4BE33AF720C7E6DF00052FFC /* Boy.h */,
+				4BE33AF820C7E6DF00052FFC /* Boy.m */,
+				4BE33AFA20C7E73700052FFC /* Girl.h */,
+				4BE33AFB20C7E73700052FFC /* Girl.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -640,6 +650,7 @@
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
 				4B0D88822087459300908880 /* ImageData.m in Sources */,
 				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
+				4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4B89431320622EE200924FD2 /* TestVC14.m in Sources */,
 				4B0D88812087459300908880 /* TestVC17.m in Sources */,
@@ -672,6 +683,7 @@
 				4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */,
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
+				4BE33AFC20C7E73700052FFC /* Girl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
