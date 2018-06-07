@@ -33,7 +33,7 @@
     _imageViews=[NSMutableArray array];
     for (int r=0; r<ROW_COUNT; r++) {
         for (int c=0; c<COLUMN_COUNT; c++) {
-            UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(50+c*ROW_WIDTH+(c*CELL_SPACING), 100+r*ROW_HEIGHT+(r*CELL_SPACING                           ), ROW_WIDTH, ROW_HEIGHT)];
+            UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(50+c*ROW_WIDTH+(c*CELL_SPACING), 100+r*ROW_HEIGHT+(r*CELL_SPACING), ROW_WIDTH, ROW_HEIGHT)];
             imageView.contentMode=UIViewContentModeScaleAspectFit;
             [self.view addSubview:imageView];
             [_imageViews addObject:imageView];
@@ -43,7 +43,6 @@
     UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame=CGRectMake(50, 660, 320, 25);
     [button setTitle:@"加载图片" forState:UIControlStateNormal];
-    //添加方法
     [button addTarget:self action:@selector(loadImageWithMultiThread) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }

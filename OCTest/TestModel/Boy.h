@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Girl.h"
 
+//外部可用的常量
 extern NSString * const kString;
 
 @interface Boy : NSObject

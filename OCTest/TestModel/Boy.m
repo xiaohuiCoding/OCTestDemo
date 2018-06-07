@@ -8,9 +8,10 @@
 
 #import "Boy.h"
 
+//仅内部可用的常量
 static const NSTimeInterval kTimeInterval = 5;
 
-NSString  * const kString = @"string";
+NSString  * const kString = @"test";
 
 @implementation Boy
 
