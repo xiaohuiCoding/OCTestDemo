@@ -52,14 +52,15 @@
                         @"Block",
                         @"RunLoop and performSelector",
                         @"RunLoop and thread",
-                        @"Runtime 1",
-                        @"Runtime 2",
-                        @"Runtime 3",
+                        @"Runtime（一）",
+                        @"Runtime（二）",
+                        @"Runtime（三）",
                         @"@autoreleasepool",
                         @"GCD",
-                        @"NSThread",
-                        @"NSThread2",
-                        @"NSThread3"];
+                        @"NSThread（一）",
+                        @"NSThread（二）",
+                        @"NSThread（三）",
+                        @"NSOperation and NSOperationQueue"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }

@@ -1,7 +1,9 @@
 //
 //  TestVC18.m
 //  OCTest
-//
+
+//  NSThread （三）控制线程的状态
+
 //  Created by xiaohui on 2018/4/19.
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //
@@ -27,10 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self layoutUI];
+    [self layoutUI1];
+    [self layoutUI2];
 }
 
-- (void)layoutUI {
+- (void)layoutUI1 {
     _imageViews=[NSMutableArray array];
     for (int r=0; r<ROW_COUNT; r++) {
         for (int c=0; c<COLUMN_COUNT; c++) {
@@ -40,7 +43,9 @@
             [_imageViews addObject:imageView];
         }
     }
-    
+}
+
+- (void)layoutUI2 {
     UIButton *startButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     startButton.frame=CGRectMake(50, 660, 100, 25);
     [startButton setTitle:@"开始加载图片" forState:UIControlStateNormal];
@@ -48,10 +53,25 @@
     [self.view addSubview:startButton];
     
     UIButton *stopButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    stopButton.frame=CGRectMake(200, 660, 100, 25);
+    stopButton.frame=CGRectMake(170, 660, 100, 25);
     [stopButton setTitle:@"停止加载图片" forState:UIControlStateNormal];
     [stopButton addTarget:self action:@selector(stopLoadImage) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopButton];
+    
+    UIButton *cleanButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    cleanButton.frame=CGRectMake(280, 660, 50, 25);
+    [cleanButton setTitle:@"清空" forState:UIControlStateNormal];
+    [cleanButton addTarget:self action:@selector(cleanView) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cleanButton];
+}
+
+- (void)cleanView {
+    for (UIView *v in self.view.subviews) {
+        if ([v isKindOfClass:[UIImageView class]]) {
+            [v removeFromSuperview];
+        }
+    }
+    [self layoutUI1];
 }
 
 - (void)loadImageWithMultiThread {
@@ -64,7 +84,7 @@
         [_threads addObject:thread];
     }
     //循环启动线程
-    for (NSInteger i = 0; i < count; i++) {
+    for (NSInteger i = 0; i < count; ++i) {
         NSThread *thread = _threads[i];
         [thread start];
     }

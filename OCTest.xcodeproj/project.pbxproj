@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
-		4B0D88822087459300908880 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D88802087459300908880 /* ImageData.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
 		4B0F5D17202199F6001F65A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D15202199F6001F65A2 /* LaunchScreen.storyboard */; };
@@ -73,6 +72,8 @@
 		4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC7C51420880B5B00C389B0 /* TestVC18.m */; };
 		4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AF820C7E6DF00052FFC /* Boy.m */; };
 		4BE33AFC20C7E73700052FFC /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFB20C7E73700052FFC /* Girl.m */; };
+		4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFE20C9259400052FFC /* TestVC19.m */; };
+		4BE33B0220C9264200052FFC /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33B0020C9264200052FFC /* ImageData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,10 +94,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B0D887D2087459200908880 /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
 		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
 		4B0D887F2087459300908880 /* TestVC17.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC17.m; sourceTree = "<group>"; };
-		4B0D88802087459300908880 /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		4B0F5D07202199F6001F65A2 /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0F5D11202199F6001F65A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B0F5D13202199F6001F65A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -223,6 +222,10 @@
 		4BE33AF820C7E6DF00052FFC /* Boy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boy.m; sourceTree = "<group>"; };
 		4BE33AFA20C7E73700052FFC /* Girl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Girl.h; sourceTree = "<group>"; };
 		4BE33AFB20C7E73700052FFC /* Girl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Girl.m; sourceTree = "<group>"; };
+		4BE33AFD20C9259400052FFC /* TestVC19.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC19.h; sourceTree = "<group>"; };
+		4BE33AFE20C9259400052FFC /* TestVC19.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC19.m; sourceTree = "<group>"; };
+		4BE33B0020C9264200052FFC /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
+		4BE33B0120C9264200052FFC /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,12 +384,12 @@
 				4B1DE670207F006A00EE6A61 /* TestVC16.h */,
 				4B1DE671207F006A00EE6A61 /* TestVC16.m */,
 				4B1DE672207F006A00EE6A61 /* TestVC16.xib */,
-				4B0D887D2087459200908880 /* ImageData.h */,
-				4B0D88802087459300908880 /* ImageData.m */,
 				4B0D887E2087459300908880 /* TestVC17.h */,
 				4B0D887F2087459300908880 /* TestVC17.m */,
 				4BC7C51320880B5B00C389B0 /* TestVC18.h */,
 				4BC7C51420880B5B00C389B0 /* TestVC18.m */,
+				4BE33AFD20C9259400052FFC /* TestVC19.h */,
+				4BE33AFE20C9259400052FFC /* TestVC19.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -394,6 +397,8 @@
 		4B77151E202EDCD700257BD8 /* TestModel */ = {
 			isa = PBXGroup;
 			children = (
+				4BE33B0120C9264200052FFC /* ImageData.h */,
+				4BE33B0020C9264200052FFC /* ImageData.m */,
 				4B7ACD4B2028470B00504726 /* Test_Nullability.h */,
 				4B7ACD4C2028470B00504726 /* Test_Nullability.m */,
 				4B0F5D422021A801001F65A2 /* Test_Generics.h */,
@@ -648,7 +653,6 @@
 				4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
-				4B0D88822087459300908880 /* ImageData.m in Sources */,
 				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
 				4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
@@ -671,6 +675,7 @@
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
 				4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */,
+				4BE33B0220C9264200052FFC /* ImageData.m in Sources */,
 				4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */,
 				4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */,
 				4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */,
@@ -680,6 +685,7 @@
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
+				4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */,
 				4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */,
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
