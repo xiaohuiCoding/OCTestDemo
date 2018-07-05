@@ -27,6 +27,7 @@
 @interface TestVC19 ()
 
 @property (nonatomic, strong) NSMutableArray *imageViews;
+@property (nonatomic, strong) NSMutableArray *imageURLs;
 
 @end
 
@@ -48,6 +49,12 @@
             [self.view addSubview:imageView];
             [_imageViews addObject:imageView];
         }
+    }
+    
+    //创建图片链接
+    _imageURLs=[NSMutableArray array];
+    for (NSInteger i=0; i<ROW_COUNT*COLUMN_COUNT; i++) {
+        [_imageURLs addObject:[NSString stringWithFormat:@"https://raw.githubusercontent.com/wiki/xiaohuiCoding/blogImages/Demo/resource_20180611_%ld.png",i]];
     }
 }
 
@@ -150,7 +157,7 @@
 }
 
 - (NSData *)requestDataWithIndex:(NSInteger)index {
-    NSURL *url = [NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"];
+    NSURL *url = [NSURL URLWithString:_imageURLs[index]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     return data;
 }
