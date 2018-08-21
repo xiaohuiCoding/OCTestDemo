@@ -43,6 +43,10 @@
 		4B771521202EF35300257BD8 /* TestVC6.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771520202EF35300257BD8 /* TestVC6.m */; };
 		4B771524202EF36000257BD8 /* TestVC7.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B771523202EF36000257BD8 /* TestVC7.m */; };
 		4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7ACD4C2028470B00504726 /* Test_Nullability.m */; };
+		4B8161A4212C0DA100DA77F5 /* TestVC20.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8161A3212C0DA100DA77F5 /* TestVC20.m */; };
+		4B8161A7212C2CA500DA77F5 /* GCDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8161A6212C2CA500DA77F5 /* GCDModel.m */; };
+		4B8161AA212C2CC800DA77F5 /* GCDModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8161A9212C2CC800DA77F5 /* GCDModel2.m */; };
+		4B8161AD212C2CD600DA77F5 /* GCDModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8161AC212C2CD600DA77F5 /* GCDModel3.m */; };
 		4B89431320622EE200924FD2 /* TestVC14.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89431220622EE200924FD2 /* TestVC14.m */; };
 		4B89431920624E4800924FD2 /* TestVC15.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89431720624E4800924FD2 /* TestVC15.m */; };
 		4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B89431820624E4800924FD2 /* TestVC15.xib */; };
@@ -164,6 +168,14 @@
 		4B771523202EF36000257BD8 /* TestVC7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC7.m; sourceTree = "<group>"; };
 		4B7ACD4B2028470B00504726 /* Test_Nullability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_Nullability.h; sourceTree = "<group>"; };
 		4B7ACD4C2028470B00504726 /* Test_Nullability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_Nullability.m; sourceTree = "<group>"; };
+		4B8161A2212C0DA100DA77F5 /* TestVC20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC20.h; sourceTree = "<group>"; };
+		4B8161A3212C0DA100DA77F5 /* TestVC20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC20.m; sourceTree = "<group>"; };
+		4B8161A5212C2CA500DA77F5 /* GCDModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDModel.h; sourceTree = "<group>"; };
+		4B8161A6212C2CA500DA77F5 /* GCDModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDModel.m; sourceTree = "<group>"; };
+		4B8161A8212C2CC800DA77F5 /* GCDModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDModel2.h; sourceTree = "<group>"; };
+		4B8161A9212C2CC800DA77F5 /* GCDModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDModel2.m; sourceTree = "<group>"; };
+		4B8161AB212C2CD600DA77F5 /* GCDModel3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDModel3.h; sourceTree = "<group>"; };
+		4B8161AC212C2CD600DA77F5 /* GCDModel3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDModel3.m; sourceTree = "<group>"; };
 		4B89431120622EE200924FD2 /* TestVC14.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC14.h; sourceTree = "<group>"; };
 		4B89431220622EE200924FD2 /* TestVC14.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC14.m; sourceTree = "<group>"; };
 		4B89431620624E4800924FD2 /* TestVC15.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC15.h; sourceTree = "<group>"; };
@@ -390,6 +402,8 @@
 				4BC7C51420880B5B00C389B0 /* TestVC18.m */,
 				4BE33AFD20C9259400052FFC /* TestVC19.h */,
 				4BE33AFE20C9259400052FFC /* TestVC19.m */,
+				4B8161A2212C0DA100DA77F5 /* TestVC20.h */,
+				4B8161A3212C0DA100DA77F5 /* TestVC20.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -419,6 +433,12 @@
 				4BE33AF820C7E6DF00052FFC /* Boy.m */,
 				4BE33AFA20C7E73700052FFC /* Girl.h */,
 				4BE33AFB20C7E73700052FFC /* Girl.m */,
+				4B8161A5212C2CA500DA77F5 /* GCDModel.h */,
+				4B8161A6212C2CA500DA77F5 /* GCDModel.m */,
+				4B8161A8212C2CC800DA77F5 /* GCDModel2.h */,
+				4B8161A9212C2CC800DA77F5 /* GCDModel2.m */,
+				4B8161AB212C2CD600DA77F5 /* GCDModel3.h */,
+				4B8161AC212C2CD600DA77F5 /* GCDModel3.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -633,6 +653,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8161AD212C2CD600DA77F5 /* GCDModel3.m in Sources */,
+				4B8161A4212C0DA100DA77F5 /* TestVC20.m in Sources */,
+				4B8161A7212C2CA500DA77F5 /* GCDModel.m in Sources */,
 				4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */,
 				4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */,
 				4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */,
@@ -650,6 +673,7 @@
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
+				4B8161AA212C2CC800DA77F5 /* GCDModel2.m in Sources */,
 				4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,

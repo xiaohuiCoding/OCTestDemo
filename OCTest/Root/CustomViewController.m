@@ -32,14 +32,14 @@
     
 //    [super loadView];
 
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
     self.view = self.tableView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 
     self.dataSource = @[@"Deep copy / Shallow copy",
                         @"weak / strong / copy",
@@ -60,7 +60,8 @@
                         @"NSThread（一）",
                         @"NSThread（二）",
                         @"NSThread（三）",
-                        @"NSOperation and NSOperationQueue"];
+                        @"NSOperation and NSOperationQueue",
+                        @"Queue"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }
@@ -93,7 +94,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-     NSMutableString *contentString = [NSMutableString stringWithFormat:@"%ld. %@",(long)indexPath.row,self.dataSource[indexPath.row]];
+    NSMutableString *contentString = [NSMutableString stringWithFormat:@"%ld. %@",(long)indexPath.row,self.dataSource[indexPath.row]];
     self.cellString = contentString;
     if (indexPath.row <= 9) {
         [contentString insertString:@" " atIndex:0];//使得看起来接近左对齐
