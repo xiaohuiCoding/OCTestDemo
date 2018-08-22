@@ -88,67 +88,179 @@ void async_f_callback(void *context) {
     // Do any additional setup after loading the view from its nib.
     
     
-    //一些基本用法
-    [self basicTest];
     
-    
-    //串行队列
-    
-    //    dispatch_queue_t queue_serial = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
-    //
-    //    dispatch_sync(queue_serial, ^{
-    //        NSLog(@"block0");
-    //    });
-    //
-    //    dispatch_sync(queue_serial, ^{
-    //        NSLog(@"block1");
-    //    });
-    //
-    //    dispatch_sync(queue_serial, ^{
-    //        NSLog(@"block2");
-    //    });
-    //
-    //    dispatch_sync(queue_serial, ^{
-    //        NSLog(@"block3");
-    //    });
-    //
-    //    dispatch_sync(queue_serial, ^{
-    //        NSLog(@"block4");
-    //    });
-    //
-    //    NSLog(@"done");
+    //1.一些基本用法
+//    [self basicTest];
     
     
     
-    //并行队列
+    //2.两种常见的死锁场景：
     
-    //    dispatch_queue_t queue_concurrent = dispatch_queue_create("com.xiaohui.gcd.concurrent", DISPATCH_QUEUE_CONCURRENT);
-    //
-    //    dispatch_async(queue_concurrent, ^{
-    //        NSLog(@"block0");
-    //    });
-    //
-    //    dispatch_async(queue_concurrent, ^{
-    //        NSLog(@"block1");
-    //    });
-    //
-    //    dispatch_async(queue_concurrent, ^{
-    //        NSLog(@"block2");
-    //    });
-    //
-    //    dispatch_async(queue_concurrent, ^{
-    //        NSLog(@"block3");
-    //    });
-    //
-    //    dispatch_async(queue_concurrent, ^{
-    //        NSLog(@"block4");
-    //    });
-    //
-    //    NSLog(@"done");
+    //第一种：同步执行主队列任务
+    
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"111111");
+//    });
+//    NSLog(@"222222");
+//
+//    //可更改如下：
+//    dispatch_sync(dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL), ^{
+//        NSLog(@"111111");
+//    });
+//    NSLog(@"222222");
+//
+//    //或：
+//
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        NSLog(@"111111");
+//    });
+//    NSLog(@"222222");
+//
+//    //或：
+//
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"111111");
+//        });
+//    });
+//    NSLog(@"222222");
+
+    
+    //第二种：在同一个同步串行队列中，再使用该串行队列同步地执行任务
+    
+    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_sync(queue, ^{
+        
+        NSLog(@"111111");
+        
+        dispatch_sync(queue, ^{
+            NSLog(@"22222");
+        });
+        
+        NSLog(@"3333333");
+        
+    });
+    
+    NSLog(@"44444444");
     
     
     
-    //dispatch_async_f
+    //3.几种队列+任务组合
+    
+    //串行同步
+    
+//    dispatch_queue_t queue_serial = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
+//
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"block0");
+//    });
+//
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"block1");
+//    });
+//
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"block2");
+//    });
+//
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"block3");
+//    });
+//
+//    dispatch_sync(queue_serial, ^{
+//        NSLog(@"block4");
+//    });
+//
+//    NSLog(@"done");
+    
+    
+    
+    //串行异步
+    
+//    dispatch_queue_t queue_serial = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
+//
+//    dispatch_async(queue_serial, ^{
+//        NSLog(@"block0");
+//    });
+//
+//    dispatch_async(queue_serial, ^{
+//        NSLog(@"block1");
+//    });
+//
+//    dispatch_async(queue_serial, ^{
+//        NSLog(@"block2");
+//    });
+//
+//    dispatch_async(queue_serial, ^{
+//        NSLog(@"block3");
+//    });
+//
+//    dispatch_async(queue_serial, ^{
+//        NSLog(@"block4");
+//    });
+//
+//    NSLog(@"done");
+    
+    
+    
+    //并行同步
+    
+//    dispatch_queue_t queue_concurrent = dispatch_queue_create("com.xiaohui.concurrent", DISPATCH_QUEUE_CONCURRENT);
+//
+//    dispatch_sync(queue_concurrent, ^{
+//        NSLog(@"block0");
+//    });
+//
+//    dispatch_sync(queue_concurrent, ^{
+//        NSLog(@"block1");
+//    });
+//
+//    dispatch_sync(queue_concurrent, ^{
+//        NSLog(@"block2");
+//    });
+//
+//    dispatch_sync(queue_concurrent, ^{
+//        NSLog(@"block3");
+//    });
+//
+//    dispatch_sync(queue_concurrent, ^{
+//        NSLog(@"block4");
+//    });
+//
+//    NSLog(@"done");
+    
+    
+    
+    //并行异步
+    
+//    dispatch_queue_t queue_concurrent = dispatch_queue_create("com.xiaohui.concurrent", DISPATCH_QUEUE_CONCURRENT);
+//
+//    dispatch_async(queue_concurrent, ^{
+//        NSLog(@"block0");
+//    });
+//
+//    dispatch_async(queue_concurrent, ^{
+//        NSLog(@"block1");
+//    });
+//
+//    dispatch_async(queue_concurrent, ^{
+//        NSLog(@"block2");
+//    });
+//
+//    dispatch_async(queue_concurrent, ^{
+//        NSLog(@"block3");
+//    });
+//
+//    dispatch_async(queue_concurrent, ^{
+//        NSLog(@"block4");
+//    });
+//
+//    NSLog(@"done");
+    
+    
+    
+    //4.dispatch_async_f
     
     //    NSString *s_context = @"Hello world";
     //    dispatch_queue_t queue_concurrent = dispatch_queue_create("com.xiaohui.gcd.concurrent", DISPATCH_QUEUE_CONCURRENT);
