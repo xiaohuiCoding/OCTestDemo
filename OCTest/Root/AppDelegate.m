@@ -16,8 +16,20 @@
 @implementation AppDelegate
 
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"willFinishLaunching --- %f", CFAbsoluteTimeGetCurrent());
+    });
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"didFinishLaunching --- %f", CFAbsoluteTimeGetCurrent());
+    });
+    
 //    NSLog(@"%s",__func__);
 //    NSLog(@"程序已经完成启动");
 //    NSLog(@"%@",[NSRunLoop currentRunLoop]);
