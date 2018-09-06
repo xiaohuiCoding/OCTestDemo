@@ -128,21 +128,21 @@ void async_f_callback(void *context) {
     
     //第二种：在同一个同步串行队列中，再使用该串行队列同步地执行任务
     
-    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
-    
-    dispatch_sync(queue, ^{
-        
-        NSLog(@"111111");
-        
-        dispatch_sync(queue, ^{
-            NSLog(@"22222");
-        });
-        
-        NSLog(@"3333333");
-        
-    });
-    
-    NSLog(@"44444444");
+//    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.serial", DISPATCH_QUEUE_SERIAL);
+//
+//    dispatch_sync(queue, ^{
+//
+//        NSLog(@"111111");
+//
+//        dispatch_sync(queue, ^{
+//            NSLog(@"22222");
+//        });
+//
+//        NSLog(@"3333333");
+//
+//    });
+//
+//    NSLog(@"44444444");
     
     
     

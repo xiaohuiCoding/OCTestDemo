@@ -78,6 +78,7 @@
 		4BE33AFC20C7E73700052FFC /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFB20C7E73700052FFC /* Girl.m */; };
 		4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFE20C9259400052FFC /* TestVC19.m */; };
 		4BE33B0220C9264200052FFC /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33B0020C9264200052FFC /* ImageData.m */; };
+		4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +239,8 @@
 		4BE33AFE20C9259400052FFC /* TestVC19.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC19.m; sourceTree = "<group>"; };
 		4BE33B0020C9264200052FFC /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		4BE33B0120C9264200052FFC /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HookImageName.h"; sourceTree = "<group>"; };
+		4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HookImageName.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +508,8 @@
 				4BA0A734204F872300AD5683 /* UIImageView+RoundedCorner.m */,
 				4BA0A736204F8BB300AD5683 /* UIImage+PureColor.h */,
 				4BA0A737204F8BB300AD5683 /* UIImage+PureColor.m */,
+				4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */,
+				4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */,
 				4BA0A73B204FBAD500AD5683 /* UIButton+AddResponseArea.h */,
 				4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */,
 				4B444594205A4E9300D0A043 /* NSObject+AddProperty.h */,
@@ -680,6 +685,7 @@
 				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
 				4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
+				4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */,
 				4B89431320622EE200924FD2 /* TestVC14.m in Sources */,
 				4B0D88812087459300908880 /* TestVC17.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
