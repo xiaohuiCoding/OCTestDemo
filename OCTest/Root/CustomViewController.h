@@ -12,4 +12,6 @@
 
 @interface CustomViewController : TestBaseVC
 
+@property (nonatomic, copy) void (^TestBlock)(void);
+
 @end
