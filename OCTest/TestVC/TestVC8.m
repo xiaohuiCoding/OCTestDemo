@@ -12,11 +12,10 @@
 #import "CustomViewController.h"
 
 //Block作为一个typedef
+typedef void (^ABlock)(void);
+ABlock b = ^void (void) {
 
-//typedef void (^Block)(void);
-//Block b = ^{
-//
-//};
+};
 
 @interface TestVC8 ()
 
@@ -45,8 +44,8 @@
     
     
     
-    //Block作为一个局部变量
-    void (^Block)(void) = ^{
+    //Block作为一个局部变量(从这里可以看出Block其实是一个匿名函数)
+    void (^Block)(void) = ^void (void) {
         
     };
     Block();
