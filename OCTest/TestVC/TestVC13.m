@@ -25,9 +25,12 @@
 //    [self printAllClassInProject];
     
     [self printAllClassWithoutSystemInProject];
+    
+    // 还可以用LLDB命令在调试时直接查看一个类的信息，包含属性和方法
+    // po [类名 _shortMethodDescription]
 }
 
-//获取某个类的信息，包含属性、方法和协议
+// 获取某个类的信息，包含属性、方法和协议
 - (void)printClassInfoWithClassName:(NSString *)className {
     Class cls = NSClassFromString(className);
     [self printPropertyListWithClass:cls];
