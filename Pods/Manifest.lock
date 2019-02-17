@@ -1,0 +1,16 @@
+PODS:
+  - UMengAnalytics (4.2.4)
+
+DEPENDENCIES:
+  - UMengAnalytics
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - UMengAnalytics
+
+SPEC CHECKSUMS:
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
+
+PODFILE CHECKSUM: d148e8a69669c76cb6953e93603428b9137c76ab
+
+COCOAPODS: 1.5.0

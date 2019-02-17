@@ -79,6 +79,7 @@
 		4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFE20C9259400052FFC /* TestVC19.m */; };
 		4BE33B0220C9264200052FFC /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33B0020C9264200052FFC /* ImageData.m */; };
 		4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */; };
+		514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
+		3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
 		4B0D887F2087459300908880 /* TestVC17.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC17.m; sourceTree = "<group>"; };
 		4B0F5D07202199F6001F65A2 /* OCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +244,7 @@
 		4BE33B0120C9264200052FFC /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
 		4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HookImageName.h"; sourceTree = "<group>"; };
 		4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HookImageName.m"; sourceTree = "<group>"; };
+		EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CE1CC9091209CB3F7C02299 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B0F5CFE202199F6001F65A2 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +288,8 @@
 				4B0F5D22202199F6001F65A2 /* OCTestTests */,
 				4B0F5D2D202199F6001F65A2 /* OCTestUITests */,
 				4B0F5D08202199F6001F65A2 /* Products */,
+				C69986DAA90BCEA5E7C244CB /* Pods */,
+				1CE1CC9091209CB3F7C02299 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -520,6 +535,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		C69986DAA90BCEA5E7C244CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */,
+				22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +551,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B0F5D33202199F6001F65A2 /* Build configuration list for PBXNativeTarget "OCTest" */;
 			buildPhases = (
+				3D83086D95A50B6A268FADB3 /* [CP] Check Pods Manifest.lock */,
 				4B0F5D03202199F6001F65A2 /* Sources */,
 				4B0F5D04202199F6001F65A2 /* Frameworks */,
 				4B0F5D05202199F6001F65A2 /* Resources */,
@@ -652,6 +677,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D83086D95A50B6A268FADB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B0F5D03202199F6001F65A2 /* Sources */ = {
@@ -880,6 +926,7 @@
 		};
 		4B0F5D34202199F6001F65A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -898,6 +945,7 @@
 		};
 		4B0F5D35202199F6001F65A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
