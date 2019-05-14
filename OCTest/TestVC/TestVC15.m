@@ -83,11 +83,21 @@ void async_f_callback(void *context) {
     });
 }
 
+- (void)printLog {
+    NSLog(@"2");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"1");
+        [self performSelector:@selector(printLog)
+                   withObject:nil
+                   afterDelay:1];
+        NSLog(@"3");
+    });
     
     //1.一些基本用法
 //    [self basicTest];

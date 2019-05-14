@@ -79,6 +79,9 @@
 		4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFE20C9259400052FFC /* TestVC19.m */; };
 		4BE33B0220C9264200052FFC /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33B0020C9264200052FFC /* ImageData.m */; };
 		4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */; };
+		7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1E4178222A588200A54DD9 /* TestVC22.m */; };
+		7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA347392228CBD700D0D712 /* TestVC21.m */; };
+		7AA3473C2228E4D600D0D712 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3473B2228E4D600D0D712 /* one.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +244,11 @@
 		4BE33B0120C9264200052FFC /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
 		4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HookImageName.h"; sourceTree = "<group>"; };
 		4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HookImageName.m"; sourceTree = "<group>"; };
+		7A1E4177222A588200A54DD9 /* TestVC22.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC22.h; sourceTree = "<group>"; };
+		7A1E4178222A588200A54DD9 /* TestVC22.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC22.m; sourceTree = "<group>"; };
+		7AA347382228CBD700D0D712 /* TestVC21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC21.h; sourceTree = "<group>"; };
+		7AA347392228CBD700D0D712 /* TestVC21.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC21.m; sourceTree = "<group>"; };
+		7AA3473B2228E4D600D0D712 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +307,7 @@
 				4B77151D202EDCC300257BD8 /* TestVC */,
 				4B77151E202EDCD700257BD8 /* TestModel */,
 				4B0F5D10202199F6001F65A2 /* Main.storyboard */,
+				7AA3473B2228E4D600D0D712 /* one.png */,
 				4B0F5D13202199F6001F65A2 /* Assets.xcassets */,
 				4B0F5D15202199F6001F65A2 /* LaunchScreen.storyboard */,
 				4B0F5D18202199F6001F65A2 /* Info.plist */,
@@ -407,6 +416,10 @@
 				4BE33AFE20C9259400052FFC /* TestVC19.m */,
 				4B8161A2212C0DA100DA77F5 /* TestVC20.h */,
 				4B8161A3212C0DA100DA77F5 /* TestVC20.m */,
+				7AA347382228CBD700D0D712 /* TestVC21.h */,
+				7AA347392228CBD700D0D712 /* TestVC21.m */,
+				7A1E4177222A588200A54DD9 /* TestVC22.h */,
+				7A1E4178222A588200A54DD9 /* TestVC22.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -632,6 +645,7 @@
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */,
 				4B1DE674207F006A00EE6A61 /* TestVC16.xib in Resources */,
+				7AA3473C2228E4D600D0D712 /* one.png in Resources */,
 				4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */,
 				4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */,
 			);
@@ -660,6 +674,7 @@
 			files = (
 				4B8161AD212C2CD600DA77F5 /* GCDModel3.m in Sources */,
 				4B8161A4212C0DA100DA77F5 /* TestVC20.m in Sources */,
+				7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */,
 				4B8161A7212C2CA500DA77F5 /* GCDModel.m in Sources */,
 				4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */,
 				4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */,
@@ -716,6 +731,7 @@
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
 				4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */,
+				7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */,
 				4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */,
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,

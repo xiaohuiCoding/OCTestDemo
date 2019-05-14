@@ -61,7 +61,9 @@
                         @"NSThread（二）",
                         @"NSThread（三）",
                         @"NSOperation and NSOperationQueue",
-                        @"Queue"];
+                        @"Queue",
+                        @"CABasicAnimation",
+                        @"CATransform3D"];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
 }
