@@ -78,11 +78,14 @@
 		4BE33AFC20C7E73700052FFC /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFB20C7E73700052FFC /* Girl.m */; };
 		4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33AFE20C9259400052FFC /* TestVC19.m */; };
 		4BE33B0220C9264200052FFC /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE33B0020C9264200052FFC /* ImageData.m */; };
+		4BF4C19322A354510070BE6A /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4C19222A354510070BE6A /* KVOModel.m */; };
+		4BF4C19622A356290070BE6A /* TestVC23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4C19522A356290070BE6A /* TestVC23.m */; };
+		4BF4C19822A359280070BE6A /* TestVC23.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4C19722A359280070BE6A /* TestVC23.xib */; };
 		4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */; };
+		514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */; };
 		7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1E4178222A588200A54DD9 /* TestVC22.m */; };
 		7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA347392228CBD700D0D712 /* TestVC21.m */; };
 		7AA3473C2228E4D600D0D712 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3473B2228E4D600D0D712 /* one.png */; };
-		514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +248,11 @@
 		4BE33AFE20C9259400052FFC /* TestVC19.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC19.m; sourceTree = "<group>"; };
 		4BE33B0020C9264200052FFC /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		4BE33B0120C9264200052FFC /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		4BF4C19122A354510070BE6A /* KVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		4BF4C19222A354510070BE6A /* KVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
+		4BF4C19422A356290070BE6A /* TestVC23.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC23.h; sourceTree = "<group>"; };
+		4BF4C19522A356290070BE6A /* TestVC23.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC23.m; sourceTree = "<group>"; };
+		4BF4C19722A359280070BE6A /* TestVC23.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC23.xib; sourceTree = "<group>"; };
 		4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HookImageName.h"; sourceTree = "<group>"; };
 		4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HookImageName.m"; sourceTree = "<group>"; };
 		7A1E4177222A588200A54DD9 /* TestVC22.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC22.h; sourceTree = "<group>"; };
@@ -435,6 +443,9 @@
 				7AA347392228CBD700D0D712 /* TestVC21.m */,
 				7A1E4177222A588200A54DD9 /* TestVC22.h */,
 				7A1E4178222A588200A54DD9 /* TestVC22.m */,
+				4BF4C19422A356290070BE6A /* TestVC23.h */,
+				4BF4C19522A356290070BE6A /* TestVC23.m */,
+				4BF4C19722A359280070BE6A /* TestVC23.xib */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -470,6 +481,8 @@
 				4B8161A9212C2CC800DA77F5 /* GCDModel2.m */,
 				4B8161AB212C2CD600DA77F5 /* GCDModel3.h */,
 				4B8161AC212C2CD600DA77F5 /* GCDModel3.m */,
+				4BF4C19122A354510070BE6A /* KVOModel.h */,
+				4BF4C19222A354510070BE6A /* KVOModel.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -667,6 +680,7 @@
 				4B0F5D17202199F6001F65A2 /* LaunchScreen.storyboard in Resources */,
 				4BA0A73A204F96DD00AD5683 /* fish.png in Resources */,
 				4B424FDA206B3C4A00AB306F /* TestVC6.xib in Resources */,
+				4BF4C19822A359280070BE6A /* TestVC23.xib in Resources */,
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */,
 				4B1DE674207F006A00EE6A61 /* TestVC16.xib in Resources */,
@@ -735,6 +749,8 @@
 				4B977CB020689B7D00671B96 /* PNPieChart.m in Sources */,
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
 				4B771511202ED2E200257BD8 /* TestVC5.m in Sources */,
+				4BF4C19622A356290070BE6A /* TestVC23.m in Sources */,
+				4BF4C19322A354510070BE6A /* KVOModel.m in Sources */,
 				4B977CAB20689B7D00671B96 /* PNColor.m in Sources */,
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
