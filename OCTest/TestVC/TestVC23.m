@@ -42,18 +42,23 @@
 
 //数组初始化
 - (IBAction)button0Clicked:(id)sender {
-    self.model.array = [NSMutableArray arrayWithObjects:@"0",@"1",@"2", nil];
+    self.model.array = [NSMutableArray arrayWithObjects:@"2",@"1",@"0", nil];
 }
 
 //增加一个元素
 - (IBAction)button1Clicked:(id)sender {
     //当我们要获取这个KVOModel的array时，不能简单用model.array，而必须调用-mutableArrayValueForKey，只有这样，得到的数组发生变化了才会收到通知。
-    [[self.model mutableArrayValueForKey:@"array"] addObject:@"3"];
+    [[self.model mutableArrayValueForKey:@"array"] insertObject:@"3" atIndex:0];
 }
 
 //删除某个元素
 - (IBAction)button2Clicked:(id)sender {
-    [[self.model mutableArrayValueForKey:@"array"] removeObject:@"0"];
+    NSArray *array = (NSArray *)[[self.model valueForKey:@"array"] copy];
+    if (array.count) {
+        [[self.model mutableArrayValueForKey:@"array"] removeObjectAtIndex:0];
+    } else {
+        NSLog(@"删除失败，数组为空！");
+    }
 }
 
 //替换某个元素

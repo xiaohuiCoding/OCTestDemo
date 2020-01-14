@@ -86,6 +86,9 @@
 		7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1E4178222A588200A54DD9 /* TestVC22.m */; };
 		7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA347392228CBD700D0D712 /* TestVC21.m */; };
 		7AA3473C2228E4D600D0D712 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3473B2228E4D600D0D712 /* one.png */; };
+		FB4645F523C5B04B004E49A6 /* TestVC24.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4645F423C5B04B004E49A6 /* TestVC24.m */; };
+		FB4645F823C5D852004E49A6 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4645F723C5D852004E49A6 /* People.m */; };
+		FB4645FB23C5D864004E49A6 /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4645FA23C5D864004E49A6 /* Man.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +264,12 @@
 		7AA347392228CBD700D0D712 /* TestVC21.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC21.m; sourceTree = "<group>"; };
 		7AA3473B2228E4D600D0D712 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
 		EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4645F323C5B04B004E49A6 /* TestVC24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC24.h; sourceTree = "<group>"; };
+		FB4645F423C5B04B004E49A6 /* TestVC24.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC24.m; sourceTree = "<group>"; };
+		FB4645F623C5D852004E49A6 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		FB4645F723C5D852004E49A6 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		FB4645F923C5D864004E49A6 /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		FB4645FA23C5D864004E49A6 /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +455,8 @@
 				4BF4C19422A356290070BE6A /* TestVC23.h */,
 				4BF4C19522A356290070BE6A /* TestVC23.m */,
 				4BF4C19722A359280070BE6A /* TestVC23.xib */,
+				FB4645F323C5B04B004E49A6 /* TestVC24.h */,
+				FB4645F423C5B04B004E49A6 /* TestVC24.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -461,6 +472,10 @@
 				4B0F5D432021A801001F65A2 /* Test_Generics.m */,
 				4B0F5D452022C612001F65A2 /* Person.h */,
 				4B0F5D462022C612001F65A2 /* Person.m */,
+				FB4645F623C5D852004E49A6 /* People.h */,
+				FB4645F723C5D852004E49A6 /* People.m */,
+				FB4645F923C5D864004E49A6 /* Man.h */,
+				FB4645FA23C5D864004E49A6 /* Man.m */,
 				4BA0A7412051375100AD5683 /* ThreadA.h */,
 				4BA0A7422051375100AD5683 /* ThreadA.m */,
 				4B444585205A1AE300D0A043 /* RuntimeTestModel.h */,
@@ -753,6 +768,8 @@
 				4BF4C19322A354510070BE6A /* KVOModel.m in Sources */,
 				4B977CAB20689B7D00671B96 /* PNColor.m in Sources */,
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
+				FB4645FB23C5D864004E49A6 /* Man.m in Sources */,
+				FB4645F523C5B04B004E49A6 /* TestVC24.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
 				4B8161AA212C2CC800DA77F5 /* GCDModel2.m in Sources */,
@@ -787,6 +804,7 @@
 				4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */,
 				4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */,
 				4B4445A6205A69EE00D0A043 /* CustomViewController.m in Sources */,
+				FB4645F823C5D852004E49A6 /* People.m in Sources */,
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,

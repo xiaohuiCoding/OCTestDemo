@@ -14,7 +14,7 @@ int main(int argc, char * argv[]) {
     NSLog(@"main() --- %f",CFAbsoluteTimeGetCurrent());
     
     @autoreleasepool {
-//        NSLog(@"%s",__func__);
+        NSLog(@"%s",__func__);
 //        NSLog(@"程序的入口 main 函数");
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

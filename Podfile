@@ -5,6 +5,7 @@ platform :ios, '8.0'
 target 'OCTest' do
 
     pod 'UMengAnalytics'
+    pod 'ReactiveObjC'
 
 end
 
