@@ -8,7 +8,7 @@
 
 #import "TestVC24.h"
 #import <ReactiveObjC/ReactiveObjC.h>
-
+#import "RACReturnSignal.h"
 /**
  疑问：
  rac_willDeallocSignal
@@ -33,33 +33,34 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    [self.signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@页面即将消失",x);
-    }];
+//    [self.signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"%@页面即将消失",x);
+//    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self.signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@页面即将出现",x);
-    }];
+//    [self.signal subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"%@页面即将出现",x);
+//    }];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self basicGrammar_RAC];
+//    [self basicGrammar_RAC];
     
 //    [self UIViewClasses_RAC];
     
 //    [self collectionClasses_RAC];
     
-//    [self timer_RAC];
+    [self timer_RAC];
 }
 
-//基本语法及一些高级用法
+#pragma mark - 基本语法及常用用法
+
 - (void)basicGrammar_RAC {
     //1.多次订阅，多次创建
 //    self.signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
@@ -289,7 +290,31 @@
     
 
 
-    //10.distinctUntilChanged --- 忽略重复（比如：忽略某些重复的数据）
+    //10.rac_liftSelector --- 处理多个信号时，全部信号都获取到数据时，才执行回调；注意：传入几个信号，回调方法就要带几个参数，否则程序就会crash。
+//    RACSignal *signal1 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        [subscriber sendNext:@"hello"];
+//        [subscriber sendCompleted];
+//        return [RACDisposable disposableWithBlock:^{
+//            NSLog(@"signal1销毁了");
+//        }];
+//    }];
+//
+//    RACSignal *signal2 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        [subscriber sendNext:@"world"];
+//        [subscriber sendCompleted];
+//        return [RACDisposable disposableWithBlock:^{
+//            NSLog(@"signal2销毁了");
+//        }];
+//    }];
+//
+//    RACSignal *signal3 = [self rac_liftSelector:@selector(getResult:result2:) withSignalsFromArray:@[signal1,signal2]];
+//    [signal3 subscribeNext:^(id  _Nullable x) {
+//        NSLog(@"signal3---%@",x);
+//    }];
+    
+
+    
+    //11.distinctUntilChanged --- 忽略重复（比如：忽略某些重复的数据）
 //    RACSubject *subject = [RACSubject subject];
 //    [[subject distinctUntilChanged] subscribeNext:^(id  _Nullable x) {
 //        NSLog(@"去重后的数据：%@",x);
@@ -302,48 +327,77 @@
     
     
     
-    //11.RACSubject --- 信号提供者，自己可以充当信号，又能发送信号。
+    //12.RACSubject --- 信号提供者，自己可以充当信号，又能发送信号。
     //使用场景：通常用来代替代理，有了它，就不必定义代理了。
     
-    //12.RACReplaySubject --- 重复提供信号类，RACSubject的子类。
+    //13.RACReplaySubject --- 重复提供信号类，RACSubject的子类。
     //使用场景一：如果一个信号每被订阅一次，就需要把之前的值重复发送一遍，使用重复提供信号类。
     //使用场景二：可以设置 capacity 数量来限制缓存的 value 的数量,即只缓充最新的几个值。
 
     //二者的区别：RACReplaySubject 可以先发送信号，再订阅信号，而 RACSubject 只能先订阅后发送。
 
     //例如：
+//    RACSubject *subject = [RACSubject subject];
+//    RACReplaySubject *replaySubject = [RACReplaySubject subject];
+////    RACReplaySubject *replaySubject = [RACReplaySubject replaySubjectWithCapacity:0];
+//
+//    [subject sendNext:@"1"]; //发送无效
+//    [replaySubject sendNext:@"1"]; //发送有效
+//
+//    [[RACScheduler mainThreadScheduler] afterDelay:2.0 schedule:^{
+//        [subject sendNext:@"2"]; //发送有效
+//        [replaySubject sendNext:@"2"]; //发送有效
+//    }];
+//
+//    [subject subscribeNext:^(id x) {
+//         NSLog(@"subscriber1: %@", x);//第二次
+//    }];
+//
+//    [subject subscribeNext:^(id x) {
+//         NSLog(@"subscriber2: %@", x);//第二次
+//    }];
+//
+//    [replaySubject subscribeNext:^(id x) {
+//         NSLog(@"Replaysubscriber1: %@", x);//第一次 //第三次
+//    }];
+//
+//    [replaySubject subscribeNext:^(id x) {
+//         NSLog(@"Replaysubscriber2: %@", x);//第一次 //第三次
+//    }];
+    
+    
+    
+    //14.bind --- 绑定（这个方法目前还没找到适用场景，也就是没什么卵用，拿来练习用的。。）
     RACSubject *subject = [RACSubject subject];
-    RACReplaySubject *replaySubject = [RACReplaySubject subject];
-//    RACReplaySubject *replaySubject = [RACReplaySubject replaySubjectWithCapacity:0];
-
-    [subject sendNext:@"1"]; //发送无效
-    [replaySubject sendNext:@"1"]; //发送有效
     
-    [[RACScheduler mainThreadScheduler] afterDelay:2.0 schedule:^{
-        [subject sendNext:@"2"]; //发送有效
-        [replaySubject sendNext:@"2"]; //发送有效
+    RACSignal *signal = [subject bind:^RACSignalBindBlock _Nonnull{
+        
+        return ^RACSignal *(id _Nullable value, BOOL *stop){
+            
+            return [RACReturnSignal return:value];
+        };
     }];
     
-    [subject subscribeNext:^(id x) {
-         NSLog(@"subscriber1: %@", x);//第二次
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"收到的数据 --- %@",x);
     }];
     
-    [subject subscribeNext:^(id x) {
-         NSLog(@"subscriber2: %@", x);//第二次
-    }];
+    [subject sendNext:@"111"];
     
-    [replaySubject subscribeNext:^(id x) {
-         NSLog(@"Replaysubscriber1: %@", x);//第一次 //第三次
-    }];
     
-    [replaySubject subscribeNext:^(id x) {
-         NSLog(@"Replaysubscriber2: %@", x);//第一次 //第三次
-    }];
+    
+    //15.冷热信号的使用与转换
+    //https://tech.meituan.com/2015/09/08/talk-about-reactivecocoas-cold-signal-and-hot-signal-part-1.html
 }
 
-//UI类
+- (void)getResult:(id)result result2:(id)result2 {
+    NSLog(@"两个请求都完成，获取到的数据是：%@ %@",result,result2);
+}
+
+#pragma mark - UI控件类
+
 - (void)UIViewClasses_RAC {
-    //输入框
+    //一.输入框
 //    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
 //    textField.layer.borderColor = UIColor.redColor.CGColor;
 //    textField.layer.borderWidth = 1;
@@ -358,14 +412,12 @@
 //        NSLog(@"输入框中的内容：%@",x);
 //    }];
     
-    
     //1.map --- 监听输入框内容
 //    [[textField.rac_textSignal map:^id _Nullable(NSString * _Nullable value) {
 //        return [NSString stringWithFormat:@"输入框中的内容：%@",value];
 //    }] subscribeNext:^(id  _Nullable x) {
 //        NSLog(@"%@",x);
 //    }];
-    
     
     //2.flattenMap --- 监听输入框内容
 //    [[textField.rac_textSignal flattenMap:^__kindof RACSignal * _Nullable(NSString * _Nullable value) {
@@ -378,7 +430,6 @@
 //        NSLog(@"%@",x);
 //    }];
     
-    
     //3.filter 过滤（比如：过滤某些文本）
 //    [[textField.rac_textSignal filter:^BOOL(NSString * _Nullable value) {
 //        return value.length > 3;
@@ -386,37 +437,40 @@
 //        NSLog(@"输入框中的内容：%@",x);
 //    }];
     
-    
     //4.ignore 忽略（比如：忽略某个文本）
 //    [[textField.rac_textSignal ignore:@"a"] subscribeNext:^(NSString * _Nullable x) {
 //        NSLog(@"输入框中的内容：%@",x);
 //    }];
     
     
-    //按钮
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 200, 200, 40);
-    button.backgroundColor = UIColor.lightGrayColor;
-    [button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-    [button setTitleColor:UIColor.redColor forState:UIControlStateHighlighted];
-    [button setTitle:@"click" forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(buttonCicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
     
-    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        NSLog(@"按钮：%@",x);
-        //发通知
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"noti" object:nil];
-    }];
+    //二.按钮
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(100, 200, 200, 40);
+//    button.backgroundColor = UIColor.lightGrayColor;
+//    [button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+//    [button setTitleColor:UIColor.redColor forState:UIControlStateHighlighted];
+//    [button setTitle:@"click" forState:UIControlStateNormal];
+////    [button addTarget:self action:@selector(buttonCicked:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
     
-    //监听通知
-    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"noti" object:nil] subscribeNext:^(NSNotification * _Nullable x) {
-        NSLog(@"通知：%@",x);
-    }];
-    
-    //监听按钮点击方法的信号，当执行点击事件时会订阅此信号
+    //类似代理执行点击事件
 //    [[self rac_signalForSelector:@selector(buttonCicked:)] subscribeNext:^(RACTuple * _Nullable x) {
 //        NSLog(@"元组：%@",x);
+//    }];
+    
+    //按钮监听点击事件
+//    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+//        NSLog(@"按钮：%@",x);
+//        //发送通知
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"noti" object:nil];
+//    }];
+//
+//
+//
+//    //三.通知
+//    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"noti" object:nil] subscribeNext:^(NSNotification * _Nullable x) {
+//        NSLog(@"通知：%@",x);
 //    }];
 }
 
@@ -424,25 +478,28 @@
     NSLog(@"按钮被点击了");
 }
 
-//集合类
+#pragma mark - 集合类
+
 - (void)collectionClasses_RAC {
     NSArray *array = @[@"1", @"2", @"3", @"4", @"5"];
     [array.rac_sequence.signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"数组元素---%@",x);
+        NSLog(@"遍历数组的元素---%@",x);
     }];
 }
 
-//定时器
+#pragma mark - 定时器
+
 - (void)timer_RAC {
-    //类似timer
-    @weakify(self)
-    self.disposable = [[RACSignal interval:2.0 onScheduler:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSDate * _Nullable x) {
-        @strongify(self)
-        NSLog(@"时间：%@",x);
-        [self.disposable dispose]; //执行一次后停止，否则每隔两秒就执行一次
-    }];
+    //1.类似NSTimer
+//    @weakify(self)
+//    self.disposable = [[RACSignal interval:2.0 onScheduler:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSDate * _Nullable x) {
+//        @strongify(self)
+//        NSLog(@"时间：%@",x);
+//        [self.disposable dispose]; //执行后就杀死，否则每隔两秒就重复执行一次，类似timer中的repeat。
+//    }];
     
-    //延时
+    
+    //2.延时
     [[[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [subscriber sendNext:@"延时发送的内容"];
         [subscriber sendCompleted];
