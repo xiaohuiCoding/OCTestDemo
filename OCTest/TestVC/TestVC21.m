@@ -7,10 +7,16 @@
 //
 
 #import "TestVC21.h"
+#import "SBBreathLightView.h"
 
 @interface TestVC21 ()<CAAnimationDelegate>
 
 @property (nonatomic, strong) UIImageView *imgView;
+@property (nonatomic, strong) CAAnimationGroup *groups;
+
+@property (nonatomic, strong) SBBreathLightView *breathLightView;
+@property (nonatomic, strong) SBBreathLightView *breathLightView2;
+@property (nonatomic, strong) SBBreathLightView *breathLightView3;
 
 @end
 
@@ -20,15 +26,39 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 128, 100, 100)];
+    self.view.backgroundColor = UIColor.purpleColor;
+    
+    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    _imgView.center = self.view.center;
     _imgView.image = [UIImage imageNamed:@"one"];
     [self.view addSubview:_imgView];
-    
+
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(300, 100, 60, 60)];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [btn setTitle:@"测试" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
+    
+    OTWeakSelf;
+    [self.view addSubview:self.breathLightView];
+    self.breathLightView.clickHandler = ^{
+        OTStrongSelf;
+        [strongSelf.navigationController popViewControllerAnimated:YES];
+    };
+    
+    [self.view addSubview:self.breathLightView2];
+    self.breathLightView2.clickHandler = ^{
+        OTStrongSelf;
+        [strongSelf.navigationController popViewControllerAnimated:YES];
+    };
+    
+    [self.view addSubview:self.breathLightView3];
+    self.breathLightView3.clickHandler = ^{
+        OTStrongSelf;
+        [strongSelf.navigationController popViewControllerAnimated:YES];
+    };
 }
 
 - (void)buttonClicked {
@@ -119,6 +149,33 @@
 //动画结束
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     NSLog(@"end!");
+}
+
+- (SBBreathLightView *)breathLightView {
+    if (!_breathLightView) {
+        _breathLightView = [[SBBreathLightView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+//        _breathLightView.backgroundColor = UIColor.redColor;
+        _breathLightView.center = self.view.center;
+    }
+    return _breathLightView;
+}
+
+- (SBBreathLightView *)breathLightView2 {
+    if (!_breathLightView2) {
+        _breathLightView2 = [[SBBreathLightView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+//        _breathLightView.backgroundColor = UIColor.redColor;
+        _breathLightView2.center = CGPointMake(self.view.center.x, self.view.center.y-100);
+    }
+    return _breathLightView2;
+}
+
+- (SBBreathLightView *)breathLightView3 {
+    if (!_breathLightView3) {
+        _breathLightView3 = [[SBBreathLightView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+//        _breathLightView.backgroundColor = UIColor.redColor;
+        _breathLightView3.center = CGPointMake(self.view.center.x, self.view.center.y+100);
+    }
+    return _breathLightView3;
 }
 
 @end

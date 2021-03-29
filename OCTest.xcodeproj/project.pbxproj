@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
@@ -109,6 +110,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1867DA932611CD25004FBBBE /* OCTestStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestStyle.h; sourceTree = "<group>"; };
+		1867DA972611D06E004FBBBE /* SBBreathLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBreathLightView.h; sourceTree = "<group>"; };
+		1867DA982611D06E004FBBBE /* SBBreathLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBreathLightView.m; sourceTree = "<group>"; };
 		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
 		3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 			children = (
 				4B444598205A509800D0A043 /* TestView.h */,
 				4B444599205A509800D0A043 /* TestView.m */,
+				1867DA972611D06E004FBBBE /* SBBreathLightView.h */,
+				1867DA982611D06E004FBBBE /* SBBreathLightView.m */,
 			);
 			path = TestView;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				4B4445A1205A69EE00D0A043 /* CustomViewController.m */,
 				4B44459F205A69EE00D0A043 /* ViewController.h */,
 				4B4445A4205A69EE00D0A043 /* ViewController.m */,
+				1867DA932611CD25004FBBBE /* OCTestStyle.h */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -797,6 +804,7 @@
 				4B44458D205A3CA800D0A043 /* ModelA.m in Sources */,
 				4B444590205A3CB600D0A043 /* ModelB.m in Sources */,
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
+				1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
 				4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */,
 				4BE33B0220C9264200052FFC /* ImageData.m in Sources */,
