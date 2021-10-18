@@ -65,7 +65,8 @@
                         @"CABasicAnimation",
                         @"CATransform3D",
                         @"KVO",
-                        @"ReactiveCocoa"
+                        @"ReactiveCocoa",
+                        @"InterView"
                         ];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
+		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
@@ -113,6 +114,8 @@
 		1867DA932611CD25004FBBBE /* OCTestStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestStyle.h; sourceTree = "<group>"; };
 		1867DA972611D06E004FBBBE /* SBBreathLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBreathLightView.h; sourceTree = "<group>"; };
 		1867DA982611D06E004FBBBE /* SBBreathLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBreathLightView.m; sourceTree = "<group>"; };
+		18A19DC5271D7CE000D29E10 /* TestVC25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC25.h; sourceTree = "<group>"; };
+		18A19DC6271D7CE000D29E10 /* TestVC25.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC25.m; sourceTree = "<group>"; };
 		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
 		3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 				4BF4C19722A359280070BE6A /* TestVC23.xib */,
 				FB4645F323C5B04B004E49A6 /* TestVC24.h */,
 				FB4645F423C5B04B004E49A6 /* TestVC24.m */,
+				18A19DC5271D7CE000D29E10 /* TestVC25.h */,
+				18A19DC6271D7CE000D29E10 /* TestVC25.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -824,6 +829,7 @@
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
 				4BE33AFC20C7E73700052FFC /* Girl.m in Sources */,
+				18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
