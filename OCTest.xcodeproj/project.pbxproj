@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
+		1883C8D7271E9DFD000980EA /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D6271E9DFC000980EA /* TestModule.m */; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
@@ -114,6 +115,8 @@
 		1867DA932611CD25004FBBBE /* OCTestStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestStyle.h; sourceTree = "<group>"; };
 		1867DA972611D06E004FBBBE /* SBBreathLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBreathLightView.h; sourceTree = "<group>"; };
 		1867DA982611D06E004FBBBE /* SBBreathLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBreathLightView.m; sourceTree = "<group>"; };
+		1883C8D5271E9DFC000980EA /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
+		1883C8D6271E9DFC000980EA /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		18A19DC5271D7CE000D29E10 /* TestVC25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC25.h; sourceTree = "<group>"; };
 		18A19DC6271D7CE000D29E10 /* TestVC25.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC25.m; sourceTree = "<group>"; };
 		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +308,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1883C8D4271E9DE7000980EA /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1883C8D5271E9DFC000980EA /* TestModule.h */,
+				1883C8D6271E9DFC000980EA /* TestModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		1CE1CC9091209CB3F7C02299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +350,7 @@
 		4B0F5D09202199F6001F65A2 /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
+				1883C8D4271E9DE7000980EA /* Module */,
 				4B977C8420689B7D00671B96 /* ThirdClass */,
 				4B44459E205A69CE00D0A043 /* Root */,
 				4BA0A732204F86A600AD5683 /* Category */,
@@ -820,6 +833,7 @@
 				FB4645F823C5D852004E49A6 /* People.m in Sources */,
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
+				1883C8D7271E9DFD000980EA /* TestModule.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
