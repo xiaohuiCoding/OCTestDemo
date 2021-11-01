@@ -1,10 +1,10 @@
 //
-//  TestVC25.h
+//  TestVC26.h
 //  OCTest
 
-//  InterView
+//  循环引用 之 NSTimer
 
-//  Created by Apple on 2021/10/18.
+//  Created by Apple on 2021/10/25.
 //  Copyright © 2021 XIAOHUI. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestVC25 : TestBaseVC
+@interface TestVC26 : TestBaseVC
 
 @end
 

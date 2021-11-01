@@ -1,10 +1,10 @@
 //
-//  TestVC25.h
+//  TestVC29.h
 //  OCTest
 
-//  InterView
+//  Crash解析（三）定位代码
 
-//  Created by Apple on 2021/10/18.
+//  Created by Apple on 2021/10/30.
 //  Copyright © 2021 XIAOHUI. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestVC25 : TestBaseVC
+@interface TestVC29 : TestBaseVC
 
 @end
 

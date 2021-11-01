@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self printClassInfoWithClassName:@"MobClickApp"];
+    [self printClassInfoWithClassName:@"MobClickApp"];
     
 //    [self printAllClassInProject];
     
@@ -80,6 +80,7 @@
         Protocol *protocol = protocolList[i];
         const char *name = protocol_getName(protocol);
         NSLog(@"protocol[%d] --- %s",i,name);
+        NSLog(@"protocol[%d] --- %@",i,[NSString stringWithUTF8String:name]);
     }
     free(protocolList);
 }

@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */; };
+		185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995D2728F1D900D9F914 /* NSObject+Runtime.m */; };
+		185F9961272902DA00D9F914 /* TestVC27.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9960272902DA00D9F914 /* TestVC27.m */; };
+		185F99642729222C00D9F914 /* TestVC28.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F99632729222C00D9F914 /* TestVC28.m */; };
+		185F9967272CA73F00D9F914 /* TestVC29.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9966272CA73F00D9F914 /* TestVC29.m */; };
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
 		1883C8D7271E9DFD000980EA /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D6271E9DFC000980EA /* TestModule.m */; };
+		1883C8DA27265439000980EA /* TestVC26.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D927265439000980EA /* TestVC26.m */; };
+		1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
@@ -112,11 +119,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185F99592728F1BA00D9F914 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		185F995C2728F1D900D9F914 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		185F995D2728F1D900D9F914 /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		185F995F272902DA00D9F914 /* TestVC27.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC27.h; sourceTree = "<group>"; };
+		185F9960272902DA00D9F914 /* TestVC27.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC27.m; sourceTree = "<group>"; };
+		185F99622729222C00D9F914 /* TestVC28.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC28.h; sourceTree = "<group>"; };
+		185F99632729222C00D9F914 /* TestVC28.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC28.m; sourceTree = "<group>"; };
+		185F9965272CA73F00D9F914 /* TestVC29.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC29.h; sourceTree = "<group>"; };
+		185F9966272CA73F00D9F914 /* TestVC29.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC29.m; sourceTree = "<group>"; };
 		1867DA932611CD25004FBBBE /* OCTestStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestStyle.h; sourceTree = "<group>"; };
 		1867DA972611D06E004FBBBE /* SBBreathLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBreathLightView.h; sourceTree = "<group>"; };
 		1867DA982611D06E004FBBBE /* SBBreathLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBreathLightView.m; sourceTree = "<group>"; };
 		1883C8D5271E9DFC000980EA /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
 		1883C8D6271E9DFC000980EA /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
+		1883C8D827265439000980EA /* TestVC26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC26.h; sourceTree = "<group>"; };
+		1883C8D927265439000980EA /* TestVC26.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC26.m; sourceTree = "<group>"; };
+		1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zombieDealloc.m"; sourceTree = "<group>"; };
+		1883C8DC2727DE27000980EA /* NSObject+zombieDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+zombieDealloc.h"; sourceTree = "<group>"; };
 		18A19DC5271D7CE000D29E10 /* TestVC25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC25.h; sourceTree = "<group>"; };
 		18A19DC6271D7CE000D29E10 /* TestVC25.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC25.m; sourceTree = "<group>"; };
 		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -350,12 +371,12 @@
 		4B0F5D09202199F6001F65A2 /* OCTest */ = {
 			isa = PBXGroup;
 			children = (
-				1883C8D4271E9DE7000980EA /* Module */,
-				4B977C8420689B7D00671B96 /* ThirdClass */,
 				4B44459E205A69CE00D0A043 /* Root */,
-				4BA0A732204F86A600AD5683 /* Category */,
-				4B444597205A509800D0A043 /* TestView */,
 				4B77151C202EDBE700257BD8 /* Base */,
+				1883C8D4271E9DE7000980EA /* Module */,
+				4B444597205A509800D0A043 /* TestView */,
+				4B977C8420689B7D00671B96 /* ThirdClass */,
+				4BA0A732204F86A600AD5683 /* Category */,
 				4B77151D202EDCC300257BD8 /* TestVC */,
 				4B77151E202EDCD700257BD8 /* TestModel */,
 				4B0F5D10202199F6001F65A2 /* Main.storyboard */,
@@ -482,6 +503,14 @@
 				FB4645F423C5B04B004E49A6 /* TestVC24.m */,
 				18A19DC5271D7CE000D29E10 /* TestVC25.h */,
 				18A19DC6271D7CE000D29E10 /* TestVC25.m */,
+				1883C8D827265439000980EA /* TestVC26.h */,
+				1883C8D927265439000980EA /* TestVC26.m */,
+				185F995F272902DA00D9F914 /* TestVC27.h */,
+				185F9960272902DA00D9F914 /* TestVC27.m */,
+				185F99622729222C00D9F914 /* TestVC28.h */,
+				185F99632729222C00D9F914 /* TestVC28.m */,
+				185F9965272CA73F00D9F914 /* TestVC29.h */,
+				185F9966272CA73F00D9F914 /* TestVC29.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -597,6 +626,12 @@
 				4B444595205A4E9300D0A043 /* NSObject+AddProperty.m */,
 				4B44459B205A55A200D0A043 /* NSObject+AddMethod.h */,
 				4B44459C205A55A200D0A043 /* NSObject+AddMethod.m */,
+				1883C8DC2727DE27000980EA /* NSObject+zombieDealloc.h */,
+				1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */,
+				185F99592728F1BA00D9F914 /* NSMutableArray+Safe.h */,
+				185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */,
+				185F995C2728F1D900D9F914 /* NSObject+Runtime.h */,
+				185F995D2728F1D900D9F914 /* NSObject+Runtime.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -778,6 +813,7 @@
 				4B8161A7212C2CA500DA77F5 /* GCDModel.m in Sources */,
 				4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */,
 				4B977CB420689B7D00671B96 /* PNScatterChartDataItem.m in Sources */,
+				185F99642729222C00D9F914 /* TestVC28.m in Sources */,
 				4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */,
 				4B977CAE20689B7D00671B96 /* PNLineChartData.m in Sources */,
 				4B771524202EF36000257BD8 /* TestVC7.m in Sources */,
@@ -805,8 +841,10 @@
 				4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */,
 				4BA0A73D204FBAD500AD5683 /* UIButton+AddResponseArea.m in Sources */,
 				4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */,
+				1883C8DA27265439000980EA /* TestVC26.m in Sources */,
 				4B89431320622EE200924FD2 /* TestVC14.m in Sources */,
 				4B0D88812087459300908880 /* TestVC17.m in Sources */,
+				185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
 				4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */,
 				4B771514202ED86100257BD8 /* TestBaseVC.m in Sources */,
@@ -816,6 +854,7 @@
 				4B977CB120689B7D00671B96 /* PNPieChartDataItem.m in Sources */,
 				4B977CAA20689B7D00671B96 /* PNCircleChart.m in Sources */,
 				4B77150B202ED0D200257BD8 /* TestVC3.m in Sources */,
+				185F9961272902DA00D9F914 /* TestVC27.m in Sources */,
 				4B977CAD20689B7D00671B96 /* PNLineChart.m in Sources */,
 				4B977CA720689B7D00671B96 /* PNBar.m in Sources */,
 				4B977CB320689B7D00671B96 /* PNScatterChartData.m in Sources */,
@@ -824,8 +863,10 @@
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
 				1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
+				185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */,
 				4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */,
 				4BE33B0220C9264200052FFC /* ImageData.m in Sources */,
+				185F9967272CA73F00D9F914 /* TestVC29.m in Sources */,
 				4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */,
 				4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */,
 				4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */,
@@ -839,6 +880,7 @@
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
 				4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */,
 				7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */,
+				1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */,
 				4B977CAF20689B7D00671B96 /* PNLineChartDataItem.m in Sources */,
 				4B444584205A175700D0A043 /* TestVC11.m in Sources */,
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
@@ -1009,6 +1051,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = RHYXLE7GFE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OCTest/PrefixHeader_OCTest.pch";
 				INFOPLIST_FILE = OCTest/Info.plist;
