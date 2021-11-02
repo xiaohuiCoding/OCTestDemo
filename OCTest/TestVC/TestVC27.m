@@ -33,8 +33,10 @@
     NSLog(@"%@",array);
     
     // 3、访问野指针
-    /*参考：https://www.jianshu.com/p/8aba0ee41cd7
-           https://www.jianshu.com/p/33ee5e7d312c
+    /*参考：
+     https://www.jianshu.com/p/8aba0ee41cd7
+     https://www.jianshu.com/p/33ee5e7d312c
+     https://www.it610.com/article/1408708687459090432.htm
      */
     
     // 对象释放的过程模拟如下：

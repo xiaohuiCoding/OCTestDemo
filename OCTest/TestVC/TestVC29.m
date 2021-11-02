@@ -2,13 +2,21 @@
 //  TestVC29.m
 //  OCTest
 
-//  Crash解析（三）定位代码
+//  Crash解析（三）崩溃信息分析 定位代码
 
 //  Created by Apple on 2021/10/30.
 //  Copyright © 2021 XIAOHUI. All rights reserved.
 //
 
 #import "TestVC29.h"
+
+/*
+ 参考：
+ https://zhuanlan.zhihu.com/p/44215067
+ https://blog.csdn.net/skylin19840101/article/details/51595503
+ https://blog.csdn.net/skylin19840101/article/details/51595622
+ https://mp.weixin.qq.com/s/loZwPPzl-vhNYrmqpU7gkw
+ */
 
 @interface TestVC29 ()
 
@@ -20,8 +28,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // 在线进制转换： https://tool.lu/hexconvert/
+    
 }
+
+// 在线进制转换： https://tool.lu/hexconvert/
 
 /*
  给定一个随意的数字，如何区分它是几进制？？？

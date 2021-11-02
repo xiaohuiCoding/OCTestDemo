@@ -10,7 +10,7 @@
 		185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */; };
 		185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995D2728F1D900D9F914 /* NSObject+Runtime.m */; };
 		185F9961272902DA00D9F914 /* TestVC27.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9960272902DA00D9F914 /* TestVC27.m */; };
-		185F99642729222C00D9F914 /* TestVC28.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F99632729222C00D9F914 /* TestVC28.m */; };
+		185F99642729222C00D9F914 /* TestVC28.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F99632729222C00D9F914 /* TestVC28.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		185F9967272CA73F00D9F914 /* TestVC29.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9966272CA73F00D9F914 /* TestVC29.m */; };
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
 		1883C8D7271E9DFD000980EA /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D6271E9DFC000980EA /* TestModule.m */; };

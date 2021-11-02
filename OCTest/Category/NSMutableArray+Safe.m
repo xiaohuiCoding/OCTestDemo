@@ -11,13 +11,13 @@
 
 @implementation NSMutableArray (Safe)
 
-//+ (void)load {
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        NSMutableArray *obj = [[NSMutableArray alloc] init];
-//        [obj swizzleMethodWithOriginalSelector:@selector(addObject:) swizzledSelector:@selector(hookAddObject:)];
-//    });
-//}
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSMutableArray *obj = [[NSMutableArray alloc] init];
+        [obj swizzleMethodWithOriginalSelector:@selector(addObject:) swizzledSelector:@selector(hookAddObject:)];
+    });
+}
 
 - (void)hookAddObject:(id)object {
     // 添加的对象为nil时直接过滤
