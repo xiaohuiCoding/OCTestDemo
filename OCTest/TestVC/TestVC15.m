@@ -40,6 +40,39 @@ void async_f_callback(void *context) {
 //    [self threadSafe];
     
 //    [self threadTaskCancel];
+    
+    
+    
+    // 多任务按照一定的顺序执行
+    // 方案一：条件锁：https://blog.csdn.net/qq_33226881/article/details/87863184
+    
+    // 方案二：通过NSOperationQueue中的依赖关系来操作，NSOperation是对GCD的封装，其优点是高于GCD的，这种只能保证任务执行的顺序，不保证任务结果的输出顺序(任务里的操作可能是异步的，需要等待回调的结果，反之如果是同步的操作是可以保证顺序的)
+    NSOperationQueue *queueTest = [[NSOperationQueue alloc] init];
+    queueTest.maxConcurrentOperationCount = 1;
+    
+    NSBlockOperation *operationOne = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:1];
+    }];
+    NSBlockOperation *operationTwo = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:2];
+    }];
+    
+    NSBlockOperation *operationThree = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:3];
+    }];
+    
+    [operationTwo addDependency:operationOne];
+    [operationThree addDependency:operationTwo];
+    
+    [queueTest addOperation:operationOne];
+    [queueTest addOperation:operationTwo];
+    [queueTest addOperation:operationThree];
+}
+
+- (void)event:(NSInteger)index {
+    for (NSInteger i = 0; i < 10; i++) {
+        NSLog(@"任务%ld的输出结果 --- %ld",(long)index,(long)i);
+    }
 }
 
 #pragma mark - 基础概念及基本使用
