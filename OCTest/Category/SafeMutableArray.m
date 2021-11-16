@@ -10,6 +10,26 @@
 
 #import "SafeMutableArray.h"
 
+// 其他方案参考：https://blog.csdn.net/kongdeqin/article/details/53171189
+
+/*
+ 在 Cocoa 中有一种奇葩的类存在 Class Clusters。面向对象的编程告诉我们：“类可以继承，子类具有父类的方法”。而 Cocoa 中的 Class Clusters 虽然平时表现的像普通类一样，但子类却没法继承父类的方法。 NSMutableArray就是这样的存在。为什么会这样呢？因为 Class Clusters 内部其实是由多个私有的类和方法组成。虽然它有这样的弊端，但是好处还是不言而喻的。例如，NSNumber 其实也是这种类，这样一个类可以把各种不同的原始类型封装到一个类下面，提供统一的接口。这正设计模式中的抽象工厂模式。
+
+ 查看Apple的文档，要继承这样的类需要必须实现其primitive methods方法，实现了这些方法，其它方法便都能通过这些方法组合而成。比如需要继承NSMutableArray就需要实现它的以下primitive methods：
+
+ - (void)addObject:(id)anObject;
+ - (void)insertObject:(id)anObject atIndex:(NSUInteger)index;
+ - (void)removeLastObject;
+ - (void)removeObjectAtIndex:(NSUInteger)index;
+ - (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject;
+
+ 和NSArray的primitive methods：
+
+ - (NSUInteger)count;
+ - (id)objectAtIndex:(NSUInteger)index;
+
+ */
+
 #define INIT(...) self = super.init; \
 if (!self) return nil; \
 __VA_ARGS__; \

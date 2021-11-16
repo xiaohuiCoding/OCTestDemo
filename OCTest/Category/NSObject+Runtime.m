@@ -11,6 +11,7 @@
 
 @implementation NSObject (Runtime)
 
+// 方法交换
 - (void)swizzleMethodWithOriginalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector {
     Class class = [self class];
     // 原方法

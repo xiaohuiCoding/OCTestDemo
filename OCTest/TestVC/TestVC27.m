@@ -39,7 +39,7 @@
      https://www.it610.com/article/1408708687459090432.htm
      */
     
-    // 对象释放的过程模拟如下：
+    // 模拟对象释放的过程，如下：
 //    id object_dispose(id obj)
 //    {
 //        if (!obj) return nil;

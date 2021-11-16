@@ -12,8 +12,10 @@
 
 /*
  参考：
- https://www.cnblogs.com/lxmtx/p/12368543.html
- instrument的使用 https://www.jianshu.com/p/33ee5e7d312c
+ 原理分析：https://www.cnblogs.com/lxmtx/p/12368543.html
+         https://www.jianshu.com/p/33ee5e7d312c
+ instrument的使用：https://www.jianshu.com/p/4d94a700de96
+                 http://www.cocoachina.com/articles/20334
  */
 
 @interface TestVC28 ()
@@ -43,10 +45,19 @@ char *buffer;
 
     testArray = [[NSMutableArray alloc] initWithCapacity:5];
     [testArray release]; // 释放对象(.m文件已改为MRC机制)
+    
+    /*
+     1.全局设置工程MRC/ARC
+     选中 Target， 在 Objective C language 地方，将 ARC 设为 YES 或 NO。
+     2.设置单个文件MRC/ARC
+     在targets的build phases选项下Compile Sources下选择是否使用arc编译的文件，双击后输入：
+     -fno-objc-arc ： MRC
+     -fobjc-arc ：ARC
+     */
 }
 
 - (void)leftBtnEvent {
-    /* 1.访问野指针 导致的crash(可使用NSZombie Objects的方式调试，Xcode勾选并添加两个环境变量)
+    /* 1.访问野指针 导致的crash(可使用NSZombie Objects的方式调试，Xcode勾选，然后在Product -> Scheme -> Edit Scheme -> Arguments设置NSZombieEnabled、MallocStackLoggingNoCompact两个变量，且值均为YES）
      Thread 1: EXC_BREAKPOINT (code=1, subcode=0x1bf50810c)
      控制台报错：*** -[__NSArrayM addObject:]: message sent to deallocated instance 0x600003468810
      */
@@ -64,12 +75,3 @@ char *buffer;
 }
 
 @end
-
-/*
- 1.全局设置工程MRC/ARC
- 选中 Target， 在 Objective C language 地方，将 ARC 设为 YES 或 NO。
- 2.设置单个文件MRC/ARC
- 在targets的build phases选项下Compile Sources下选择是否使用arc编译的文件，双击后输入：
- -fno-objc-arc ： MRC
- -fobjc-arc ：ARC
- */

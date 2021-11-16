@@ -108,11 +108,13 @@
     self.animateCube.layer.sublayerTransform = transform;
     float angle = M_PI / 180;
 
+    // 在子线程中执行定时器事件，如果使用这种创建方式，则要将定时器加到当前子线程中并启动
     NSTimer *timer = [NSTimer timerWithTimeInterval:1.0/60 repeats:YES block:^(NSTimer * _Nonnull timer) {
         transform = CATransform3DRotate(transform, angle, 1, 1, 0.5);
         self.animateCube.layer.sublayerTransform = transform;
     }];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [[NSRunLoop currentRunLoop] run];
 }
 
 - (void)buttonClicked

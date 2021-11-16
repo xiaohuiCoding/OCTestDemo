@@ -10,6 +10,12 @@
 
 #import "TestVC26.h"
 
+/*
+ 参考：
+ https://www.jianshu.com/p/5068b6f02238
+ https://zhuanlan.zhihu.com/p/67853194
+ */
+
 @interface P2PBomb : NSObject
  
 @property (copy, nonatomic) dispatch_block_t block;

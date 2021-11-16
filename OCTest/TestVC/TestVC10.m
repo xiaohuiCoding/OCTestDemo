@@ -11,6 +11,10 @@
 #import "TestVC10.h"
 #import "ThreadA.h"
 
+/*
+ 参考：https://www.jianshu.com/p/d260d18dd551
+ */
+
 @interface TestVC10 ()
 
 @property (nonatomic, strong) ThreadA *threadA;
@@ -49,16 +53,9 @@
 
     [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
     [[NSRunLoop currentRunLoop] run];
-
     NSLog(@"111111");
     
-    
-    
-    //在子线程中执行定时器事件，需要将定时器加到当前子线程中
 //    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTest) userInfo:nil repeats:YES];
-//    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
-//    [[NSRunLoop currentRunLoop] run];
-//
 //    NSLog(@"222222");
 }
 
