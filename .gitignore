@@ -20,3 +20,8 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xccheckout
+
+#CocoaPods
+Pods
+!Podfile
+!Podfile.lock
