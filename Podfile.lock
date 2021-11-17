@@ -3,11 +3,11 @@ PODS:
   - UMengAnalytics (4.2.4)
 
 DEPENDENCIES:
-  - ReactiveObjC
-  - UMengAnalytics
+  - ReactiveObjC (= 3.1.1)
+  - UMengAnalytics (= 4.2.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - ReactiveObjC
     - UMengAnalytics
 
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
 
-PODFILE CHECKSUM: b96d5d1a79ba8528d8477276f8bf8404ab6e5046
+PODFILE CHECKSUM: 4c854336c3813a57556e47d33e0c111ab1efb544
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.7.2
