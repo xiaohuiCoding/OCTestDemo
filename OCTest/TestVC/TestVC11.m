@@ -8,6 +8,11 @@
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //
 
+/* OC的动态性：
+ https://www.jianshu.com/p/40229034a3f9
+ https://www.cnblogs.com/dxb123456/p/5525343.html
+ */
+
 #import "TestVC11.h"
 #import "RuntimeTestModel.h"
 #import "ModelA.h"

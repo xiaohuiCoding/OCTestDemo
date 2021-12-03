@@ -11,6 +11,8 @@
 #import "TestVC23.h"
 #import "KVOModel.h"
 
+/* KVO原理：https://www.jianshu.com/p/4826bc63ba77 */
+
 @interface TestVC23 ()
 
 @property (weak, nonatomic) IBOutlet UIButton *button0;

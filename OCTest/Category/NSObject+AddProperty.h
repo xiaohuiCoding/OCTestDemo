@@ -12,4 +12,6 @@
 
 @property (nonatomic, copy) NSString *smallName;
 
+//@property (class, nonatomic, copy) NSString *smallName; // 类属性
+
 @end

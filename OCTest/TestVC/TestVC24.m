@@ -11,10 +11,21 @@
 #import "TestVC24.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "RACReturnSignal.h"
-/**
- 疑问：
- rac_willDeallocSignal
+
+/*
+ 疑问？rac_willDeallocSignal
 */
+
+/*
+ 参考资料：
+ https://www.jianshu.com/p/87ef6720a096
+ https://www.jianshu.com/p/5fc71f541b1c
+ https://www.cnblogs.com/chglog/p/11051433.html
+ */
+
+/* 冷热信号的使用与转换
+ https://tech.meituan.com/2015/09/08/talk-about-reactivecocoas-cold-signal-and-hot-signal-part-1.html
+ */
 
 @interface TestVC24 ()
 
@@ -385,11 +396,6 @@
     }];
     
     [subject sendNext:@"111"];
-    
-    
-    
-    //15.冷热信号的使用与转换
-    //https://tech.meituan.com/2015/09/08/talk-about-reactivecocoas-cold-signal-and-hot-signal-part-1.html
 }
 
 - (void)getResult:(id)result result2:(id)result2 {
@@ -512,10 +518,3 @@
 }
 
 @end
-
-/**
- 参考资料：
- https://www.jianshu.com/p/87ef6720a096
- https://www.jianshu.com/p/5fc71f541b1c
- https://www.cnblogs.com/chglog/p/11051433.html
-*/

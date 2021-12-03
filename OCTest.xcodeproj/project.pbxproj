@@ -20,6 +20,10 @@
 		1883C8DA27265439000980EA /* TestVC26.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D927265439000980EA /* TestVC26.m */; };
 		1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
+		18E619A827479B88008B68C0 /* TestVC32.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619A727479B88008B68C0 /* TestVC32.m */; };
+		18E619AC274CD338008B68C0 /* TestVC33.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619AB274CD338008B68C0 /* TestVC33.m */; };
+		18E619AF274DEAF6008B68C0 /* TestVC34.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619AE274DEAF5008B68C0 /* TestVC34.m */; };
+		18E619B227577994008B68C0 /* TestVC35.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619B127577994008B68C0 /* TestVC35.m */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
@@ -149,6 +153,14 @@
 		1883C8DC2727DE27000980EA /* NSObject+zombieDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+zombieDealloc.h"; sourceTree = "<group>"; };
 		18A19DC5271D7CE000D29E10 /* TestVC25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC25.h; sourceTree = "<group>"; };
 		18A19DC6271D7CE000D29E10 /* TestVC25.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC25.m; sourceTree = "<group>"; };
+		18E619A627479B88008B68C0 /* TestVC32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC32.h; sourceTree = "<group>"; };
+		18E619A727479B88008B68C0 /* TestVC32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC32.m; sourceTree = "<group>"; };
+		18E619AA274CD338008B68C0 /* TestVC33.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC33.h; sourceTree = "<group>"; };
+		18E619AB274CD338008B68C0 /* TestVC33.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC33.m; sourceTree = "<group>"; };
+		18E619AD274DEAF5008B68C0 /* TestVC34.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC34.h; sourceTree = "<group>"; };
+		18E619AE274DEAF5008B68C0 /* TestVC34.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC34.m; sourceTree = "<group>"; };
+		18E619B027577994008B68C0 /* TestVC35.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC35.h; sourceTree = "<group>"; };
+		18E619B127577994008B68C0 /* TestVC35.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC35.m; sourceTree = "<group>"; };
 		22F1DBCD8913BF612FEC28C6 /* Pods-OCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.release.xcconfig"; sourceTree = "<group>"; };
 		3D407D507D99F4092B4E117E /* Pods-OCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTest/Pods-OCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0D887E2087459300908880 /* TestVC17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC17.h; sourceTree = "<group>"; };
@@ -524,6 +536,14 @@
 				185F996C2735210A00D9F914 /* TestVC30.m */,
 				185F996E2735269700D9F914 /* TestVC31.h */,
 				185F996F2735269700D9F914 /* TestVC31.m */,
+				18E619A627479B88008B68C0 /* TestVC32.h */,
+				18E619A727479B88008B68C0 /* TestVC32.m */,
+				18E619AA274CD338008B68C0 /* TestVC33.h */,
+				18E619AB274CD338008B68C0 /* TestVC33.m */,
+				18E619AD274DEAF5008B68C0 /* TestVC34.h */,
+				18E619AE274DEAF5008B68C0 /* TestVC34.m */,
+				18E619B027577994008B68C0 /* TestVC35.h */,
+				18E619B127577994008B68C0 /* TestVC35.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -845,6 +865,7 @@
 				4B977CAB20689B7D00671B96 /* PNColor.m in Sources */,
 				185F996A2732635D00D9F914 /* SafeMutableArray.m in Sources */,
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
+				18E619A827479B88008B68C0 /* TestVC32.m in Sources */,
 				FB4645FB23C5D864004E49A6 /* Man.m in Sources */,
 				FB4645F523C5B04B004E49A6 /* TestVC24.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
@@ -863,6 +884,7 @@
 				4B0D88812087459300908880 /* TestVC17.m in Sources */,
 				185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */,
 				185F996D2735210A00D9F914 /* TestVC30.m in Sources */,
+				18E619AF274DEAF6008B68C0 /* TestVC34.m in Sources */,
 				4B771508202ED0C200257BD8 /* TestVC2.m in Sources */,
 				4BA0A731204E2F8800AD5683 /* TestVC9.m in Sources */,
 				4B771514202ED86100257BD8 /* TestBaseVC.m in Sources */,
@@ -882,6 +904,7 @@
 				1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */,
 				4B77150E202ED2D700257BD8 /* TestVC4.m in Sources */,
 				185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */,
+				18E619B227577994008B68C0 /* TestVC35.m in Sources */,
 				4B977CB520689B7D00671B96 /* UICountingLabel.m in Sources */,
 				4BE33B0220C9264200052FFC /* ImageData.m in Sources */,
 				185F9967272CA73F00D9F914 /* TestVC29.m in Sources */,
@@ -893,6 +916,7 @@
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
 				1883C8D7271E9DFD000980EA /* TestModule.m in Sources */,
+				18E619AC274CD338008B68C0 /* TestVC33.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,

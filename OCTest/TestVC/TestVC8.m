@@ -8,6 +8,8 @@
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //
 
+/* Block的本质：https://www.jianshu.com/p/4e79e9a0dd82 */
+
 #import "TestVC8.h"
 #import "CustomViewController.h"
 

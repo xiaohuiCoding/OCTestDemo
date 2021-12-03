@@ -61,10 +61,10 @@ void async_f_callback(void *context) {
         [self event:3];
     }];
     
-    [operationTwo addDependency:operationOne];
+    [operationTwo addDependency:operationOne]; // 添加依赖
     [operationThree addDependency:operationTwo];
     
-    [queueTest addOperation:operationOne];
+    [queueTest addOperation:operationOne]; // 添加任务
     [queueTest addOperation:operationTwo];
     [queueTest addOperation:operationThree];
 }

@@ -10,6 +10,14 @@
 
 #import "TestVC25.h"
 
+/*
+ 参考：
+ 精华篇：https://www.jianshu.com/p/0930e13c9898
+ 精华篇：https://zhuanlan.zhihu.com/p/186875101
+ 面试题大全：https://github.com/xiaohuiCoding/GoldHouse-for-iOS
+ 面试题大全：https://www.jianshu.com/p/69d719568ae2
+ */
+
 @interface Father : NSObject
 
 @end

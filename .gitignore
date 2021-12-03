@@ -20,8 +20,9 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xccheckout
+*.xcscmblueprint
 
-#CocoaPods
+## CocoaPods
 Pods
 !Podfile
 !Podfile.lock

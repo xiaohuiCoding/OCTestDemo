@@ -10,6 +10,7 @@
 
 @implementation TestModule
 
+// 模块的初始化可以这么做，避免大量的初始化代码都写在AppDelegate的-didFinishLaunchingNotification方法中!
 + (void)load
 {
     __block id observer =

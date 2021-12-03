@@ -11,6 +11,11 @@
 #import "TestVC13.h"
 #import <objc/runtime.h>
 
+/*
+ 消息转发：https://www.jianshu.com/p/521dd19d4406
+ 元类：https://www.jianshu.com/p/79b06fabb459
+ */
+
 @interface TestVC13 ()
 
 @end
