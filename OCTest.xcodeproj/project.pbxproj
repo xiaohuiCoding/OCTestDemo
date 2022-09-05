@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C7BE7283F68F900513568 /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7BE6283F68F900513568 /* NSArray+Description.m */; };
 		185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */; };
 		185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995D2728F1D900D9F914 /* NSObject+Runtime.m */; };
 		185F9961272902DA00D9F914 /* TestVC27.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9960272902DA00D9F914 /* TestVC27.m */; };
@@ -126,6 +127,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183C7BE5283F68F900513568 /* NSArray+Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
+		183C7BE6283F68F900513568 /* NSArray+Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
 		185F99592728F1BA00D9F914 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
 		185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		185F995C2728F1D900D9F914 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
@@ -667,6 +670,8 @@
 				185F995D2728F1D900D9F914 /* NSObject+Runtime.m */,
 				185F99682732635D00D9F914 /* SafeMutableArray.h */,
 				185F99692732635D00D9F914 /* SafeMutableArray.m */,
+				183C7BE5283F68F900513568 /* NSArray+Description.h */,
+				183C7BE6283F68F900513568 /* NSArray+Description.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -919,6 +924,7 @@
 				18E619AC274CD338008B68C0 /* TestVC33.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
+				183C7BE7283F68F900513568 /* NSArray+Description.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
 				4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */,
 				7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */,

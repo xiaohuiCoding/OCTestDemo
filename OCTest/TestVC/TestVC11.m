@@ -17,6 +17,7 @@
 #import "RuntimeTestModel.h"
 #import "ModelA.h"
 #import "ModelB.h"
+#import "NSArray+Description.h"
 
 @interface TestVC11 ()
 
@@ -37,6 +38,10 @@
     
     ModelB *modelB = [[ModelB alloc] init];
     [modelB test];
+    
+    // 打印包含中文的数组内容，请显式输出中文，不要输出UTF-8的格式
+    NSArray *array = @[@"小辉",@"abc",@"123"];
+    NSLog(@"打印数组 --- %@",array);
 }
 
 @end
