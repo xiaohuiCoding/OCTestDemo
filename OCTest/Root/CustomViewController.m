@@ -41,13 +41,15 @@
     // Do any additional setup after loading the view.
 //    NSLog(@"%s",__func__);
 
+    self.view.backgroundColor = UIColor.whiteColor;
+
     self.dataSource = @[@"Deep copy / Shallow copy",
                         @"weak / strong / copy",
                         @"Nullability",
                         @"Generics",
                         @"Some interview topic",
                         @"Hash and Equal",
-                        @"UIViewController's life cycle",
+                        @"CADisplayLink",
                         @"UIView's life cycle",
                         @"Block",
                         @"RunLoop and performSelector",
@@ -76,7 +78,8 @@
                         @"高阶容器",
                         @"内存管理",
                         @"KVC",
-                        @"逆向 混淆"
+                        @"逆向 混淆",
+                        @"组件化"
                         ];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];

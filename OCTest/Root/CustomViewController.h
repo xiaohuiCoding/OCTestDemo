@@ -8,9 +8,9 @@
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //
 
-#import "TestBaseVC.h"
+#import <UIKit/UIKit.h>
 
-@interface CustomViewController : TestBaseVC
+@interface CustomViewController : UIViewController
 
 @property (nonatomic, copy) void (^TestBlock)(void);
 

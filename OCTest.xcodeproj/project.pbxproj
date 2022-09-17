@@ -17,7 +17,8 @@
 		185F996D2735210A00D9F914 /* TestVC30.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F996C2735210A00D9F914 /* TestVC30.m */; };
 		185F99702735269700D9F914 /* TestVC31.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F996F2735269700D9F914 /* TestVC31.m */; };
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
-		1883C8D7271E9DFD000980EA /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D6271E9DFC000980EA /* TestModule.m */; };
+		186D2E4328D52DB800290382 /* TestVC36.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2E4228D52DB800290382 /* TestVC36.m */; };
+		186D2E8928D5346800290382 /* XHBaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D2E8828D5346800290382 /* XHBaseModule.framework */; };
 		1883C8DA27265439000980EA /* TestVC26.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D927265439000980EA /* TestVC26.m */; };
 		1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
@@ -25,6 +26,7 @@
 		18E619AC274CD338008B68C0 /* TestVC33.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619AB274CD338008B68C0 /* TestVC33.m */; };
 		18E619AF274DEAF6008B68C0 /* TestVC34.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619AE274DEAF5008B68C0 /* TestVC34.m */; };
 		18E619B227577994008B68C0 /* TestVC35.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619B127577994008B68C0 /* TestVC35.m */; };
+		28B0CF28677529EB06AB345A /* Pods_OCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52945A7AA4F50624B029958D /* Pods_OCTest.framework */; };
 		4B0D88812087459300908880 /* TestVC17.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D887F2087459300908880 /* TestVC17.m */; };
 		4B0F5D12202199F6001F65A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D10202199F6001F65A2 /* Main.storyboard */; };
 		4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F5D13202199F6001F65A2 /* Assets.xcassets */; };
@@ -100,7 +102,6 @@
 		4BF4C19622A356290070BE6A /* TestVC23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4C19522A356290070BE6A /* TestVC23.m */; };
 		4BF4C19822A359280070BE6A /* TestVC23.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4C19722A359280070BE6A /* TestVC23.xib */; };
 		4BFE67DD21412AA3003D2F82 /* UIImage+HookImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */; };
-		514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */; };
 		7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1E4178222A588200A54DD9 /* TestVC22.m */; };
 		7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA347392228CBD700D0D712 /* TestVC21.m */; };
 		7AA3473C2228E4D600D0D712 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3473B2228E4D600D0D712 /* one.png */; };
@@ -148,8 +149,10 @@
 		1867DA932611CD25004FBBBE /* OCTestStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestStyle.h; sourceTree = "<group>"; };
 		1867DA972611D06E004FBBBE /* SBBreathLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBreathLightView.h; sourceTree = "<group>"; };
 		1867DA982611D06E004FBBBE /* SBBreathLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBreathLightView.m; sourceTree = "<group>"; };
-		1883C8D5271E9DFC000980EA /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
-		1883C8D6271E9DFC000980EA /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
+		186D2E3F28D52D0400290382 /* BaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		186D2E4128D52DB800290382 /* TestVC36.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC36.h; sourceTree = "<group>"; };
+		186D2E4228D52DB800290382 /* TestVC36.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC36.m; sourceTree = "<group>"; };
+		186D2E8828D5346800290382 /* XHBaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XHBaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1883C8D827265439000980EA /* TestVC26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC26.h; sourceTree = "<group>"; };
 		1883C8D927265439000980EA /* TestVC26.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC26.m; sourceTree = "<group>"; };
 		1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zombieDealloc.m"; sourceTree = "<group>"; };
@@ -313,12 +316,12 @@
 		4BF4C19722A359280070BE6A /* TestVC23.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC23.xib; sourceTree = "<group>"; };
 		4BFE67DB21412AA3003D2F82 /* UIImage+HookImageName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HookImageName.h"; sourceTree = "<group>"; };
 		4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HookImageName.m"; sourceTree = "<group>"; };
+		52945A7AA4F50624B029958D /* Pods_OCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1E4177222A588200A54DD9 /* TestVC22.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC22.h; sourceTree = "<group>"; };
 		7A1E4178222A588200A54DD9 /* TestVC22.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC22.m; sourceTree = "<group>"; };
 		7AA347382228CBD700D0D712 /* TestVC21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC21.h; sourceTree = "<group>"; };
 		7AA347392228CBD700D0D712 /* TestVC21.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC21.m; sourceTree = "<group>"; };
 		7AA3473B2228E4D600D0D712 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
-		EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4645F323C5B04B004E49A6 /* TestVC24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC24.h; sourceTree = "<group>"; };
 		FB4645F423C5B04B004E49A6 /* TestVC24.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC24.m; sourceTree = "<group>"; };
 		FB4645F623C5D852004E49A6 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
@@ -332,7 +335,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514EB2927435E59C600C1C94 /* libPods-OCTest.a in Frameworks */,
+				186D2E8928D5346800290382 /* XHBaseModule.framework in Frameworks */,
+				28B0CF28677529EB06AB345A /* Pods_OCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,19 +357,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1883C8D4271E9DE7000980EA /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				1883C8D5271E9DFC000980EA /* TestModule.h */,
-				1883C8D6271E9DFC000980EA /* TestModule.m */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
 		1CE1CC9091209CB3F7C02299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB76390D6C12E9B7E579A7A8 /* libPods-OCTest.a */,
+				186D2E8828D5346800290382 /* XHBaseModule.framework */,
+				186D2E3F28D52D0400290382 /* BaseModule.framework */,
+				52945A7AA4F50624B029958D /* Pods_OCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -397,7 +394,6 @@
 			children = (
 				4B44459E205A69CE00D0A043 /* Root */,
 				4B77151C202EDBE700257BD8 /* Base */,
-				1883C8D4271E9DE7000980EA /* Module */,
 				4B444597205A509800D0A043 /* TestView */,
 				4B977C8420689B7D00671B96 /* ThirdClass */,
 				4BA0A732204F86A600AD5683 /* Category */,
@@ -547,6 +543,8 @@
 				18E619AE274DEAF5008B68C0 /* TestVC34.m */,
 				18E619B027577994008B68C0 /* TestVC35.h */,
 				18E619B127577994008B68C0 /* TestVC35.m */,
+				186D2E4128D52DB800290382 /* TestVC36.h */,
+				186D2E4228D52DB800290382 /* TestVC36.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -696,6 +694,7 @@
 				4B0F5D03202199F6001F65A2 /* Sources */,
 				4B0F5D04202199F6001F65A2 /* Frameworks */,
 				4B0F5D05202199F6001F65A2 /* Resources */,
+				DB30FF10E29361BE7D6D33C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -840,6 +839,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB30FF10E29361BE7D6D33C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -920,7 +939,6 @@
 				FB4645F823C5D852004E49A6 /* People.m in Sources */,
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
-				1883C8D7271E9DFD000980EA /* TestModule.m in Sources */,
 				18E619AC274CD338008B68C0 /* TestVC33.m in Sources */,
 				4B771502202ED09F00257BD8 /* TestVC0.m in Sources */,
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
@@ -934,6 +952,7 @@
 				4B0F5D1A202199F6001F65A2 /* main.m in Sources */,
 				4BE33AFC20C7E73700052FFC /* Girl.m in Sources */,
 				18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */,
+				186D2E4328D52DB800290382 /* TestVC36.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1128,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -1128,6 +1148,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};

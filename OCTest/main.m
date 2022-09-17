@@ -15,7 +15,16 @@ int main(int argc, char * argv[]) {
     
     @autoreleasepool {
         NSLog(@"%s",__func__);
-//        NSLog(@"程序的入口 main 函数");
+        
+        NSProcessInfo *processInfo = [NSProcessInfo processInfo];
+        NSLog(@"当前进程的环境 --- %@", processInfo.environment);
+        NSLog(@"当前进程的参数 --- %@", processInfo.arguments);
+        NSLog(@"当前进程的主机名 --- %@", processInfo.hostName);
+        NSLog(@"当前进程的进程名 --- %@", processInfo.processName);
+        NSLog(@"当前进程的进程标识 --- %d", processInfo.processIdentifier);
+        NSLog(@"当前进程的唯一字符串 --- %@", processInfo.globallyUniqueString);
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
+ 

@@ -9,6 +9,10 @@
 #import "NSObject+AddProperty.h"
 #import <objc/runtime.h>
 
+/*
+ 参考：https://blog.csdn.net/u014600626/article/details/51435943
+ */
+
 @implementation NSObject (AddProperty)
 
 - (void)setSmallName:(NSString *)smallName {

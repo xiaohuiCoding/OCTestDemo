@@ -33,7 +33,7 @@
     });
     
 //    NSLog(@"%s",__func__);
-//    NSLog(@"程序已经完成启动");
+    NSLog(@"程序已经完成启动");
 //    NSLog(@"%@",[NSRunLoop currentRunLoop]);
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

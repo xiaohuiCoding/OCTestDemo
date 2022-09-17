@@ -9,10 +9,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TestBaseVC.h"
 
-@interface ViewController : TestBaseVC
-
+@interface ViewController : UIViewController
 
 @end
 
