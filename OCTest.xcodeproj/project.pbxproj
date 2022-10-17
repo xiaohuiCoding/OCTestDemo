@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		183C7BE7283F68F900513568 /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7BE6283F68F900513568 /* NSArray+Description.m */; };
+		184D26AD28DA8ED300E233C8 /* XHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D26AC28DA8ED300E233C8 /* XHManager.m */; };
 		185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */; };
 		185F995E2728F1D900D9F914 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995D2728F1D900D9F914 /* NSObject+Runtime.m */; };
 		185F9961272902DA00D9F914 /* TestVC27.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F9960272902DA00D9F914 /* TestVC27.m */; };
@@ -130,6 +131,8 @@
 /* Begin PBXFileReference section */
 		183C7BE5283F68F900513568 /* NSArray+Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		183C7BE6283F68F900513568 /* NSArray+Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
+		184D26AB28DA8ED300E233C8 /* XHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHManager.h; sourceTree = "<group>"; };
+		184D26AC28DA8ED300E233C8 /* XHManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHManager.m; sourceTree = "<group>"; };
 		185F99592728F1BA00D9F914 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
 		185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		185F995C2728F1D900D9F914 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
@@ -586,6 +589,8 @@
 				4B8161AC212C2CD600DA77F5 /* GCDModel3.m */,
 				4BF4C19122A354510070BE6A /* KVOModel.h */,
 				4BF4C19222A354510070BE6A /* KVOModel.m */,
+				184D26AB28DA8ED300E233C8 /* XHManager.h */,
+				184D26AC28DA8ED300E233C8 /* XHManager.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -867,6 +872,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8161AD212C2CD600DA77F5 /* GCDModel3.m in Sources */,
+				184D26AD28DA8ED300E233C8 /* XHManager.m in Sources */,
 				4B8161A4212C0DA100DA77F5 /* TestVC20.m in Sources */,
 				7A1E4179222A588200A54DD9 /* TestVC22.m in Sources */,
 				4B8161A7212C2CA500DA77F5 /* GCDModel.m in Sources */,

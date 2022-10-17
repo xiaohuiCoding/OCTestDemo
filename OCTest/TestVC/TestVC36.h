@@ -1,7 +1,9 @@
 //
 //  TestVC36.h
 //  OCTest
-//
+
+//  组件化
+
 //  Created by apple on 2022/9/17.
 //  Copyright © 2022 XIAOHUI. All rights reserved.
 //

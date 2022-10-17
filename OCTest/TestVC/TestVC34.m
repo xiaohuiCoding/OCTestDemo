@@ -36,7 +36,7 @@
     
 }
 
- // 若让一个类禁用KVC，就重写这个方法(原理：如果KVC没有找到set<Key>:属性名时，会直接用setValue：forUndefinedKey：方法)
+// 若让一个类禁用KVC，就重写这个方法(原理：如果KVC没有找到set<Key>:属性名时，会直接用setValue：forUndefinedKey：方法)
 + (BOOL)accessInstanceVariablesDirectly {
     return NO;
 }

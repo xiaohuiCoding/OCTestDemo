@@ -10,6 +10,7 @@
 
 #import "TestVC5.h"
 #import "Person.h"
+#import "XHManager.h"
 
 @interface TestVC5 ()
 
@@ -44,6 +45,12 @@
     
     NSLog(@"color1 == color2 = %@", color1 == color2 ? @"YES" : @"NO");
     NSLog(@"[color1 isEqual:color2] = %@", [color1 isEqual:color2] ? @"YES" : @"NO");
+    
+    // 验证单例对象是否唯一
+    XHManager *manager = [XHManager sharedInstance];
+    XHManager *manager2 = [[XHManager alloc] init];
+    XHManager *manager3 = [XHManager new];
+    NSLog(@"%@ %@ %@",manager,manager2,manager3);
 }
 
 @end
