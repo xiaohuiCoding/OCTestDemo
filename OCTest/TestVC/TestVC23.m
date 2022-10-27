@@ -78,6 +78,9 @@
         for (NSString *str in self.model.array) {
             NSLog(@"%@",str);
         }
+    } else {
+        // 默认处理
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
 }
 

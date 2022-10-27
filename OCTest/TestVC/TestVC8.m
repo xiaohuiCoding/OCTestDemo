@@ -12,6 +12,7 @@
 
 #import "TestVC8.h"
 #import "CustomViewController.h"
+#import "Person.h"
 
 //Block作为一个typedef
 typedef void (^ABlock)(void);
@@ -33,6 +34,12 @@ ABlock b = ^void (void) {
     block();
 }
 
+// Block的原理探究
+- (void)testBlockPrinciple {
+    Person *p = [[Person alloc] init];
+    p.name = @"xiaohui";
+    [p testBlock];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

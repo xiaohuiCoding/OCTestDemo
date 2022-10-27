@@ -100,11 +100,11 @@
 
     
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectOffset(self.animateCube.frame, 0, -100);
+    label.frame = CGRectOffset(self.animateCube.frame, 0, -100); // 添加坐标约束
     label.text = @"翻滚的立方体";
-    [label sizeToFit];
+    [label sizeToFit]; // 自适应宽度
     [self.view addSubview:label];
-//    label.transform = CGAffineTransformMakeScale(1, -1);//文字会沿着Y轴倒过来展示
+//    label.transform = CGAffineTransformMakeScale(1, -1);//文字会沿着Y轴倒过来展示，设置为(2, 2)的话字体就会被放大到2倍哦～
     
     
     self.animateCube.layer.sublayerTransform = transform;
@@ -116,7 +116,7 @@
         self.animateCube.layer.sublayerTransform = transform;
     }];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    [[NSRunLoop currentRunLoop] run];
+//    [[NSRunLoop currentRunLoop] run]; // TODO: 加上这行代码程序就卡死！待解决。。。
 }
 
 - (void)buttonClicked

@@ -15,11 +15,11 @@ end
 
 # 主工程
 def project_only_pods
-#  pod 'Masonry'
+  pod 'Masonry'
   pod 'ReactiveObjC', '3.1.1'
   pod 'UMengAnalytics', '4.2.4'
-#  pod 'Bugly', '2.5.71'
-#  pod 'Bugtags', '3.2.3'
+  pod 'Bugly', '2.5.71'
+  pod 'Bugtags', '3.2.3'
 end
 
 #网络

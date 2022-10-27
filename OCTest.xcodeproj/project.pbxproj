@@ -20,6 +20,13 @@
 		1867DA992611D06E004FBBBE /* SBBreathLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867DA982611D06E004FBBBE /* SBBreathLightView.m */; };
 		186D2E4328D52DB800290382 /* TestVC36.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D2E4228D52DB800290382 /* TestVC36.m */; };
 		186D2E8928D5346800290382 /* XHBaseModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D2E8828D5346800290382 /* XHBaseModule.framework */; };
+		187AA0C2290769930074C0BC /* RuntimeMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0C1290769930074C0BC /* RuntimeMsgModel.m */; };
+		187AA0C52907729A0074C0BC /* RuntimeMsgModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0C42907729A0074C0BC /* RuntimeMsgModel2.m */; };
+		187AA0C82907ED2C0074C0BC /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0C72907ED2C0074C0BC /* NSString+Attributed.m */; };
+		187AA0CB2907EF330074C0BC /* AttributedMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0CA2907EF330074C0BC /* AttributedMaker.m */; };
+		187AA0F229091F8D0074C0BC /* MosaicHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0F129091F8D0074C0BC /* MosaicHandler.m */; };
+		187AA0F4290923CD0074C0BC /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 187AA0F3290923CD0074C0BC /* girl.jpg */; };
+		187AA0FA2909304A0074C0BC /* UIControl+ClickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0F92909304A0074C0BC /* UIControl+ClickInterval.m */; };
 		1883C8DA27265439000980EA /* TestVC26.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D927265439000980EA /* TestVC26.m */; };
 		1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
@@ -156,6 +163,19 @@
 		186D2E4128D52DB800290382 /* TestVC36.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC36.h; sourceTree = "<group>"; };
 		186D2E4228D52DB800290382 /* TestVC36.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC36.m; sourceTree = "<group>"; };
 		186D2E8828D5346800290382 /* XHBaseModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XHBaseModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187AA0C0290769930074C0BC /* RuntimeMsgModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMsgModel.h; sourceTree = "<group>"; };
+		187AA0C1290769930074C0BC /* RuntimeMsgModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMsgModel.m; sourceTree = "<group>"; };
+		187AA0C32907729A0074C0BC /* RuntimeMsgModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMsgModel2.h; sourceTree = "<group>"; };
+		187AA0C42907729A0074C0BC /* RuntimeMsgModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMsgModel2.m; sourceTree = "<group>"; };
+		187AA0C62907ED2C0074C0BC /* NSString+Attributed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Attributed.h"; sourceTree = "<group>"; };
+		187AA0C72907ED2C0074C0BC /* NSString+Attributed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Attributed.m"; sourceTree = "<group>"; };
+		187AA0C92907EF330074C0BC /* AttributedMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedMaker.h; sourceTree = "<group>"; };
+		187AA0CA2907EF330074C0BC /* AttributedMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedMaker.m; sourceTree = "<group>"; };
+		187AA0F029091F8D0074C0BC /* MosaicHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MosaicHandler.h; sourceTree = "<group>"; };
+		187AA0F129091F8D0074C0BC /* MosaicHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosaicHandler.m; sourceTree = "<group>"; };
+		187AA0F3290923CD0074C0BC /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
+		187AA0F82909304A0074C0BC /* UIControl+ClickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ClickInterval.h"; sourceTree = "<group>"; };
+		187AA0F92909304A0074C0BC /* UIControl+ClickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ClickInterval.m"; sourceTree = "<group>"; };
 		1883C8D827265439000980EA /* TestVC26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC26.h; sourceTree = "<group>"; };
 		1883C8D927265439000980EA /* TestVC26.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC26.m; sourceTree = "<group>"; };
 		1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zombieDealloc.m"; sourceTree = "<group>"; };
@@ -407,6 +427,7 @@
 				4B0F5D15202199F6001F65A2 /* LaunchScreen.storyboard */,
 				4B0F5D18202199F6001F65A2 /* Info.plist */,
 				4BA0A739204F96DD00AD5683 /* fish.png */,
+				187AA0F3290923CD0074C0BC /* girl.jpg */,
 				4B0F5D19202199F6001F65A2 /* main.m */,
 				4B977C8320689B0900671B96 /* PrefixHeader_OCTest.pch */,
 				7AA3473B2228E4D600D0D712 /* one.png */,
@@ -571,6 +592,10 @@
 				4BA0A7422051375100AD5683 /* ThreadA.m */,
 				4B444585205A1AE300D0A043 /* RuntimeTestModel.h */,
 				4B444586205A1AE300D0A043 /* RuntimeTestModel.m */,
+				187AA0C0290769930074C0BC /* RuntimeMsgModel.h */,
+				187AA0C1290769930074C0BC /* RuntimeMsgModel.m */,
+				187AA0C32907729A0074C0BC /* RuntimeMsgModel2.h */,
+				187AA0C42907729A0074C0BC /* RuntimeMsgModel2.m */,
 				4B44458B205A3CA800D0A043 /* ModelA.h */,
 				4B44458C205A3CA800D0A043 /* ModelA.m */,
 				4B44458E205A3CB600D0A043 /* ModelB.h */,
@@ -591,6 +616,8 @@
 				4BF4C19222A354510070BE6A /* KVOModel.m */,
 				184D26AB28DA8ED300E233C8 /* XHManager.h */,
 				184D26AC28DA8ED300E233C8 /* XHManager.m */,
+				187AA0F029091F8D0074C0BC /* MosaicHandler.h */,
+				187AA0F129091F8D0074C0BC /* MosaicHandler.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -661,6 +688,8 @@
 				4BFE67DC21412AA3003D2F82 /* UIImage+HookImageName.m */,
 				4BA0A73B204FBAD500AD5683 /* UIButton+AddResponseArea.h */,
 				4BA0A73C204FBAD500AD5683 /* UIButton+AddResponseArea.m */,
+				187AA0F82909304A0074C0BC /* UIControl+ClickInterval.h */,
+				187AA0F92909304A0074C0BC /* UIControl+ClickInterval.m */,
 				4B444594205A4E9300D0A043 /* NSObject+AddProperty.h */,
 				4B444595205A4E9300D0A043 /* NSObject+AddProperty.m */,
 				4B44459B205A55A200D0A043 /* NSObject+AddMethod.h */,
@@ -675,6 +704,10 @@
 				185F99692732635D00D9F914 /* SafeMutableArray.m */,
 				183C7BE5283F68F900513568 /* NSArray+Description.h */,
 				183C7BE6283F68F900513568 /* NSArray+Description.m */,
+				187AA0C62907ED2C0074C0BC /* NSString+Attributed.h */,
+				187AA0C72907ED2C0074C0BC /* NSString+Attributed.m */,
+				187AA0C92907EF330074C0BC /* AttributedMaker.h */,
+				187AA0CA2907EF330074C0BC /* AttributedMaker.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -700,6 +733,7 @@
 				4B0F5D04202199F6001F65A2 /* Frameworks */,
 				4B0F5D05202199F6001F65A2 /* Resources */,
 				DB30FF10E29361BE7D6D33C1 /* [CP] Embed Pods Frameworks */,
+				82516A1BAA95DD2A5CA86237 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -802,6 +836,7 @@
 				4BF4C19822A359280070BE6A /* TestVC23.xib in Resources */,
 				4B0F5D14202199F6001F65A2 /* Assets.xcassets in Resources */,
 				4B89431C20624E9C00924FD2 /* TestVC14.xib in Resources */,
+				187AA0F4290923CD0074C0BC /* girl.jpg in Resources */,
 				4B1DE674207F006A00EE6A61 /* TestVC16.xib in Resources */,
 				7AA3473C2228E4D600D0D712 /* one.png in Resources */,
 				4B89431A20624E4800924FD2 /* TestVC15.xib in Resources */,
@@ -844,6 +879,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		82516A1BAA95DD2A5CA86237 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-resources.sh",
+				"${PODS_ROOT}/Bugtags/Bugtags.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Bugtags.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB30FF10E29361BE7D6D33C1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,11 +905,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,6 +941,7 @@
 				4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */,
 				4B4445A5205A69EE00D0A043 /* AppDelegate.m in Sources */,
 				4B444593205A417600D0A043 /* TestVC12.m in Sources */,
+				187AA0C2290769930074C0BC /* RuntimeMsgModel.m in Sources */,
 				4BA0A7432051375100AD5683 /* ThreadA.m in Sources */,
 				4B977CB020689B7D00671B96 /* PNPieChart.m in Sources */,
 				4B0F5D442021A801001F65A2 /* Test_Generics.m in Sources */,
@@ -894,9 +950,12 @@
 				4BF4C19322A354510070BE6A /* KVOModel.m in Sources */,
 				4B977CAB20689B7D00671B96 /* PNColor.m in Sources */,
 				185F996A2732635D00D9F914 /* SafeMutableArray.m in Sources */,
+				187AA0C82907ED2C0074C0BC /* NSString+Attributed.m in Sources */,
 				4B977CA820689B7D00671B96 /* PNBarChart.m in Sources */,
+				187AA0C52907729A0074C0BC /* RuntimeMsgModel2.m in Sources */,
 				18E619A827479B88008B68C0 /* TestVC32.m in Sources */,
 				FB4645FB23C5D864004E49A6 /* Man.m in Sources */,
+				187AA0F229091F8D0074C0BC /* MosaicHandler.m in Sources */,
 				FB4645F523C5B04B004E49A6 /* TestVC24.m in Sources */,
 				4B444596205A4E9300D0A043 /* NSObject+AddProperty.m in Sources */,
 				4B977CA920689B7D00671B96 /* PNChartLabel.m in Sources */,
@@ -923,11 +982,13 @@
 				4B22F2BC2047E5D70013C590 /* TestVC8.m in Sources */,
 				4B977CB120689B7D00671B96 /* PNPieChartDataItem.m in Sources */,
 				4B977CAA20689B7D00671B96 /* PNCircleChart.m in Sources */,
+				187AA0FA2909304A0074C0BC /* UIControl+ClickInterval.m in Sources */,
 				4B77150B202ED0D200257BD8 /* TestVC3.m in Sources */,
 				185F9961272902DA00D9F914 /* TestVC27.m in Sources */,
 				4B977CAD20689B7D00671B96 /* PNLineChart.m in Sources */,
 				4B977CA720689B7D00671B96 /* PNBar.m in Sources */,
 				4B977CB320689B7D00671B96 /* PNScatterChartData.m in Sources */,
+				187AA0CB2907EF330074C0BC /* AttributedMaker.m in Sources */,
 				4B44458D205A3CA800D0A043 /* ModelA.m in Sources */,
 				4B444590205A3CB600D0A043 /* ModelB.m in Sources */,
 				4B771505202ED0B600257BD8 /* TestVC1.m in Sources */,
@@ -1045,7 +1106,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1101,7 +1162,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

@@ -38,6 +38,38 @@
     [_imgView performSelector:@selector(setImage:) withObject:[UIImage imageNamed:@"fish"] afterDelay:2.0 inModes:@[NSDefaultRunLoopMode]];
     
     //    [_imgView performSelector:@selector(setImage:) withObject:[UIImage imageNamed:@"fish"] afterDelay:2.0 inModes:@[NSRunLoopCommonModes]];
+    
+    NSLog(@"%@",[NSRunLoop currentRunLoop]);
+    
+    /*
+     1.CFRunLoopRef就是RunLoop，而SourceRef、TimerRef、ObserverRef是CFRunLoopRef的内容，而ModeRef指的是mode的属性。
+     
+     CFRunLoopRef
+     CFRunLoopModeRef
+     CFRunLoopSourceRef
+     CFRunLoopTimerRef
+     CFRunLoopObserverRef
+     
+     
+     2.CFRunLoopObserverRef，是RunLoop的监听者，监听的状态如下：
+
+     typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
+     kCFRunLoopEntry = (1UL << 0), //即将进入Runloop
+     kCFRunLoopBeforeTimers = (1UL << 1), //即将处理NSTimer
+     kCFRunLoopBeforeSources = (1UL << 2), //即将处理Sources
+     kCFRunLoopBeforeWaiting = (1UL << 5), //即将进入休眠
+     kCFRunLoopAfterWaiting = (1UL << 6), //刚从休眠中唤醒
+     kCFRunLoopExit = (1UL << 7), //即将退出runloop
+     kCFRunLoopAllActivities = 0x0FFFFFFFU //所有状态改变};
+     
+     3.
+     kCFRunLoopDefaultMode //App的默认Mode，通常主线程是在这个Mode下运行
+     UITrackingRunLoopMode //界面跟踪 Mode，用于 ScrollView 追踪触摸滑动，保证界面滑动时不受其他 Mode 影响
+     UIInitializationRunLoopMode // 在刚启动 App 时第进入的第一个 Mode，启动完成后就不再使用
+     GSEventReceiveRunLoopMode // 接受系统事件的内部 Mode，通常用不到
+     kCFRunLoopCommonModes //这是一个占位用的Mode，不是一种真正的Mode
+
+     */
 }
 
 @end

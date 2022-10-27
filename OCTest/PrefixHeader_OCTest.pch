@@ -28,6 +28,12 @@
 #import "AFNetworking.h"
 #endif
 
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
+
 #endif
 
 // 预编译指令的使用 https://blog.csdn.net/yingBi2014/article/details/79664466

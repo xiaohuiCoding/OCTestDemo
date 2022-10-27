@@ -15,4 +15,6 @@
 
 + (Person *)personWithName:(NSString *)name gender:(NSString *)gender;
 
+- (void)testBlock;
+
 @end

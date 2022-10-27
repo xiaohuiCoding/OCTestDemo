@@ -1,7 +1,9 @@
 //
 //  NSObject+AddMethod.m
 //  OCTest
-//
+
+//  给分类添加方法
+
 //  Created by xiaohui on 2018/3/15.
 //  Copyright © 2018年 XIAOHUI. All rights reserved.
 //

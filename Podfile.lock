@@ -14,16 +14,27 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Bugly (2.5.71)
+  - Bugtags (3.2.3):
+    - Bugtags/Core (= 3.2.3)
+  - Bugtags/Core (3.2.3)
+  - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
   - UMengAnalytics (4.2.4)
 
 DEPENDENCIES:
   - AFNetworking (from `https://github.com/xiaohuiCoding/AFNetworking`)
+  - Bugly (= 2.5.71)
+  - Bugtags (= 3.2.3)
+  - Masonry
   - ReactiveObjC (= 3.1.1)
   - UMengAnalytics (= 4.2.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Bugly
+    - Bugtags
+    - Masonry
     - ReactiveObjC
     - UMengAnalytics
 
@@ -38,9 +49,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
+  Bugtags: 7eca28adc91cd3d718e346a0f2eb37b697251cbb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
 
-PODFILE CHECKSUM: e2f8c07df944b90c776d94100b9c245b769b36f4
+PODFILE CHECKSUM: 292d60ee4721f8c56b12f1d51484a2e940054c62
 
 COCOAPODS: 1.11.3

@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"willFinishLaunching --- %f", CFAbsoluteTimeGetCurrent());
+        NSLog(@"willFinishLaunching --- %f", CFAbsoluteTimeGetCurrent()); // 打印当前时间
     });
     return YES;
 }
@@ -29,7 +29,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"didFinishLaunching --- %f", CFAbsoluteTimeGetCurrent());
+        NSLog(@"didFinishLaunching --- %f", CFAbsoluteTimeGetCurrent()); // 打印当前时间
     });
     
 //    NSLog(@"%s",__func__);
