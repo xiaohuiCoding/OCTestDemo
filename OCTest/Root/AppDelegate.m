@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CustomViewController.h"
+#import "UIControl+ClickInterval.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,8 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"didFinishLaunching --- %f", CFAbsoluteTimeGetCurrent()); // 打印当前时间
     });
+    
+    [UIControl kk_exchangeClickMethod]; // 全局阻止频繁的点击事件
     
 //    NSLog(@"%s",__func__);
     NSLog(@"程序已经完成启动");

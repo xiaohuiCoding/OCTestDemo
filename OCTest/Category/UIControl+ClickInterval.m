@@ -1,7 +1,9 @@
 //
 //  UIControl+ClickInterval.m
 //  OCTest
-//
+
+//  阻止频繁的点击事件
+
 //  Created by apple on 2022/10/26.
 //  Copyright © 2022 XIAOHUI. All rights reserved.
 //
@@ -9,7 +11,7 @@
 #import "UIControl+ClickInterval.h"
 #import <objc/runtime.h>
 
-static double kDefaultInterval = 2.5;
+static double kDefaultInterval = 2.0;
 
 @interface UIControl ()
 

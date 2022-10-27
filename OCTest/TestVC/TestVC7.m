@@ -15,6 +15,7 @@
 #import "TestView.h"
 #import "NSString+Attributed.h"
 #import "MosaicHandler.h"
+//#import "UIControl+ClickInterval.h"
 
 @interface TestVC7 ()
 
@@ -45,7 +46,9 @@
 //    btn.contentEdgeInsets = UIEdgeInsetsMake(-5, -10, -15, -25);
     [self.view addSubview:btn];
     
-
+//    [UIControl kk_exchangeClickMethod]; // 局部阻止频繁的点击事件
+    
+    
     // 给图片画圆角
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(240, 150, 100, 100)];
 //    [imgView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fish" ofType:@"png"]]];
