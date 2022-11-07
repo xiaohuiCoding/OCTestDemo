@@ -60,7 +60,6 @@
     
     
     //创建多个线程用来加载多张图片，并设置最后一个线程优先启动
-    NSMutableArray *threadArray = [NSMutableArray array];
     NSInteger count = ROW_COUNT*COLUMN_COUNT;
     //创建多个线程用来加载多张图片
     for (NSInteger i = 0; i < count; ++i) {
@@ -71,10 +70,6 @@
         } else {
             thread.threadPriority = 0.5;
         }
-        [threadArray addObject:thread];
-    }
-    for (NSInteger i = 0; i < count; i++) {
-        NSThread *thread = threadArray[i];
         [thread start];
     }
 }
@@ -93,14 +88,14 @@
 }
 
 - (NSData *)requestDataWithIndex:(NSInteger)index {
-//    NSURL *url = [NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"];
+//    NSURL *url = [NSURL URLWithString:@"http://g.hiphotos.baidu.com/image/pic/item/472309f790529822c4ac8ad0d5ca7bcb0a46d402.jpg"];
 //    NSData *data = [NSData dataWithContentsOfURL:url];
     
     //为了更好的解决优先加载最后一张图片的问题，不妨让其他线程先休眠一会儿，等等最后一个线程，你将会看到最后一张图片总是第一个加载（除非网速特别差）。
     if (index != ROW_COUNT*COLUMN_COUNT - 1) {
         [NSThread sleepForTimeInterval:2.0];
     }
-    NSURL *url = [NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"];
+    NSURL *url = [NSURL URLWithString:@"http://g.hiphotos.baidu.com/image/pic/item/472309f790529822c4ac8ad0d5ca7bcb0a46d402.jpg"];
     NSData *data = [NSData dataWithContentsOfURL:url];
     return data;
 }

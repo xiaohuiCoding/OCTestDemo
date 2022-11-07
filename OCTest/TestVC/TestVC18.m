@@ -87,6 +87,7 @@
     for (NSInteger i = 0; i < count; ++i) {
         NSThread *thread = _threads[i];
         [thread start];
+        NSLog(@"thread(%@) is start!",thread); // 打印已经开始了的任务
     }
 }
 
@@ -96,22 +97,18 @@
     NSInteger i = [index integerValue];
     NSLog(@"execute%ld",i);//执行顺序未必和启动顺序一致,因为线程启动后仅仅处于就绪状态，实际是否执行要由CPU根据当前状态来调度。
     NSLog(@"main thread%@",[NSThread mainThread]);//主线程的number永远是1
-    NSData *data = [self requestDataWithIndex:i];
+    NSURL *url = [NSURL URLWithString:@"http://g.hiphotos.baidu.com/image/pic/item/472309f790529822c4ac8ad0d5ca7bcb0a46d402.jpg"];
+    NSData *data = [NSData dataWithContentsOfURL:url];
     NSThread *currentThread = [NSThread currentThread];
+    // 判断当前线程是否已取消
     if (currentThread.isCancelled) {
-        NSLog(@"thread(%@) will be cancelled!",currentThread);
-        [NSThread exit];
+        NSLog(@"thread(%@) will be cancelled!",currentThread); // 打印会被取消的任务(已经开始了的任务)
+        [NSThread exit]; // 退出线程，就会真的取消该线程任务
     }
     ImageData *imageData = [[ImageData alloc] init];
     imageData.index = i;
     imageData.data = data;
     [self performSelectorOnMainThread:@selector(updateImageWithImageData:) withObject:imageData waitUntilDone:YES];
-}
-
-- (NSData *)requestDataWithIndex:(NSInteger)index {
-    NSURL *url = [NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    return data;
 }
 
 - (void)updateImageWithImageData:(ImageData *)imageData {
@@ -124,8 +121,9 @@
 - (void)stopLoadImage {
     for (NSInteger i=0; i<ROW_COUNT*COLUMN_COUNT; i++) {
         NSThread *thread = _threads[i];
+        // 判断线程任务是否已执行完成，若未完成就取消，此时的任务已经开始但未完成
         if (!thread.isFinished) {
-            [thread cancel];
+            [thread cancel]; // 取消线程的执行
         }
     }
 }

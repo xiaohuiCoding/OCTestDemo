@@ -39,40 +39,10 @@ void async_f_callback(void *context) {
     
 //    [self threadSafe];
     
-//    [self threadTaskCancel];
+//    [self orderAsyncTasks];
     
-    
-    
-    // 多任务按照一定的顺序执行
-    // 方案一：条件锁：https://blog.csdn.net/qq_33226881/article/details/87863184
-    
-    // 方案二：通过NSOperationQueue中的依赖关系来操作，NSOperation是对GCD的封装，其优点是高于GCD的，这种只能保证任务执行的顺序，不保证任务结果的输出顺序(任务里的操作可能是异步的，需要等待回调的结果，反之如果是同步的操作是可以保证顺序的)
-    NSOperationQueue *queueTest = [[NSOperationQueue alloc] init];
-    queueTest.maxConcurrentOperationCount = 1;
-    
-    NSBlockOperation *operationOne = [NSBlockOperation blockOperationWithBlock:^{
-        [self event:1];
-    }];
-    NSBlockOperation *operationTwo = [NSBlockOperation blockOperationWithBlock:^{
-        [self event:2];
-    }];
-    
-    NSBlockOperation *operationThree = [NSBlockOperation blockOperationWithBlock:^{
-        [self event:3];
-    }];
-    
-    [operationTwo addDependency:operationOne]; // 添加依赖
-    [operationThree addDependency:operationTwo];
-    
-    [queueTest addOperation:operationOne]; // 添加任务
-    [queueTest addOperation:operationTwo];
-    [queueTest addOperation:operationThree];
-}
-
-- (void)event:(NSInteger)index {
-    for (NSInteger i = 0; i < 10; i++) {
-        NSLog(@"任务%ld的输出结果 --- %ld",(long)index,(long)i);
-    }
+//    [self taskCancel];
+    [self taskCancel2];
 }
 
 #pragma mark - 基础概念及基本使用
@@ -510,59 +480,93 @@ void async_f_callback(void *context) {
     }
 }
 
-#pragma mark - 线程任务取消
+#pragma mark - 异步多任务的顺序执行
 
-- (void)threadTaskCancel {
-    //GCD如何取消线程？
-        
-        //1.自定义变量，标记任务是否需要取消
-        
-    //    __block BOOL needCancel = NO;
-    //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-    //        for (NSInteger i=0; i<1000; i++) {
-    //            NSLog(@"第%ld次打印",i+1);
-    //            sleep(1);
-    //            if (needCancel) {
-    //                NSLog(@"停止！");
-    //                return;
-    //            }
-    //        }
-    //    });
-    //
-    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    //        needCancel = YES;
-    //    });
-        
-        
-        
-        //2.iOS8之后可以调用dispatch_block_cancel来取消尚未执行的任务（需要注意必须用dispatch_block_create创建dispatch_block_t）
-        
-    //    dispatch_block_t block1 = dispatch_block_create(0, ^{
-    //        sleep(1);
-    //        NSLog(@"block1执行");
-    //    });
-    //
-    //    dispatch_block_t block2 = dispatch_block_create(0, ^{
-    //        sleep(1);
-    //        NSLog(@"block2执行");
-    //    });
-    //
-    //    dispatch_block_t block3 = dispatch_block_create(0, ^{
-    //        sleep(1);
-    //        NSLog(@"block3执行");
-    //    });
-    //
-    //    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.test", DISPATCH_QUEUE_CONCURRENT);
-    //
-    //    dispatch_async(queue, block1);
-    //    dispatch_async(queue, block2);
-    //    dispatch_block_cancel(block3);
-    //
-    //    //dispatch_block_testcancel 判断是否成功取消，不为0则成功，否则失败。
-    //    long success = dispatch_block_testcancel(block3);
-    //    if (success != 0) {
-    //        NSLog(@"成功取消");
-    //    }
+- (void)orderAsyncTasks {
+    // 方案一：条件锁：https://blog.csdn.net/qq_33226881/article/details/87863184
+    
+    // 方案二：通过NSOperationQueue中的依赖关系来操作，NSOperation是对GCD的封装，其优点是高于GCD的，这种只能保证任务执行的顺序，不保证任务结果的输出顺序(任务里的操作可能是异步的，需要等待回调的结果，反之如果是同步的操作是可以保证顺序的)
+    NSOperationQueue *queueTest = [[NSOperationQueue alloc] init];
+    queueTest.maxConcurrentOperationCount = 1;
+    
+    NSBlockOperation *operationOne = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:1];
+    }];
+    NSBlockOperation *operationTwo = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:2];
+    }];
+    
+    NSBlockOperation *operationThree = [NSBlockOperation blockOperationWithBlock:^{
+        [self event:3];
+    }];
+    
+    [operationTwo addDependency:operationOne]; // 添加依赖
+    [operationThree addDependency:operationTwo];
+    
+    [queueTest addOperation:operationOne]; // 添加任务
+    [queueTest addOperation:operationTwo];
+    [queueTest addOperation:operationThree];
+}
+
+- (void)event:(NSInteger)index {
+    for (NSInteger i = 0; i < 10; i++) {
+        NSLog(@"任务%ld的输出结果 --- %ld",(long)index,(long)i);
+    }
+}
+
+#pragma mark - 任务取消
+
+// 方式一：iOS8之后可以调用dispatch_block_cancel来取消尚未执行的任务（需要注意必须用dispatch_block_create创建dispatch_block_t）
+- (void)taskCancel {
+    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.test", DISPATCH_QUEUE_CONCURRENT); // 并发队列
+
+    dispatch_block_t block1 = dispatch_block_create(0, ^{
+        NSLog(@"block1执行");
+    });
+
+    dispatch_block_t block2 = dispatch_block_create(0, ^{
+        NSLog(@"block2执行");
+    });
+
+    dispatch_block_t block3 = dispatch_block_create(0, ^{
+        NSLog(@"block3执行");
+    });
+
+    dispatch_async(queue, block1); // 执行任务1
+    dispatch_async(queue, block2); // 执行任务2
+    dispatch_async(queue, block3); // 执行任务3
+
+    dispatch_block_cancel(block1); // 取消任务1
+
+    // 判断是否取消成功，结果等于非0就表示取消成功了
+    long success = dispatch_block_testcancel(block1);
+    if (success != 0) {
+        NSLog(@"成功取消");
+    }
+}
+
+static BOOL needCancel = NO; // 静态变量
+
+// 方式二：自定义变量，标记某个任务是否需要取消
+- (void)taskCancel2 {
+    dispatch_queue_t queue = dispatch_queue_create("com.xiaohui.test", DISPATCH_QUEUE_CONCURRENT); // 并发队列
+    dispatch_async(queue, ^{
+        NSLog(@"任务已经开始了");
+        for (NSInteger i = 0; i < 1000; i++) {
+            if (needCancel) {
+                NSLog(@"在i=%ld的时候任务已经取消了",(long)i); // 取消任务
+                break;;
+            }
+            NSLog(@"第%ld次任务",(long)i); // 执行任务
+            sleep(1);
+        }
+    });
+    
+    [self performSelector:@selector(resetVar) withObject:nil afterDelay:5.0]; // 5秒后更改变量的值
+}
+
+- (void)resetVar {
+    needCancel = YES;
 }
 
 @end

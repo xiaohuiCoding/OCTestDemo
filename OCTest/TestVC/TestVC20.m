@@ -30,7 +30,7 @@
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
     dispatch_group_async(group, queue, ^{
-        NSLog(@"block1");
+        NSLog(@"1");
     });
     
     dispatch_group_async(group, queue, ^{
@@ -40,16 +40,18 @@
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"3");
         
-        dispatch_group_t groupNew = dispatch_group_create();
+        dispatch_group_t group2 = dispatch_group_create();
         
-        dispatch_group_async(groupNew, queue, ^{
+        dispatch_group_async(group2, queue, ^{
             NSLog(@"4");
         });
         
-        dispatch_group_async(groupNew, queue, ^{
+        dispatch_group_async(group2, queue, ^{
             NSLog(@"5");
         });
     });
+    
+    // 输出结果是：1和2顺序不定， 3， 4或5顺序不定
 }
 
 @end

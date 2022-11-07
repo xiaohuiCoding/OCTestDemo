@@ -15,12 +15,10 @@
 static const int kStep = 100000;
 static const int kIterationCount = 10 * kStep;
 
-#define GetScreenWidth      [[UIScreen mainScreen] bounds].size.width
-
 @interface TestVC14 ()
 
-@property(strong, nonatomic) NSMutableArray *memoryUsageList1;
-@property(strong, nonatomic) NSMutableArray *memoryUsageList2;
+@property (strong, nonatomic) NSMutableArray *memoryUsageList1;
+@property (strong, nonatomic) NSMutableArray *memoryUsageList2;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
 @end
@@ -38,7 +36,7 @@ static const int kIterationCount = 10 * kStep;
 - (IBAction)test:(UIButton *)sender {
 
     sender.enabled = NO;
-    [UIView animateWithDuration:0.5f animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         sender.alpha = 0.1;
     }];
     
@@ -90,11 +88,11 @@ static const int kIterationCount = 10 * kStep;
     chartView.yFixedValueMin = 0;
     chartView.yUnit = @"MB";
     chartView.legendStyle = PNLegendItemStyleStacked;
-    chartView.legendFontSize = 12.0f;
+    chartView.legendFontSize = 12.0;
     
     PNLineChartData *lineData1 = [PNLineChartData new];
     lineData1.dataTitle = @"with @autoreleasepool";
-    lineData1.color = PNFreshGreen;
+    lineData1.color = UIColor.greenColor;
     lineData1.alpha = 0.8;
     lineData1.itemCount = _memoryUsageList1.count;
     lineData1.inflexionPointStyle = PNLineChartPointStyleTriangle;
@@ -105,7 +103,7 @@ static const int kIterationCount = 10 * kStep;
     
     PNLineChartData *lineData2 = [PNLineChartData new];
     lineData2.dataTitle = @"without @autoreleasepool";
-    lineData2.color = PNWeiboColor;
+    lineData2.color = UIColor.redColor;
     lineData2.alpha = 0.8;
     lineData2.itemCount = _memoryUsageList2.count;
     lineData2.inflexionPointStyle = PNLineChartPointStyleCircle;

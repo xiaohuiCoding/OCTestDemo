@@ -21,7 +21,7 @@ int main(int argc, char * argv[]) {
         NSLog(@"当前进程的参数 --- %@", processInfo.arguments);
         NSLog(@"当前进程的主机名 --- %@", processInfo.hostName);
         NSLog(@"当前进程的进程名 --- %@", processInfo.processName);
-        NSLog(@"当前进程的进程标识 --- %d", processInfo.processIdentifier);
+        NSLog(@"当前进程的进程标识 --- %d", processInfo.processIdentifier); // PID
         NSLog(@"当前进程的唯一字符串 --- %@", processInfo.globallyUniqueString);
 
         NSLog(@"argc = %d argv = %s",argc,*argv); // argc的值是1，*argv的值是应用程序可执行文件的路径
@@ -31,4 +31,3 @@ int main(int argc, char * argv[]) {
         return result;
     }
 }
- 

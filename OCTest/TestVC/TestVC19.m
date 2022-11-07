@@ -36,8 +36,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self layoutUI1];
-    [self layoutUI2];
+//    [self layoutUI1];
+//    [self layoutUI2];
+    
+//    [self taskCancel];
+    [self taskCancel2];
 }
 
 - (void)layoutUI1 {
@@ -167,6 +170,50 @@
     UIImage *image = [UIImage imageWithData:data];
     UIImageView *imageView = _imageViews[index];
     imageView.image = image;
+}
+
+#pragma mark - 任务取消
+
+// 在任务开始后取消无效
+- (void)taskCancel {
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"1");
+    }];
+        
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"2");
+    }];
+    
+    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"3");
+    }];
+    
+    [operation1 start]; // 任务1开始了
+    [operation2 start]; // 任务2开始了
+    [operation3 start]; // 任务3开始了
+    
+    [operation1 cancel]; // 取消任务1
+}
+
+// 在任务开始前取消才有效
+- (void)taskCancel2 {
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"1");
+    }];
+        
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"2");
+    }];
+    
+    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"3");
+    }];
+    
+    [operation1 cancel];  // 取消任务1
+    
+    [operation1 start]; // 任务1开始了
+    [operation2 start]; // 任务2开始了
+    [operation3 start]; // 任务3开始了
 }
 
 @end

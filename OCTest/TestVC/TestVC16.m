@@ -32,7 +32,8 @@
 
 - (IBAction)loadImageWithMultiThread:(id)sender {
     
-//    [self loadImage]; //不创建线程，直接默认在主线程执行下载操作，在下载完成前无法点击测试按钮，这就是线程阻塞。
+    //不创建线程，直接默认在主线程执行下载操作，在下载完成前无法点击测试按钮，这就是线程阻塞！！！
+//    [self loadImage];
     
     //使用对象方法创建一个线程
 //    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(loadImage) object:nil];
@@ -43,14 +44,9 @@
     [NSThread detachNewThreadSelector:@selector(loadImage) toTarget:self withObject:nil];
 }
 
-- (NSData *)requestData {
+- (void)loadImage {
     NSURL *url = [NSURL URLWithString:@"http://g.hiphotos.baidu.com/image/pic/item/472309f790529822c4ac8ad0d5ca7bcb0a46d402.jpg"];
     NSData *data = [NSData dataWithContentsOfURL:url];
-    return data;
-}
-
-- (void)loadImage {
-    NSData *data = [self requestData];
     //在主线程更新UI
     [self performSelectorOnMainThread:@selector(updateImageWithData:) withObject:data waitUntilDone:YES];
 }

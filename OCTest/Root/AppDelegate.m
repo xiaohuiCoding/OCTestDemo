@@ -59,6 +59,7 @@
 }
 
 
+// 程序在后台运行
 - (void)applicationDidEnterBackground:(UIApplication *)application {
 //    NSLog(@"%s",__func__);
 //    NSLog(@"程序已经进入后台");

@@ -44,6 +44,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 添加断言
+    NSAssert(self.view.subviews.count == 0, @"数组为空了");
+
     /* 一、验证发送消息机制的底层是 objc_msgSend(id _Nullable self, SEL _Nonnull op, ...)
     注意：
     1.调用objc_msgSend，需要导入头文件： #import <objc/message.h>;
