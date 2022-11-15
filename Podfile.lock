@@ -20,6 +20,9 @@ PODS:
   - Bugtags/Core (3.2.3)
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
+  - SDWebImage (5.12.6):
+    - SDWebImage/Core (= 5.12.6)
+  - SDWebImage/Core (5.12.6)
   - UMengAnalytics (4.2.4)
 
 DEPENDENCIES:
@@ -28,6 +31,7 @@ DEPENDENCIES:
   - Bugtags (= 3.2.3)
   - Masonry
   - ReactiveObjC (= 3.1.1)
+  - SDWebImage
   - UMengAnalytics (= 4.2.4)
 
 SPEC REPOS:
@@ -36,6 +40,7 @@ SPEC REPOS:
     - Bugtags
     - Masonry
     - ReactiveObjC
+    - SDWebImage
     - UMengAnalytics
 
 EXTERNAL SOURCES:
@@ -53,8 +58,9 @@ SPEC CHECKSUMS:
   Bugtags: 7eca28adc91cd3d718e346a0f2eb37b697251cbb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
 
-PODFILE CHECKSUM: 292d60ee4721f8c56b12f1d51484a2e940054c62
+PODFILE CHECKSUM: 9aed5c7e0d0c16390234dfc70258005f25e064fd
 
 COCOAPODS: 1.11.3

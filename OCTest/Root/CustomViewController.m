@@ -161,11 +161,4 @@
     return _tableView;
 }
 
-- (NSArray *)dataSource {
-    if (!_dataSource) {
-        _dataSource = [NSArray array];
-    }
-    return _dataSource;
-}
-
 @end

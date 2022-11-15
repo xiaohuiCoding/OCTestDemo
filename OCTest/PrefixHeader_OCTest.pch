@@ -34,6 +34,12 @@
 #import "Masonry.h"
 #endif
 
+#if __has_include(<SDWebImage/SDWebImage.h>)
+#import <SDWebImage/SDWebImage.h>
+#else
+#import "SDWebImage.h"
+#endif
+
 #endif
 
 // 预编译指令的使用 https://blog.csdn.net/yingBi2014/article/details/79664466

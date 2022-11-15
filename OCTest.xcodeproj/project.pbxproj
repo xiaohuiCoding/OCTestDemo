@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18027C9929239B9500D629CD /* XHOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18027C9829239B9500D629CD /* XHOperation.m */; };
 		180E286F291350D400E822DB /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 180E2860291350D400E822DB /* README.markdown */; };
 		180E2870291350D400E822DB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 180E2861291350D400E822DB /* LICENSE.txt */; };
 		180E2871291350D400E822DB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E2865291350D400E822DB /* FMDatabaseQueue.m */; };
@@ -14,7 +15,6 @@
 		180E2873291350D400E822DB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E2869291350D400E822DB /* FMDatabase.m */; };
 		180E2874291350D400E822DB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E286D291350D400E822DB /* FMDatabasePool.m */; };
 		180E2875291350D400E822DB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E286E291350D400E822DB /* FMResultSet.m */; };
-		180E28782913629900E822DB /* XHoperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E28772913629900E822DB /* XHoperation.m */; };
 		183C7BE7283F68F900513568 /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7BE6283F68F900513568 /* NSArray+Description.m */; };
 		184D26AD28DA8ED300E233C8 /* XHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D26AC28DA8ED300E233C8 /* XHManager.m */; };
 		185F995B2728F1BA00D9F914 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F995A2728F1BA00D9F914 /* NSMutableArray+Safe.m */; };
@@ -145,6 +145,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18027C9729239B9500D629CD /* XHOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHOperation.h; sourceTree = "<group>"; };
+		18027C9829239B9500D629CD /* XHOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHOperation.m; sourceTree = "<group>"; };
 		180E2860291350D400E822DB /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		180E2861291350D400E822DB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		180E2864291350D400E822DB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -158,8 +160,6 @@
 		180E286C291350D400E822DB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		180E286D291350D400E822DB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		180E286E291350D400E822DB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		180E28762913629900E822DB /* XHoperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHoperation.h; sourceTree = "<group>"; };
-		180E28772913629900E822DB /* XHoperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHoperation.m; sourceTree = "<group>"; };
 		183C7BE5283F68F900513568 /* NSArray+Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		183C7BE6283F68F900513568 /* NSArray+Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
 		184D26AB28DA8ED300E233C8 /* XHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHManager.h; sourceTree = "<group>"; };
@@ -682,8 +682,8 @@
 				184D26AC28DA8ED300E233C8 /* XHManager.m */,
 				187AA0F029091F8D0074C0BC /* MosaicHandler.h */,
 				187AA0F129091F8D0074C0BC /* MosaicHandler.m */,
-				180E28762913629900E822DB /* XHoperation.h */,
-				180E28772913629900E822DB /* XHoperation.m */,
+				18027C9729239B9500D629CD /* XHOperation.h */,
+				18027C9829239B9500D629CD /* XHOperation.m */,
 			);
 			path = TestModel;
 			sourceTree = "<group>";
@@ -974,12 +974,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCTest/Pods-OCTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
@@ -1005,7 +1007,6 @@
 				185F99642729222C00D9F914 /* TestVC28.m in Sources */,
 				4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */,
 				4B977CAE20689B7D00671B96 /* PNLineChartData.m in Sources */,
-				180E28782913629900E822DB /* XHoperation.m in Sources */,
 				4B771524202EF36000257BD8 /* TestVC7.m in Sources */,
 				4B977CAC20689B7D00671B96 /* PNGenericChart.m in Sources */,
 				4BA0A735204F872300AD5683 /* UIImageView+RoundedCorner.m in Sources */,
@@ -1085,6 +1086,7 @@
 				4BA0A738204F8BB300AD5683 /* UIImage+PureColor.m in Sources */,
 				183C7BE7283F68F900513568 /* NSArray+Description.m in Sources */,
 				4B89431920624E4800924FD2 /* TestVC15.m in Sources */,
+				18027C9929239B9500D629CD /* XHOperation.m in Sources */,
 				4BE33AFF20C9259400052FFC /* TestVC19.m in Sources */,
 				7AA3473A2228CBD700D0D712 /* TestVC21.m in Sources */,
 				1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */,

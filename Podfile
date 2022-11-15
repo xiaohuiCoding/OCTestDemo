@@ -26,6 +26,7 @@ end
 def network_layer_pods
 #  pod 'AFNetworking'
   pod 'AFNetworking', :git => 'https://github.com/xiaohuiCoding/AFNetworking' #DIY一下
+  pod 'SDWebImage'
 end
 
 ################# 模块
