@@ -2,7 +2,7 @@
 //  TestVC30.m
 //  OCTest
 
-//  UITableView 优化
+//  UITableView 优化 滚动停止加载一屏数据
 
 //  Created by Apple on 2021/11/5.
 //  Copyright © 2021 XIAOHUI. All rights reserved.
@@ -122,7 +122,8 @@
     
     [self.view addSubview:self.tableView];
     
-    for (NSInteger i = 0; i < 50; i++) {
+    // 当列表需要加载大量的数据时，若采用常规的加载方式，CPU的占用率在短时间内会快速增多，就会出现卡顿的体验！采用分屏懒加载的方式就会好很多～
+    for (NSInteger i = 0; i < 1000; i++) {
         XHModel *model = [[XHModel alloc] init];
         if (i % 2 == 0) {
             model.URLString = @"https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png";

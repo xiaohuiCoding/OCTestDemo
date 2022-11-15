@@ -41,33 +41,33 @@
     
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSLog(@"before perform");
-        [self performSelector:@selector(printLog) withObject:nil afterDelay:0];
-        NSLog(@"after perform");
+        NSLog(@"before perform --- 1");
+        [self performSelector:@selector(printLog:) withObject:@1 afterDelay:0];
+        NSLog(@"after perform --- 1");
     });
     
-    //修改代码使得“printLog”可以打印，不考虑打印的先后顺序。解决方案如下：
+    //如何修改代码使得“printLog”可以打印（不考虑打印的先后顺序）？解决方案如下：
     
     //方案一：
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSLog(@"before perform");
-        [self performSelector:@selector(printLog) withObject:nil afterDelay:0];
-        NSLog(@"after perform");
+        NSLog(@"before perform --- 2");
+        [self performSelector:@selector(printLog:) withObject:@2 afterDelay:0];
+        NSLog(@"after perform --- 2");
         [[NSRunLoop currentRunLoop] run];//重启当前线程的runloop
     });
     
     //方案二：
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSLog(@"before perform");
+        NSLog(@"before perform --- 3");
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self performSelector:@selector(printLog) withObject:nil afterDelay:0];
+            [self performSelector:@selector(printLog:) withObject:@3 afterDelay:0];
         });//将该打印任务放到主线程执行
-        NSLog(@"after perform");
+        NSLog(@"after perform --- 3");
     });
 }
 
-- (void)printLog {
-    NSLog(@"printLog");
+- (void)printLog:(NSNumber *)num {
+    NSLog(@"printLog --- %ld",(long)num.integerValue);
 }
 
 /**
@@ -101,22 +101,22 @@
 
 - (void)test2 {
     NSString *path = @"https://www.baidu.com/";
-    NSString *path2 = @"http://fanyi.baidu.com/translate?query=#auto/zh/";
-    NSString *path3 = @"http://fanyi.baidu.com/translate?query=#zh/en/测试";
-    
     NSURL *url = [NSURL URLWithString:path];
-    NSURL *url2 = [NSURL URLWithString:path2];
-    NSURL *url3 = [NSURL URLWithString:path3];
-    
     NSLog(@"%@", url);
+
+    NSString *path2 = @"http://fanyi.baidu.com/translate?query=#auto/zh/";
+    NSURL *url2 = [NSURL URLWithString:path2];
     NSLog(@"%@", url2);
-    NSLog(@"%@", url3);
     
-    //url中含有中文，需要重新编码，否则若用 URLWithString 来初始化会失败！
+    //URL中含有中文，若用 URLWithString 来初始化会失败！需要重新编码！
+    NSString *path3 = @"http://fanyi.baidu.com/translate?query=#zh/en/测试";
+    NSURL *url3 = [NSURL URLWithString:path3];
+    NSLog(@"%@", url3);
+
+    //URL：Uniform Resource Locator，统一资源定位符，用的是ASCII编码。
     NSString *path_3 = [path3 stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSURL *url_3 = [NSURL URLWithString:path_3];
     NSLog(@"%@", url_3);
-    //URL：Uniform Resource Locator，统一资源定位符，用的是ASCII编码。
 }
 
 /**
