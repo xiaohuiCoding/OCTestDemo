@@ -29,9 +29,9 @@ DEPENDENCIES:
   - AFNetworking (from `https://github.com/xiaohuiCoding/AFNetworking`)
   - Bugly (= 2.5.71)
   - Bugtags (= 3.2.3)
-  - Masonry
+  - Masonry (= 1.1.0)
   - ReactiveObjC (= 3.1.1)
-  - SDWebImage
+  - SDWebImage (= 5.12.6)
   - UMengAnalytics (= 4.2.4)
 
 SPEC REPOS:
@@ -61,6 +61,6 @@ SPEC CHECKSUMS:
   SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
 
-PODFILE CHECKSUM: 9aed5c7e0d0c16390234dfc70258005f25e064fd
+PODFILE CHECKSUM: 124066524bb9f3b7914e293df342d03200f7ed79
 
 COCOAPODS: 1.11.3

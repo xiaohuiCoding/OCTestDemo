@@ -15,7 +15,7 @@ end
 
 # 主工程
 def project_only_pods
-  pod 'Masonry'
+  pod 'Masonry', '1.1.0'
   pod 'ReactiveObjC', '3.1.1'
   pod 'UMengAnalytics', '4.2.4'
   pod 'Bugly', '2.5.71'
@@ -24,9 +24,9 @@ end
 
 #网络
 def network_layer_pods
-#  pod 'AFNetworking'
+#  pod 'AFNetworking', '4.0.1'
   pod 'AFNetworking', :git => 'https://github.com/xiaohuiCoding/AFNetworking' #DIY一下
-  pod 'SDWebImage'
+  pod 'SDWebImage', '5.12.6'
 end
 
 ################# 模块
