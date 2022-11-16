@@ -18,7 +18,6 @@
 @property (nonatomic, strong) UITableView *tableView;//用strong声明也不会出错（由于strong是强引用，又是用懒加载构建，可能会导致在某些需求下无法重新构建该视图！）
 
 @property (nonatomic, copy) NSArray *dataSource;
-@property (nonatomic, strong) NSString *cellString;//故意这么声明，为了利用其“弊端”！
 
 @end
 
@@ -43,44 +42,44 @@
 
     self.view.backgroundColor = UIColor.whiteColor;
 
-    self.dataSource = @[@"Deep copy / Shallow copy",
-                        @"weak / strong / copy",
-                        @"Nullability",
-                        @"Generics",
-                        @"Some interview topic",
-                        @"Hash and Equal",
-                        @"CADisplayLink",
-                        @"UIView's life cycle",
-                        @"Block",
-                        @"RunLoop and performSelector",
-                        @"RunLoop and thread",
-                        @"Runtime（一）",
-                        @"Runtime（二）",
-                        @"Runtime（三）",
-                        @"@autoreleasepool",
-                        @"GCD",
-                        @"NSThread（一）",
-                        @"NSThread（二）",
-                        @"NSThread（三）",
-                        @"NSOperation and NSOperationQueue",
-                        @"Queue",
-                        @"CABasicAnimation",
-                        @"CATransform3D",
-                        @"KVO",
-                        @"ReactiveCocoa",
-                        @"InterView",
-                        @"NSTimer",
-                        @"Crash（一）",
-                        @"Crash（二）",
-                        @"Crash（三）",
-                        @"UITableView 优化",
-                        @"WKWebView 进阶",
-                        @"高阶容器",
-                        @"内存管理",
-                        @"KVC",
-                        @"逆向 混淆",
-                        @"组件化",
-                        @"数据库"
+    self.dataSource = @[@" 0.Deep copy / Shallow copy",
+                        @" 1.weak / strong / copy",
+                        @" 2.Nullability",
+                        @" 3.Generics",
+                        @" 4.Some interview topic",
+                        @" 5.Hash and Equal",
+                        @" 6.CADisplayLink",
+                        @" 7.UIView's life cycle",
+                        @" 8.Block",
+                        @" 9.RunLoop and performSelector",
+                        @"10.RunLoop and thread",
+                        @"11.Runtime（一）",
+                        @"12.Runtime（二）",
+                        @"13.Runtime（三）",
+                        @"14.@autoreleasepool",
+                        @"15.GCD",
+                        @"16.NSThread（一）",
+                        @"17.NSThread（二）",
+                        @"18.NSThread（三）",
+                        @"19.NSOperation and NSOperationQueue",
+                        @"20.Queue",
+                        @"21.CABasicAnimation",
+                        @"22.CATransform3D",
+                        @"23.KVO",
+                        @"24.ReactiveCocoa",
+                        @"25.InterView",
+                        @"26.NSTimer",
+                        @"27.Crash（一）",
+                        @"28.Crash（二）",
+                        @"29.Crash（三）",
+                        @"30.UITableView 优化",
+                        @"31.WKWebView 进阶",
+                        @"32.高阶容器",
+                        @"33.内存管理",
+                        @"34.KVC",
+                        @"35.逆向 混淆",
+                        @"36.组件化",
+                        @"37.数据库"
                         ];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Objective-C(%ld)",(unsigned long)self.dataSource.count];
@@ -114,13 +113,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    NSMutableString *contentString = [NSMutableString stringWithFormat:@"%ld. %@",(long)indexPath.row,self.dataSource[indexPath.row]];
-    self.cellString = contentString;
-    if (indexPath.row <= 9) {
-        [contentString insertString:@" " atIndex:0];//使得看起来接近左对齐
+    if (indexPath.row < self.dataSource.count) {
+        NSString *txt = self.dataSource[indexPath.row];
+        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+        cell.textLabel.text = txt;
     }
-    cell.textLabel.font = [UIFont systemFontOfSize:14.0];
-    cell.textLabel.text = self.cellString;
     return cell;
 }
 

@@ -52,12 +52,16 @@
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.offset(10);
         make.bottom.offset(-10);
-        make.width.height.mas_equalTo(125);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(150).priority(MASLayoutPriorityDefaultHigh); // 设置子元素约束的优先级，以免报警告⚠️
+//        make.height.mas_equalTo(self.imgView.mas_width).multipliedBy(1.5).priority(MASLayoutPriorityDefaultHigh); // 设置宽高比例
     }];
     [self.txtLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.imgView.mas_right).offset(60);
         make.centerY.offset(0);
     }];
+    
+    MASAttachKeys(self.imgView); // 打印有警告的约束对象
 }
 
 - (void)setUpModel:(XHModel *)model {
@@ -185,12 +189,14 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+        _tableView.estimatedRowHeight = 144;
         [_tableView registerClass:[XHTableViewCell class] forCellReuseIdentifier:NSStringFromClass([XHTableViewCell class])];
     }
     return _tableView;

@@ -38,6 +38,7 @@
 		187AA0FD2912733C0074C0BC /* TestVC37.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AA0FC2912733C0074C0BC /* TestVC37.m */; };
 		1883C8DA27265439000980EA /* TestVC26.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8D927265439000980EA /* TestVC26.m */; };
 		1883C8DD2727DE27000980EA /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		189DB7272924562C002A9647 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DB7262924562C002A9647 /* CustomViewController.m */; };
 		18A19DC7271D7CE000D29E10 /* TestVC25.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A19DC6271D7CE000D29E10 /* TestVC25.m */; };
 		18E619A827479B88008B68C0 /* TestVC32.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619A727479B88008B68C0 /* TestVC32.m */; };
 		18E619AC274CD338008B68C0 /* TestVC33.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E619AB274CD338008B68C0 /* TestVC33.m */; };
@@ -66,7 +67,6 @@
 		4B44459A205A509800D0A043 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B444599205A509800D0A043 /* TestView.m */; };
 		4B44459D205A55A200D0A043 /* NSObject+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44459C205A55A200D0A043 /* NSObject+AddMethod.m */; };
 		4B4445A5205A69EE00D0A043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A0205A69EE00D0A043 /* AppDelegate.m */; };
-		4B4445A6205A69EE00D0A043 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A1205A69EE00D0A043 /* CustomViewController.m */; };
 		4B4445A7205A69EE00D0A043 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A4205A69EE00D0A043 /* ViewController.m */; };
 		4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445A9205A9BD800D0A043 /* ModelC.m */; };
 		4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4445AC205BAFA600D0A043 /* TestVC13.m */; };
@@ -206,6 +206,8 @@
 		1883C8D927265439000980EA /* TestVC26.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC26.m; sourceTree = "<group>"; };
 		1883C8DB2727DE27000980EA /* NSObject+zombieDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zombieDealloc.m"; sourceTree = "<group>"; };
 		1883C8DC2727DE27000980EA /* NSObject+zombieDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+zombieDealloc.h"; sourceTree = "<group>"; };
+		189DB7262924562C002A9647 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		189DB72829245663002A9647 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		18A19DC5271D7CE000D29E10 /* TestVC25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC25.h; sourceTree = "<group>"; };
 		18A19DC6271D7CE000D29E10 /* TestVC25.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC25.m; sourceTree = "<group>"; };
 		18E619A627479B88008B68C0 /* TestVC32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC32.h; sourceTree = "<group>"; };
@@ -260,9 +262,7 @@
 		4B44459C205A55A200D0A043 /* NSObject+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddMethod.m"; sourceTree = "<group>"; };
 		4B44459F205A69EE00D0A043 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4B4445A0205A69EE00D0A043 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B4445A1205A69EE00D0A043 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		4B4445A2205A69EE00D0A043 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4B4445A3205A69EE00D0A043 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		4B4445A4205A69EE00D0A043 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4B4445A8205A9BD800D0A043 /* ModelC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelC.h; sourceTree = "<group>"; };
 		4B4445A9205A9BD800D0A043 /* ModelC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelC.m; sourceTree = "<group>"; };
@@ -531,8 +531,6 @@
 			children = (
 				4B4445A2205A69EE00D0A043 /* AppDelegate.h */,
 				4B4445A0205A69EE00D0A043 /* AppDelegate.m */,
-				4B4445A3205A69EE00D0A043 /* CustomViewController.h */,
-				4B4445A1205A69EE00D0A043 /* CustomViewController.m */,
 				4B44459F205A69EE00D0A043 /* ViewController.h */,
 				4B4445A4205A69EE00D0A043 /* ViewController.m */,
 				1867DA932611CD25004FBBBE /* OCTestStyle.h */,
@@ -552,6 +550,8 @@
 		4B77151D202EDCC300257BD8 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
+				189DB72829245663002A9647 /* CustomViewController.h */,
+				189DB7262924562C002A9647 /* CustomViewController.m */,
 				4B771500202ED09F00257BD8 /* TestVC0.h */,
 				4B771501202ED09F00257BD8 /* TestVC0.m */,
 				4B771503202ED0B600257BD8 /* TestVC1.h */,
@@ -1034,6 +1034,7 @@
 				4BC7C51520880B5B00C389B0 /* TestVC18.m in Sources */,
 				4B4445AD205BAFA600D0A043 /* TestVC13.m in Sources */,
 				4BA0A746205161B000AD5683 /* TestVC10.m in Sources */,
+				189DB7272924562C002A9647 /* CustomViewController.m in Sources */,
 				4B1DE673207F006A00EE6A61 /* TestVC16.m in Sources */,
 				185F99702735269700D9F914 /* TestVC31.m in Sources */,
 				4BE33AF920C7E6DF00052FFC /* Boy.m in Sources */,
@@ -1077,7 +1078,6 @@
 				4B4445AA205A9BD800D0A043 /* ModelC.m in Sources */,
 				4B977CB220689B7D00671B96 /* PNScatterChart.m in Sources */,
 				4B444587205A1AE300D0A043 /* RuntimeTestModel.m in Sources */,
-				4B4445A6205A69EE00D0A043 /* CustomViewController.m in Sources */,
 				FB4645F823C5D852004E49A6 /* People.m in Sources */,
 				4B771521202EF35300257BD8 /* TestVC6.m in Sources */,
 				4B7ACD4D2028470B00504726 /* Test_Nullability.m in Sources */,
