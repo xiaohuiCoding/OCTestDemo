@@ -39,7 +39,7 @@
 - (void)addTestImgView
 {
     _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 128, 100, 100)];
-    _imgView.image = [UIImage imageNamed:@"one"];
+    _imgView.image = [UIImage imageNamed:@"jenkins"];
     [self.view addSubview:_imgView];
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(300, 100, 60, 60)];

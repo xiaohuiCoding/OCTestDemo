@@ -13,7 +13,8 @@
 @interface XHModel : NSObject
 
 @property (nonatomic, copy) NSString *URLString;
-@property (nonatomic, copy) NSString *txt;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 
 @property (nonatomic, assign) BOOL needLoad;
 
@@ -30,7 +31,8 @@
 @interface XHTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UIImageView *imgView;
-@property (nonatomic, strong) UILabel *txtLabel;
+@property (nonatomic, strong) UILabel *titLabel;
+@property (nonatomic, strong) UILabel *subtitLabel;
 
 - (void)setUpModel:(XHModel *)model;
 
@@ -47,27 +49,33 @@
 
 - (void)setUpSubviews {
     [self.contentView addSubview:self.imgView];
-    [self.contentView addSubview:self.txtLabel];
+    [self.contentView addSubview:self.titLabel];
+    [self.contentView addSubview:self.subtitLabel];
 
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.offset(10);
         make.bottom.offset(-10);
-        make.width.mas_equalTo(100);
-        make.height.mas_equalTo(150).priority(MASLayoutPriorityDefaultHigh); // 设置子元素约束的优先级，以免报警告⚠️
-//        make.height.mas_equalTo(self.imgView.mas_width).multipliedBy(1.5).priority(MASLayoutPriorityDefaultHigh); // 设置宽高比例
+        make.width.mas_equalTo(150);
+        make.height.mas_equalTo(150).priority(MASLayoutPriorityDefaultHigh); // 设置高度(设置子元素约束的优先级，控制台打印警告信息⚠️)
+//        make.height.mas_equalTo(self.imgView.mas_width).multipliedBy(1.0).priority(MASLayoutPriorityDefaultHigh); // 设置宽高比例
     }];
-    [self.txtLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.imgView.mas_right).offset(60);
-        make.centerY.offset(0);
+    [self.titLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.imgView.mas_right).offset(20);
+        make.top.offset(30);
+    }];
+    [self.subtitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.titLabel);
+        make.bottom.offset(-30);
     }];
     
-    MASAttachKeys(self.imgView); // 打印有警告的约束对象
+//    MASAttachKeys(self.imgView); // 可以打印有警告的约束对象！
 }
 
 - (void)setUpModel:(XHModel *)model {
     if (model == nil) {
-        self.imgView.image = [UIImage imageNamed:@"fish"];
-        self.txtLabel.text = @"默认文字";
+        self.imgView.image = [UIImage imageNamed:@"jenkins"];
+        self.titLabel.text = @"默认标题";
+        self.subtitLabel.text = @"默认副标题";
     } else {
         [self.imgView sd_setImageWithURL:[NSURL URLWithString:model.URLString] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
             self.imgView.contentScaleFactor = [[UIScreen mainScreen] scale];
@@ -75,7 +83,8 @@
             self.imgView.clipsToBounds = YES;
             model.needLoad = YES;
         }];
-        self.txtLabel.text = model.txt;
+        self.titLabel.text = model.title;
+        self.subtitLabel.text = model.subtitle;
     }
     
     // TODO: 下面这种方案是利用Runloop的Mode特性，监听页面是否在滚动（处于TrackingMode），目前有点卡顿，待研究～
@@ -95,13 +104,22 @@
     return _imgView;
 }
 
-- (UILabel *)txtLabel {
-    if (!_txtLabel) {
-        _txtLabel = [[UILabel alloc] init];
-        _txtLabel.font = [UIFont systemFontOfSize:32.0];
-        _txtLabel.textColor = UIColor.lightGrayColor;
+- (UILabel *)titLabel {
+    if (!_titLabel) {
+        _titLabel = [[UILabel alloc] init];
+        _titLabel.font = [UIFont systemFontOfSize:18.0];
+        _titLabel.textColor = UIColor.grayColor;
     }
-    return _txtLabel;
+    return _titLabel;
+}
+
+- (UILabel *)subtitLabel {
+    if (!_subtitLabel) {
+        _subtitLabel = [[UILabel alloc] init];
+        _subtitLabel.font = [UIFont systemFontOfSize:14.0];
+        _subtitLabel.textColor = UIColor.lightGrayColor;
+    }
+    return _subtitLabel;
 }
 
 @end
@@ -134,7 +152,8 @@
         } else {
             model.URLString = @"http://g.hiphotos.baidu.com/image/pic/item/472309f790529822c4ac8ad0d5ca7bcb0a46d402.jpg";
         }
-        model.txt = [NSString stringWithFormat:@"第%ld行",(long)i];
+        model.title = [NSString stringWithFormat:@"第%ld行标题",(long)i];
+        model.subtitle = [NSString stringWithFormat:@"第%ld行副标题",(long)i];
         model.needLoad = NO;
         [self.datasource addObject:model];
         

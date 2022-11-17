@@ -32,7 +32,7 @@
     
     _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     _imgView.center = self.view.center;
-    _imgView.image = [UIImage imageNamed:@"one"];
+    _imgView.image = [UIImage imageNamed:@"jenkins"];
     [self.view addSubview:_imgView];
 
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(300, 100, 60, 60)];
