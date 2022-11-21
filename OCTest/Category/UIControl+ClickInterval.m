@@ -35,11 +35,13 @@ static double kDefaultInterval = 2.0;
         Method originalMethod = class_getInstanceMethod(self , originalSel);
         Method newMethod = class_getInstanceMethod(self , newSel);
 
-        // 如果发现方法已经存在，返回NO；也可以用来做检查用，这里是为了避免源方法没有存在的情况；如果方法没有存在，我们则先尝试添加被替换的方法的实现。
-        BOOL isAddNewMethod = class_addMethod(self, originalSel, method_getImplementation(newMethod), "v@:");
+        // 这里做判断是为了避免原方法的实现不存在的情况。如果返回YES就是添加成功了，说明原方法的实现不存在(就先添加被替换方法的实现，然后替换)，否则就返回NO；
+        BOOL isAddNewMethod = class_addMethod(self, originalSel, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
         if (isAddNewMethod) {
-            class_replaceMethod(self, newSel, method_getImplementation(originalMethod), "v@:");
+            // 替换方法的实现
+            class_replaceMethod(self, newSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
         } else {
+            // 交换方法的实现
             method_exchangeImplementations(originalMethod, newMethod);
         }
     });

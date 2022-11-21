@@ -21,13 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"more" style:UIBarButtonItemStylePlain target:self action:@selector(toNextPage)];
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
-}
 
-- (void)toNextPage {
-    
 }
 
 - (IBAction)loadImageWithMultiThread:(id)sender {
@@ -54,6 +48,10 @@
 - (void)updateImageWithData:(NSData *)imageData {
     UIImage *image = [UIImage imageWithData:imageData];
     _imgView.image = image;
+}
+
+- (IBAction)clickEvent:(id)sender {
+    NSLog(@"button is clicked!");
 }
 
 @end

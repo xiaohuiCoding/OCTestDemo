@@ -15,7 +15,6 @@
 #import "TestView.h"
 #import "NSString+Attributed.h"
 #import "MosaicHandler.h"
-//#import "UIControl+ClickInterval.h"
 
 @interface TestVC7 ()
 
@@ -45,8 +44,6 @@
     [btn addInsets:UIEdgeInsetsMake(-5, -10, -15, -25)];
 //    btn.contentEdgeInsets = UIEdgeInsetsMake(-5, -10, -15, -25);
     [self.view addSubview:btn];
-    
-//    [UIControl kk_exchangeClickMethod]; // 局部阻止频繁的点击事件
     
     
     // 给图片画圆角
